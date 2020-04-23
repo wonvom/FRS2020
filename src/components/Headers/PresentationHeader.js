@@ -19,7 +19,7 @@ function PresentationHeader() {
           <div className="content-center">
             <Container>
               <div className="title-brand">
-                <h1 className="presentation-title">Paper Kit React</h1>
+                <h1 className="presentation-title">원종이의 React</h1>
                 <div className="type">PRO</div>
                 <div className="fog-low">
                   <img
@@ -35,8 +35,7 @@ function PresentationHeader() {
                 </div>
               </div>
               <h2 className="presentation-subtitle text-center">
-                Make your mark with a premium Bootstrap 4, React, React Hooks
-                and Reactstrap UI Kit!
+                열심히해봅시다
               </h2>
             </Container>
           </div>
