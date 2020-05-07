@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container, Row, Col } from "reactstrap";
+import {  Container, Row, Col } from "reactstrap"; // { Button } 버튼사용시 삽입
 
 // core components
 
@@ -12,22 +12,22 @@ function SectionSections() {
         <Container>
           <Col className="ml-auto mr-auto" md="8">
             <div className="section-description text-center">
-              <h2 className="title">Sections you will love</h2>
-              <h5 className="description">
+              <h2 className="title">Choose your travel destination</h2>
+              {/* <h5 className="description">
                 Build pages in no time using pre-made sections! We have created
                 multiple sections for you to put together and customise into
                 pixel perfect example pages. From headers to footers, you will
                 be able to choose the best combination for your project.
-              </h5>
+              </h5> */}
               <br />
-              <Button
+              {/* <Button
                 className="btn-rose btn-round"
                 color="default"
                 href="sections.html"
                 target="_blank"
               >
                 View All Sections
-              </Button>
+              </Button> */}
             </div>
           </Col>
         </Container>
@@ -38,25 +38,25 @@ function SectionSections() {
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/header-1.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Seoul.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/header-2.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Busan.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/header-3.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Daegu.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/header-4.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Daejeon.PNG")}
                   />
                 </Col>
               </Row>
@@ -64,25 +64,25 @@ function SectionSections() {
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/team-cards-social.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Gangwon.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/bg-pricing-card.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Gwangju.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/white-pricing-card.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Incheon.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/team-member-card.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Ulsan.PNG")}
                   />
                 </Col>
               </Row>
@@ -90,29 +90,29 @@ function SectionSections() {
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/testimonials-1.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Jeju.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/blog-bg-cards.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Gyeonggi.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/our-products.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Gyeongsang.PNG")}
                   />
                 </Col>
                 <Col md="3">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/projects-cards.jpg")}
+                    src={require("assets/img/presentation-page/screenshots/Jeonla.PNG")}
                   />
                 </Col>
               </Row>
-              <Row>
+              {/* <Row>
                 <Col md="3">
                   <img
                     alt="..."
@@ -137,7 +137,7 @@ function SectionSections() {
                     src={require("assets/img/presentation-page/screenshots/team-3.jpg")}
                   />
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
           </div>
         </Container>

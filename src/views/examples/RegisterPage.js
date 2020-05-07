@@ -47,7 +47,7 @@ function RegisterPage() {
                     <i className="fa fa-umbrella" />
                   </div>
                   <div className="description">
-                    <h3>We've got you covered</h3>
+                    <h3>안녕</h3>
                     <p>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient. Everything you need in a
@@ -60,7 +60,7 @@ function RegisterPage() {
                     <i className="fa fa-map-signs" />
                   </div>
                   <div className="description">
-                    <h3>Clear Directions</h3>
+                    <h3>최연지</h3>
                     <p>
                       Efficiently unleash cross-media information without
                       cross-media value. Quickly maximize timely deliverables
