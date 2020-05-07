@@ -24,11 +24,10 @@ function SectionOverview() {
                       <div className="card-icon">
                         <i className="nc-icon nc-money-coins" />
                       </div>
-                      <CardTitle tag="h4">Save Money</CardTitle>
+                      <CardTitle tag="h4">CULTURE</CardTitle>
                       <p className="card-description">
-                        Creating your design from scratch with dedicated
-                        designers can be very expensive. Using a kit is the best
-                        option to start your development.
+                      Were you worried because it was too expensive when you visited various sites to travel to Korea? 
+                      Use our cheap site and buy delicious food with that money.
                       </p>
                     </CardBody>
                   </Card>
@@ -41,9 +40,8 @@ function SectionOverview() {
                       </div>
                       <CardTitle tag="h4">Save Time</CardTitle>
                       <p className="card-description">
-                        Using the kit will save you large amount of time. You
-                        don't have to worry about customising the basic
-                        Bootstrap 4 design or its components.
+                      If you use our site, you can save more time than any other site. 
+                      No hassle, no stress, just try our service.
                       </p>
                     </CardBody>
                   </Card>
@@ -58,7 +56,7 @@ function SectionOverview() {
                       <p className="card-description">
                         Enjoy the fluid grid system based on 12 columns. Paper
                         Kit PRO React is built over Reactstrap and has all the
-                        benefits that the framework comes with.
+                        
                       </p>
                     </CardBody>
                   </Card>

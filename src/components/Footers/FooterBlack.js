@@ -20,7 +20,7 @@ function FooterBlack() {
                     target="_blank"
                     className="mr-1"
                   >
-                    Creative Tim
+                    FRS
                   </a>
                 </li>
                 <li>
@@ -45,7 +45,7 @@ function FooterBlack() {
             <div className="credits ml-auto">
               <span className="copyright">
                 © {new Date().getFullYear()}
-                , made with <i className="fa fa-heart heart" /> by Creative Tim
+                , made with <i className="fa fa-heart heart" /> by FRS team
               </span>
             </div>
           </Row>

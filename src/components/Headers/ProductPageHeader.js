@@ -23,7 +23,7 @@ function ProductPageHeader() {
             ")"
         }}
       >
-        <div className="filter" />
+        <div className="filter"/>
       </div>
     </>
   );

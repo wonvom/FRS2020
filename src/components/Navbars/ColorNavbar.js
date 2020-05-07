@@ -67,10 +67,10 @@ function ColorNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              Paper Kit PRO React
+              FRS team
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Paper Kit PRO React
+              FRS team
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"
@@ -91,24 +91,70 @@ function ColorNavbar() {
             <Nav className="ml-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
-                  Components
+                  Theme
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
                   <DropdownItem to="/index" tag={Link}>
-                    All Components
+                    Culture
                   </DropdownItem>
                   <DropdownItem to="/presentation" tag={Link}>
-                    Presentation
+                    Sports
                   </DropdownItem>
                   <DropdownItem
                     href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-color-navbar"
                     target="_blank"
                   >
-                    Documentation
+                    Eat
+                  </DropdownItem>
+                  <DropdownItem to="/presentation" tag={Link}>
+                    Healing
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
+                  Location
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/sections#headers" tag={Link}>
+                    <i className="nc-icon nc-tile-56" />
+                    Seoul
+                  </DropdownItem>
+                  <DropdownItem to="/sections#features" tag={Link}>
+                    <i className="nc-icon nc-settings" />
+                    Busan
+                  </DropdownItem>
+                  <DropdownItem to="/sections#blogs" tag={Link}>
+                    <i className="nc-icon nc-bullet-list-67" />
+                    Daegu
+                  </DropdownItem>
+                  <DropdownItem to="/sections#teams" tag={Link}>
+                    <i className="nc-icon nc-single-02" />
+                    Daejeon
+                  </DropdownItem>
+                  <DropdownItem to="/sections#projects" tag={Link}>
+                    <i className="nc-icon nc-calendar-60" />
+                    Gangwon
+                  </DropdownItem>
+                  <DropdownItem to="/sections#pricing" tag={Link}>
+                    <i className="nc-icon nc-money-coins" />
+                    Gwangju
+                  </DropdownItem>
+                  <DropdownItem to="/sections#testimonials" tag={Link}>
+                    <i className="nc-icon nc-badge" />
+                    Incheon
+                  </DropdownItem>
+                  <DropdownItem to="/sections#contact-us" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Ulsan
+                  </DropdownItem>
+                  <DropdownItem to="/sections#contact-us" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Jeju
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
                   Sections
                 </DropdownToggle>
@@ -146,7 +192,7 @@ function ColorNavbar() {
                     Contact Us
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle color="default" caret nav>
                   Examples
@@ -221,9 +267,20 @@ function ColorNavbar() {
                   href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-color-navbar"
                   target="_blank"
                 >
-                  <i className="nc-icon nc-cart-simple" /> Buy Now
+                  {/* <i className="nc-icon nc-cart-simple" />  */}
+                  Register Now
                 </Button>
               </NavItem>
+              {/* <NavItem>
+                <Button
+                  className="btn-round"
+                  color="danger"
+                  href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-color-navbar"
+                  target="_blank"
+                >
+                  <i className="nc-icon nc-cart-simple" /> Buy Now
+                </Button>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

@@ -7,18 +7,18 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
-import SectionSummary from "./presentation-sections/SectionSummary.js";
-import SectionComponents from "./presentation-sections/SectionComponents.js";
-import SectionCards from "./presentation-sections/SectionCards.js";
-import SectionContent from "./presentation-sections/SectionContent.js";
+// import SectionSummary from "./presentation-sections/SectionSummary.js";
+// import SectionComponents from "./presentation-sections/SectionComponents.js";
+// import SectionCards from "./presentation-sections/SectionCards.js";
+// import SectionContent from "./presentation-sections/SectionContent.js";
 import SectionSections from "./presentation-sections/SectionSections.js";
-import SectionExamples from "./presentation-sections/SectionExamples.js";
+// import SectionExamples from "./presentation-sections/SectionExamples.js";
 import SectionIcons from "./presentation-sections/SectionIcons.js";
-import SectionFreeDemo from "./presentation-sections/SectionFreeDemo.js";
-import SectionResponsive from "./presentation-sections/SectionResponsive.js";
+// import SectionFreeDemo from "./presentation-sections/SectionFreeDemo.js";
+// import SectionResponsive from "./presentation-sections/SectionResponsive.js";
 import SectionOverview from "./presentation-sections/SectionOverview.js";
-import SectionTestimonials from "./presentation-sections/SectionTestimonials.js";
-import SectionSharing from "./presentation-sections/SectionSharing.js";
+// import SectionTestimonials from "./presentation-sections/SectionTestimonials.js";
+// import SectionSharing from "./presentation-sections/SectionSharing.js";
 
 function Presentation() {
   document.documentElement.classList.remove("nav-open");
@@ -56,18 +56,19 @@ function Presentation() {
     <>
       <ColorNavbar />
       <PresentationHeader />
-      <SectionSummary />
-      <SectionComponents />
-      <SectionCards />
-      <SectionContent />
-      <SectionSections />
-      <SectionExamples />
-      <SectionIcons />
-      <SectionFreeDemo />
-      <SectionResponsive />
       <SectionOverview />
-      <SectionTestimonials />
-      <SectionSharing />
+      {/* <SectionSummary /> */}
+      {/* <SectionComponents /> */}
+      {/* <SectionCards /> */}
+      {/* <SectionContent /> */}
+      <SectionSections />
+      {/* <SectionExamples /> */}
+      <SectionIcons />
+      {/* <SectionFreeDemo /> */}
+      {/* <SectionResponsive /> */}
+      
+      {/* <SectionTestimonials /> */}
+      {/* <SectionSharing /> */}
       <FooterBlack />
     </>
   );
