@@ -39,7 +39,7 @@ function PresentationHeader() {
           style={{
             backgroundImage:
               // "url(" + require("assets/img/sections/pk-pro-cover.jpg") + ")"
-              "url(" + require("/Users/Ethan/EthanPro/src/assets/img/effel_tower.jpg") + ")"
+              "url(" + require("assets/img/effel_tower.jpg") + ")"
               // <img src = "/assets/img/effel_tower.jpg">
           }}
         >
