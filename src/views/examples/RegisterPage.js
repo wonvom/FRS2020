@@ -47,11 +47,9 @@ function RegisterPage() {
                     <i className="fa fa-umbrella" />
                   </div>
                   <div className="description">
-                    <h3>안녕</h3>
+                    <h3>Where do you want to go?</h3>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient. Everything you need in a
-                      single case.
+                      You can go anywhere and everywhere.
                     </p>
                   </div>
                 </div>
@@ -60,11 +58,9 @@ function RegisterPage() {
                     <i className="fa fa-map-signs" />
                   </div>
                   <div className="description">
-                    <h3>최연지</h3>
+                    <h3>What do you like?</h3>
                     <p>
-                      Efficiently unleash cross-media information without
-                      cross-media value. Quickly maximize timely deliverables
-                      for real-time schemas.
+                      Please check your favor.
                     </p>
                   </div>
                 </div>
@@ -73,7 +69,7 @@ function RegisterPage() {
                     <i className="fa fa-user-secret" />
                   </div>
                   <div className="description">
-                    <h3>We value your privacy</h3>
+                    <h3>When do you want to go?</h3>
                     <p>
                       Completely synergize resource taxing relationships via
                       premier niche markets.
