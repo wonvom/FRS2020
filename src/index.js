@@ -32,6 +32,7 @@ import Presentation from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
+import BlogPost_Seoul from "views/examples/BlogPost_Seoul.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Discover from "views/examples/Discover.js";
@@ -65,6 +66,9 @@ ReactDOM.render(
       <Route path="/about-us" render={props => <AboutUs {...props} />} />
       <Route path="/add-product" render={props => <AddProduct {...props} />} />
       <Route path="/blog-post" render={props => <BlogPost {...props} />} />
+      <Route path="/blog-post-seoul" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Seoul {...props} />} />
       <Route path="/blog-posts" render={props => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={props => <ContactUs {...props} />} />
       <Route path="/discover" render={props => <Discover {...props} />} />

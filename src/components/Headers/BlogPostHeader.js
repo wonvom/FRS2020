@@ -35,8 +35,11 @@ function BlogPostHeader() {
         <div className="filter" />
         <div className="content-center">
           <div className="motto">
-            <h1 className="title-uppercase text-center">Paper Kit</h1>
-            <h3 className="text-center">Make your mark with a new design.</h3>
+            <h2 className="title-uppercase text-center">The world is a book </h2>
+            <h2 className="title-uppercase text-center">and those who do not travel read only one page</h2>
+            <h3 className="text-center">- St. Augustine -</h3>
+            <br />
+            <br />
             <br />
             <Button
               className="btn-round"
@@ -45,8 +48,8 @@ function BlogPostHeader() {
               onClick={e => e.preventDefault()}
               size="lg"
             >
-              <i className="fa fa-share-alt mr-1 " />
-              Share Article
+              {/* <i className="fa fa-share-alt mr-1 " /> */}
+              Scroll Down
             </Button>
           </div>
         </div>
