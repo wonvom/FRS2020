@@ -66,7 +66,7 @@ function ColorNavbar() {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
+            <NavbarBrand id="navbar-brand" to="/presentation" tag={Link}>
               FRS team
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
@@ -116,7 +116,7 @@ function ColorNavbar() {
                   Location
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/sections#headers" tag={Link}>
+                  <DropdownItem to="/blog-post-seoul" tag={Link}>
                     <i className="nc-icon nc-tile-56" />
                     Seoul
                   </DropdownItem>

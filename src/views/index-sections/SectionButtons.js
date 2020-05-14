@@ -154,6 +154,9 @@ function SectionButtons() {
                   color="primary"
                   outline
                   type="button"
+                  // onClick={()=>{
+                  //   props.history.puhs("/")
+                  // }}
                 >
                   Primary
                 </Button>
