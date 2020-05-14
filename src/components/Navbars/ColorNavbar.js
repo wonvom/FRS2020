@@ -94,15 +94,16 @@ function ColorNavbar() {
                   Theme
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/presentation2" tag={Link}>
                     Culture
                   </DropdownItem>
                   <DropdownItem to="/presentation" tag={Link}>
                     Sports
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-color-navbar"
-                    target="_blank"
+                    to="/presentation" tag={Link}
+                    //href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-color-navbar"
+                    //target="_blank"
                   >
                     Eat
                   </DropdownItem>
