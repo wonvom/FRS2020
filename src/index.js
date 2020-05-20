@@ -33,6 +33,14 @@ import AboutUs from "views/examples/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPost_Seoul from "views/sections-sections/BlogPost_Seoul.js";
+import BlogPost_Busan from "views/sections-sections/BlogPost_Busan.js";
+import BlogPost_Daegu from "views/sections-sections/BlogPost_Daegu.js";
+import BlogPost_Daejeon from "views/sections-sections/BlogPost_Daejeon.js";
+import BlogPost_Gangwon from "views/sections-sections/BlogPost_Gangwon.js";
+import BlogPost_Gwangju from "views/sections-sections/BlogPost_Gwangju.js";
+import BlogPost_Incheon from "views/sections-sections/BlogPost_Incheon.js";
+import BlogPost_Ulsan from "views/sections-sections/BlogPost_Ulsan.js";
+import BlogPost_Jeju from "views/sections-sections/BlogPost_Jeju.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Discover from "views/examples/Discover.js";
@@ -69,6 +77,30 @@ ReactDOM.render(
       <Route path="/blog-post-seoul" 
        // eslint-disable-next-line
        render={props => <BlogPost_Seoul {...props} />} />
+      <Route path="/blog-post-busan" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Daejeon {...props} />} />
+      <Route path="/blog-post-busan" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Busan {...props} />} />
+      <Route path="/blog-post-daegu" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Daegu {...props} />} />
+       <Route path="/blog-post-gangwon" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Gangwon {...props} />} />
+       <Route path="/blog-post-gwangju" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Gwangju {...props} />} />
+       <Route path="/blog-post-incheon" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Incheon {...props} />} />
+       <Route path="/blog-post-ulsan" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Ulsan {...props} />} />
+       <Route path="/blog-post-jeju" 
+       // eslint-disable-next-line
+       render={props => <BlogPost_Jeju {...props} />} />
       <Route path="/blog-posts" render={props => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={props => <ContactUs {...props} />} />
       <Route path="/discover" render={props => <Discover {...props} />} />
