@@ -53,13 +53,13 @@ function ProfilePage() {
                   <div className="fileinput-new img-no-padding">
                     <img
                       alt="..."
-                      src={require("assets/img/faces/joe-gardner-2.jpg")}
+                      src={require("assets/img/faces/wonjong-1.jpg")}
                     />
                   </div>
                   <div className="name">
                     <h4 className="title text-center">
-                      Chet Faker <br />
-                      <small>Music Producer</small>
+                      Kim Wonjong <br />
+                      <small>Programmar</small>
                     </h4>
                   </div>
                 </div>
@@ -68,10 +68,7 @@ function ProfilePage() {
             <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
                 <p>
-                  An artist of considerable range, Chet Faker — the name taken
-                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure.
+                  Traveling with alcohol
                 </p>
                 <br />
                 <Button className="btn-round" color="default" outline>
@@ -119,13 +116,13 @@ function ProfilePage() {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
+                              src={require("assets/img/faces/baeinhyuk.jpg")}
                             />
                           </Col>
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                             <h6>
-                              Lincoln <br />
-                              <small>Car Producer</small>
+                              Bae Inhyuk <br />
+                              <small>Actor</small>
                             </h6>
                           </Col>
                           <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
@@ -149,12 +146,12 @@ function ProfilePage() {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/erik-lucatero-2.jpg")}
+                              src={require("assets/img/faces/joy.jpg")}
                             />
                           </Col>
                           <Col lg="7" md="4" xs="4">
                             <h6>
-                              Banks <br />
+                              Joy <br />
                               <small>Singer</small>
                             </h6>
                           </Col>

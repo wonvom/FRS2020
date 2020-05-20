@@ -262,9 +262,21 @@ function ColorNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
+              <Button
+                  className="btn-round"
+                  style={{backgroundColor: '#BF7E5D'}}
+                  outline color="secondary"
+                  to="/profile-page" tag={Link}
+                  //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
+                  //target="_blank"
+                >
+                  {/* <i className="nc-icon nc-cart-simple" />  */}
+                  My Page
+                </Button>
                 <Button
                   className="btn-round"
-                  color="danger"
+                  style={{backgroundColor: '#BF7E5D'}}
+                  outline color="secondary"
                   to="/register-page" tag={Link}
                   //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
                   //target="_blank"

@@ -18,7 +18,7 @@ function ProfilePageHeader() {
         className="page-header page-header-small"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/sections/rodrigo-ardilha.jpg") + ")"
+            "url(" + require("assets/img/sections/gyeong-hoiryu.jpg") + ")"
         }}
       >
         <div className="filter" />
