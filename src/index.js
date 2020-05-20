@@ -32,7 +32,7 @@ import Presentation from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
-import BlogPost_Seoul from "views/examples/BlogPost_Seoul.js";
+import BlogPost_Seoul from "views/sections-sections/BlogPost_Seoul.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Discover from "views/examples/Discover.js";
