@@ -66,6 +66,7 @@ ReactDOM.render(
       <Route path="/about-us" render={props => <AboutUs {...props} />} />
       <Route path="/add-product" render={props => <AddProduct {...props} />} />
       <Route path="/blog-post" render={props => <BlogPost {...props} />} />
+
       <Route path="/blog-post-seoul" 
        // eslint-disable-next-line
        render={props => <BlogPost_Seoul {...props} />} />

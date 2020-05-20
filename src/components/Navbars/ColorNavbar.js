@@ -265,8 +265,9 @@ function ColorNavbar() {
                 <Button
                   className="btn-round"
                   color="danger"
-                  href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-color-navbar"
-                  target="_blank"
+                  to="/register-page" tag={Link}
+                  //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
+                  //target="_blank"
                 >
                   {/* <i className="nc-icon nc-cart-simple" />  */}
                   Register Now
