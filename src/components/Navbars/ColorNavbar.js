@@ -120,7 +120,7 @@ function ColorNavbar() {
                     <i className="nc-icon nc-tile-56" />
                     Seoul
                   </DropdownItem>
-                  <DropdownItem to="/sections#features" tag={Link}>
+                  <DropdownItem to="/blog-post-busan" tag={Link}>
                     <i className="nc-icon nc-settings" />
                     Busan
                   </DropdownItem>
