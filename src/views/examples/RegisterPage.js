@@ -5,9 +5,11 @@ import {
   Button,
   Card,
   CardTitle,
+  FormGroup,
   Form,
   Input,
   Container,
+  Label,
   Row,
   Col
 } from "reactstrap";
@@ -35,7 +37,7 @@ function RegisterPage() {
           className="page-header"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/sections/soroush-karimi.jpg") + ")"
+              "url(" + require("assets/img/sections/goseong_beach.jpg") + ")"
           }}
         >
           <div className="filter" />
@@ -44,35 +46,90 @@ function RegisterPage() {
               <Col className="ml-auto" lg="6" md="6" sm="7" xs="12">
                 <div className="info info-horizontal">
                   <div className="icon">
-                    <i className="fa fa-umbrella" />
+                    <i className="fa fa-child" />
                   </div>
                   <div className="description">
-                    <h3>Where do you want to go?</h3>
+                    <h3>How old are you? Or What age group do you want to know about?</h3>
                     <p>
-                      You can go anywhere and everywhere.
+                    <FormGroup check>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />10s
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />20s
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />30s
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />40s
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                      </FormGroup>
                     </p>
                   </div>
                 </div>
                 <div className="info info-horizontal">
                   <div className="icon">
-                    <i className="fa fa-map-signs" />
+                    <i className="fa fa-thumbs-o-up" />
                   </div>
                   <div className="description">
-                    <h3>What do you like?</h3>
+                    <h3>Where are you from?</h3>
                     <p>
-                      Please check your favor.
+                      Please check your nationality.
+                    </p>
+                    <p>
+                    <FormGroup check>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Korea
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Sports
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Eat
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Healing
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                      </FormGroup>
                     </p>
                   </div>
                 </div>
                 <div className="info info-horizontal">
                   <div className="icon">
-                    <i className="fa fa-user-secret" />
+                    <i className="fa fa-heart" />
                   </div>
                   <div className="description">
-                    <h3>When do you want to go?</h3>
+                    <h3>Female or Male?</h3>
                     <p>
-                      Completely synergize resource taxing relationships via
-                      premier niche markets.
+                    <FormGroup check>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Female
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" />Male
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                      </FormGroup>
                     </p>
                   </div>
                 </div>
@@ -82,7 +139,7 @@ function RegisterPage() {
                   <CardTitle className="text-center" tag="h3">
                     Register
                   </CardTitle>
-                  <div className="social">
+                  {/* <div className="social">
                     <Button className="btn-just-icon mr-1" color="facebook">
                       <i className="fa fa-facebook" />
                     </Button>
@@ -92,7 +149,7 @@ function RegisterPage() {
                     <Button className="btn-just-icon" color="twitter">
                       <i className="fa fa-twitter" />
                     </Button>
-                  </div>
+                  </div> */}
                   <div className="division">
                     <div className="line l" />
                     <span>or</span>
@@ -122,7 +179,7 @@ function RegisterPage() {
           <div className="demo-footer text-center">
             <h6>
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <i className="fa fa-heart heart" /> by FRS team
             </h6>
           </div>
         </div>
