@@ -28,9 +28,9 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to Incheon</h2>
                   <h3 className="title-uppercase">
-                    <small>I SEOUL U</small>
+                    <small>All ways Incheon</small>
                   </h3>
                 </Col>
               </Row>
@@ -42,10 +42,10 @@ function BlogPost() {
                     </Badge>
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Yongyudo Island (용유도)
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">308-13, Masiran-ro, Jung-gu, Incheon</h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/incheon-yongyudo-1.jpg") +
                           ")"
                       }}
                     />
@@ -66,27 +66,27 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Yongyudo Island is located near other islands such as Sinbuldo Island</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    Yongyudo Island and Yeongjongdo Island were once connected by a bridge. The two 
+                    islands were joined as one when Incheon International Airport was constructed 
+                    on a reclaimed land between these two.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    Attractions on Yongyudo Island include Eulwangni Beach, Wangsan Beach, Seonnyeobawi 
+                    Beach, Geojampo (a peaceful fishing port offering great views of the the sunrise and 
+                    sunset), and Masian Beach (famous for its red, glowing evening sky). In early August, 
+                    the island holds a variety of events such as a sea festival, fishing contests and shellfish 
+                    harvesting, making it an ideal place for nature exploration.
+                    </p>
+                    <br />
+                    <p>
+                    Because of its proximity to the airport, the area resembles a resort complex due to the 
+                    availability of various accommodation facilities such as a floating hotel, casino, and a golf course.
                     </p>
                     <br />
                     </blockquote>
@@ -124,7 +124,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +138,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

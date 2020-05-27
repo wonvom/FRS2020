@@ -125,37 +125,37 @@ function ColorNavbar() {
                     <i className="nc-icon nc-settings" />
                     Busan
                   </DropdownItem>
-                  <DropdownItem to="/sections#blogs" tag={Link}>
+                  <DropdownItem to="/blog-post-daegu" tag={Link}>
                     <i className="nc-icon nc-bullet-list-67" />
                     Daegu
                   </DropdownItem>
-                  <DropdownItem to="/sections#teams" tag={Link}>
+                  <DropdownItem to="/blog-post-daejeon" tag={Link}>
                     <i className="nc-icon nc-single-02" />
                     Daejeon
                   </DropdownItem>
-                  <DropdownItem to="/sections#projects" tag={Link}>
+                  <DropdownItem to="/blog-post-gangwon" tag={Link}>
                     <i className="nc-icon nc-calendar-60" />
                     Gangwon
                   </DropdownItem>
-                  <DropdownItem to="/sections#pricing" tag={Link}>
+                  <DropdownItem to="/blog-post-gwangju" tag={Link}>
                     <i className="nc-icon nc-money-coins" />
                     Gwangju
                   </DropdownItem>
-                  <DropdownItem to="/sections#testimonials" tag={Link}>
+                  <DropdownItem to="/blog-post-incheon" tag={Link}>
                     <i className="nc-icon nc-badge" />
                     Incheon
                   </DropdownItem>
-                  <DropdownItem to="/sections#contact-us" tag={Link}>
+                  <DropdownItem to="/blog-post-ulsan" tag={Link}>
                     <i className="nc-icon nc-mobile" />
                     Ulsan
                   </DropdownItem>
-                  <DropdownItem to="/sections#contact-us" tag={Link}>
+                  <DropdownItem to="/blog-post-jeju" tag={Link}>
                     <i className="nc-icon nc-mobile" />
                     Jeju
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              {/* <UncontrolledDropdown nav inNavbar>
+              <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
                   Sections
                 </DropdownToggle>
@@ -193,7 +193,7 @@ function ColorNavbar() {
                     Contact Us
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown> */}
+              </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle color="default" caret nav>
                   Examples
