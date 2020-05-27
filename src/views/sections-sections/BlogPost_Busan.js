@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/GukjeMarket-1.png") +
+                          require("assets/img/location/busan-gukjeMarket-1.png") +
                           ")"
                       }}
                     />
@@ -119,7 +119,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -133,7 +133,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

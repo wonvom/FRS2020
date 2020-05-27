@@ -28,9 +28,9 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to GangWon</h2>
                   <h3 className="title-uppercase">
-                    <small>I SEOUL U</small>
+                    <small>Lively Gangwon</small>
                   </h3>
                 </Col>
               </Row>
@@ -42,10 +42,10 @@ function BlogPost() {
                     </Badge>
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Namiseom Island (남이섬)
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">1, Namiseom-gil, Chuncheon-si, Gangwon-do</h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/gangwon-namiseon-1.jpg") +
                           ")"
                       }}
                     />
@@ -66,28 +66,36 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Namiseom Island was formed as a result of the construction of Cheongpyeong Dam.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    It is a half moon-shaped isle, and on it is the grave of General Nami, who led a 
+                    great victory against the rebels in the 13th year of the 7th king of the Joseon 
+                    dynasty, King Sejo (r. 1455-1468).
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    Namiseom Island is 63 kilometers away from Seoul in the direction of Chuncheon, and is 
+                    famous for its beautiful tree lined roads. The island is 30 minutes away from Chuncheon 
+                    and an hour away from the suburbs of Seoul. Since it is not far from Seoul, many couples 
+                    and families come to visit.
                     </p>
+                    <br />
+                    <p>
+                    A special feature of Namiseom Island is that there are no telephone poles. This is because 
+                    all electric wires were built underground to keep the natural feeling of the landscape. 
+                    The island is 553,560 square yards with chestnut trees and poplar trees throughout.
+                    </p>
+                    <br />
+                    <p>
+                    In the middle of the isle, there is a grass field about 316,320 square yards. It features 
+                    education and training facilities and camping sites. The island also has a swimming pool 
+                    and water sports facilities for motorboats and water-skiing, as well as a theme park with 
+                    a merry-go-round, shooting range, and roller skating rink. Lodging facilities such as resort 
+                    villas and bungalows are available for visitors to stay on the island.   
+                    </p>                 
                     <br />
                     </blockquote>
                     {/* <p>
@@ -124,7 +132,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +146,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

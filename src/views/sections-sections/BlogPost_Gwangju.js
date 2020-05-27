@@ -28,9 +28,9 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to Gwanju</h2>
                   <h3 className="title-uppercase">
-                    <small>I SEOUL U</small>
+                    <small>Your Partner Gwangju</small>
                   </h3>
                 </Col>
               </Row>
@@ -42,10 +42,10 @@ function BlogPost() {
                     </Badge>
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Jeonju Hanok Village [Slow City] (전주한옥마을 [슬로시티])
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">29, Eojin-gil, Wansan-gu, Jeonju-si, Jeollabuk-do</h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/jeonju-jeonjuhankokvilage-1.jpg") +
                           ")"
                       }}
                     />
@@ -66,27 +66,33 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Jeonju Hanok Village is located in the city of Jeonju and overlaps Pungnam-dong and Gyo-dong.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    There are 735 traditional Korean hanok houses. While the rest of city has been industrialized, 
+                    Hanok Village retains its historical charms and traditions.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    Jeonju Hanok Village is especially beautiful for its unique roof edges, which are slightly 
+                    raised to the sky. Hanok houses are generally divided into two sections, Anchae and Sarangchae. 
+                    Sarangchae is where the men dwell, and is referred to as the Seonbi room. Because men and women 
+                    had to remain separate, Anchae is situated deep inside the house so that it is secretive and quiet.
+                    </p>
+                    <br />
+                    <p>
+                    Another trait of hanok is that all the houses are heated with ondol, a unique sub-floor heating system. 
+                    Since Koreans enjoy sitting, eating, and sleeping on the floor, it needs to remain heated. One hanok 
+                    in particular has been set aside so that tourists can experience traditional Korean life, called Hanok 
+                    Life Experience Hall. You can enter the rooms to experience the warm floor first-hand.
+                    </p>
+                    <br />
+                    <p>
+                    The food provided is very traditional, which adds to the traditional ambience. At Jeonju Hanok Village, 
+                    visitors can enjoy traditional Korean life and traditional foods like bibimbap, the most well known dish 
+                    from the Jeonju region.
                     </p>
                     <br />
                     </blockquote>
@@ -124,7 +130,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +144,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

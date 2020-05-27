@@ -28,7 +28,7 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to Seoul-BLOGPOST</h2>
                   <h3 className="title-uppercase">
                     <small>I SEOUL U</small>
                   </h3>
@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/seoul-myeongdong-1.jpg") +
                           ")"
                       }}
                     />
@@ -124,7 +124,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +138,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

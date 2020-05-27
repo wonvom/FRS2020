@@ -28,9 +28,9 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to Jeju</h2>
                   <h3 className="title-uppercase">
-                    <small>I SEOUL U</small>
+                    <small>Only Jeju</small>
                   </h3>
                 </Col>
               </Row>
@@ -42,10 +42,13 @@ function BlogPost() {
                     </Badge>
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Hallasan National Park - Jeju-do National Geopark
+                      </h3>
+                      <h3 className="title">
+                      (한라산 (제주도 국가지질공원))
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">2070-61, 1100-ro, Jeju-si, Jeju-do </h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -55,7 +58,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/jeju-hallasan-1.jpg") +
                           ")"
                       }}
                     />
@@ -66,27 +69,29 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Hallasan Mountain stands proudly at the center of Jeju Island and is perhaps 
+                      the island’s most memorable landmarks.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    Also called Yeongjusan Mountain, meaning "mountain high enough to pull the galaxy," 
+                    Hallasan Mountain is widely known by scientists for its geological value. Designated 
+                    as a national park in 1970, there are 368 parasitic volcanoes called Oreums (peaks) 
+                    around the main mountain.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    Hallasan Mountain is famous for its vertical ecosystem of plants that results from 
+                    the varying temperatures along the mountainside. Over 1,800 kinds of plants and 4,000 
+                    species of animals (3,300 species of insects) have been identified; to explore the 
+                    mountain's treasures, simply follow one of the well-developed mountain hiking trails.
+                    </p>
+                    <br />
+                    <p>
+                    Hallasan Mountain is relatively easy to hike. With hiking courses less than 10 kilometers 
+                    in length, it is possible to go to the peak and back in one day. However, the constantly 
+                    changing weather brings a lot of wind, so visitors must be well prepared before hiking.
                     </p>
                     <br />
                     </blockquote>
@@ -124,7 +129,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +143,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />

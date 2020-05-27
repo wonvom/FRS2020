@@ -28,9 +28,9 @@ function BlogPost() {
             <Container>
               <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
-                  <h2>Welcome to Seoul-2</h2>
+                  <h2>Welcome to Deagu</h2>
                   <h3 className="title-uppercase">
-                    <small>I SEOUL U</small>
+                    <small>Colorful Daegu</small>
                   </h3>
                 </Col>
               </Row>
@@ -42,10 +42,10 @@ function BlogPost() {
                     </Badge>
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Daegu Modern History Streets (대구 근대골목)
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">99, Gyeongsanggamyeong-gil, Jung-gu, Daegu</h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/myeongdong-1.jpg") +
+                          require("assets/img/location/daegu-modernhistory-1.jpg") +
                           ")"
                       }}
                     />
@@ -66,28 +66,18 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Daegu Modern History Street offers an experience trip to see the modern history that lives on in the alleyways of Daegu.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    Compared to other regions, Daegu suffered less damage during the Korean War, 
+                    allowing the city to clearly show the changes that happened from before and 
+                    after the war. The course includes locations that were important venues of 
+                    historical moments from the previous generations.
                     </p>
                     <br />
-                    <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
-                    </p>
+                  
                     <br />
                     </blockquote>
                     {/* <p>
@@ -124,7 +114,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-myeongdong-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +128,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-myeongdong-3.jpg") +
                                 ")"
                             }}
                           />
