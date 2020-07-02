@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Badge, Button, Card, Media, Container, Row, Col } from "reactstrap";
+import { Badge, Card, Container, Row, Col } from "reactstrap"; // Button, Media 삭제
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
@@ -196,7 +196,7 @@ function BlogPost() {
                     </p> */}
                   </div>
                   <br />
-                  <div className="article-footer">
+                  {/* <div className="article-footer">
                     <Container>
                       <Row>
                         <Col md="6">
@@ -231,7 +231,7 @@ function BlogPost() {
                         </Col>
                       </Row>
                     </Container>
-                  </div>
+                  </div> */}
                   <hr />
                   <Container>
                     {/* <Row>
@@ -271,136 +271,13 @@ function BlogPost() {
                         </Media>
                       </Media>
                     </Row> */}
-                    <Row>
-                      <div className="comments media-area">
-                        <h3 className="text-center">Comments</h3>
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              John Lincoln
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:54 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <Media>
-                              <a
-                                className="pull-left"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <div className="avatar">
-                                  <Media
-                                    alt="..."
-                                    object
-                                    src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                                  />
-                                </div>
-                              </a>
-                              <Media body>
-                                <Media heading tag="h5">
-                                  Erik P.
-                                </Media>
-                                <div className="pull-right">
-                                  <h6 className="text-muted">
-                                    Sep 11, 11:56 AM
-                                  </h6>
-                                  <Button
-                                    className="btn-link pull-right"
-                                    color="info"
-                                    href="#pablo"
-                                    onClick={e => e.preventDefault()}
-                                  >
-                                    <i className="fa fa-reply mr-1" />
-                                    Reply
-                                  </Button>
-                                </div>
-                                <p>
-                                  Hello guys, nice to have you on the platform!
-                                  There will be a lot of great stuff coming
-                                  soon. We will keep you posted for the latest
-                                  news.
-                                </p>
-                                <p>Don't forget, You're Awesome!</p>
-                              </Media>
-                            </Media>
-                            {/* end media */}
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/joe-gardner-2.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              Joe
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:57 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <p>Don't forget, You're Awesome!</p>
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                      </div>
-                    </Row>
+                    
                   </Container>
                 </Col>
               </Row>
               <Row>
                 <div className="related-articles">
-                  <h3 className="title">Related articles</h3>
+                  <h3 className="title">Related with this destination</h3>
                   <legend />
                   <Container>
                     <Row>
@@ -409,11 +286,11 @@ function BlogPost() {
                           <img
                             alt="..."
                             className="img-rounded img-responsive"
-                            src={require("assets/img/sections/damir-bosnjak.jpg")}
+                            src={require("assets/img/location/seoul-hongdae-1.jpg")}
                           />
                         </a>
                         <p className="blog-title">
-                          My Review of Pitchfork’s ‘Indie 500’ Album Review
+                        Hongdae
                         </p>
                       </Col>
                       <Col md="4">
@@ -421,22 +298,21 @@ function BlogPost() {
                           <img
                             alt="..."
                             className="img-rounded img-responsive"
-                            src={require("assets/img/sections/por7o.jpg")}
+                            src={require("assets/img/location/seoul-namsantower-1.jpg")}
                           />
                         </a>
-                        <p className="blog-title">Top Events This Month</p>
+                        <p className="blog-title">Namsan Tower</p>
                       </Col>
                       <Col md="4">
                         <a href="pkp">
                           <img
                             alt="..."
                             className="img-rounded img-responsive"
-                            src={require("assets/img/sections/jeff-sheldon.jpg")}
+                            src={require("assets/img/location/seoul-gyeongbokgung-1.jpg")}
                           />
                         </a>
                         <p className="blog-title">
-                          You Should Get Excited About Virtual Reality. Here’s
-                          Why.
+                          Gyeongbokgung
                         </p>
                       </Col>
                     </Row>
