@@ -27,19 +27,13 @@ function SectionIcons() {
               </div>
             </Col>
             <Col className="text-center" md="6">
-              <h2 className="title revealOnScroll">Custom Icons</h2>
+              <h2 className="title revealOnScroll">FRS team</h2>
               <h5 className="description">
-                Paper Kit PRO React comes with 100 custom demo icons made by our
-                friends from{" "}
-                <a href="https://nucleoapp.com/?ref=1712" target="_blank">
-                  NucleoApp
-                </a>
-                . The official package contains over 20.729 icons which are
-                looking great in combination with Paper Kit 2 PRO. Make sure you
-                check all of them and use those that you like the most.
+              We don't advertise to you. With the big data of objective data, 
+              I recommend the right trip for you. Trust us.
               </h5>
               <br />
-              <Button
+              {/* <Button
                 className="btn-round mr-1"
                 color="primary"
                 href="/nucleo-icons"
@@ -57,7 +51,7 @@ function SectionIcons() {
                 target="_blank"
               >
                 View All Icons
-              </Button>
+              </Button> */}
             </Col>
             <Col md="3">
               <div className="icons-nucleo">

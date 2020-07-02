@@ -26,8 +26,7 @@ function SectionOverview() {
                       </div>
                       <CardTitle tag="h4">CULTURE</CardTitle>
                       <p className="card-description">
-                      Were you worried because it was too expensive when you visited various sites to travel to Korea? 
-                      Use our cheap site and buy delicious food with that money.
+                      Aren't you curious about Korean culture? Experience Oriental Culture
                       </p>
                     </CardBody>
                   </Card>
@@ -38,10 +37,10 @@ function SectionOverview() {
                       <div className="card-icon">
                         <i className="nc-icon nc-watch-time" />
                       </div>
-                      <CardTitle tag="h4">Save Time</CardTitle>
+                      <CardTitle tag="h4">SPORTS</CardTitle>
                       <p className="card-description">
-                      If you use our site, you can save more time than any other site. 
-                      No hassle, no stress, just try our service.
+                      There are many sports to enjoy in Korea because it consists 
+                      of the sea and mountain plains. Try it all in Korea.
                       </p>
                     </CardBody>
                   </Card>
@@ -52,10 +51,11 @@ function SectionOverview() {
                       <div className="card-icon">
                         <i className="nc-icon nc-layout-11" />
                       </div>
-                      <CardTitle tag="h4">Reactstrap Grid</CardTitle>
+                      <CardTitle tag="h4">EAT</CardTitle>
                       <p className="card-description">
-                        Enjoy the fluid grid system based on 12 columns. Paper
-                        Kit PRO React is built over Reactstrap and has all the
+                      Enjoy a wide range of dishes, from traditional foods to 
+                      fusion cuisine, a joint venture between the East and the West. 
+                      It's no less than Michelin.
                         
                       </p>
                     </CardBody>
@@ -67,11 +67,12 @@ function SectionOverview() {
                       <div className="card-icon">
                         <i className="nc-icon nc-align-center" />
                       </div>
-                      <CardTitle tag="h4">Built with Flexbox</CardTitle>
+                      <CardTitle tag="h4">HEALING</CardTitle>
                       <p className="card-description">
-                        Paper Kit PRO React primarily uses the flexbox for the
-                        layout, grid system, cards and components. This is a
-                        huge advantage for working with columns.
+                      Are you tired of the long trip? Hot springs, forest baths, etc. 
+                      There are so many factors to relieve your fatigue.
+
+                      
                       </p>
                     </CardBody>
                   </Card>
