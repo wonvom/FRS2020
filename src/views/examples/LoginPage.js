@@ -35,7 +35,7 @@ function LoginPage() {
           className="page-header"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/sections/bruno-abatti.jpg") + ")"
+              "url(" + require("assets/img/sections/2terminal_1.jpg") + ")"
           }}
         >
           <div className="filter" />
@@ -58,7 +58,7 @@ function LoginPage() {
                       type="password"
                     />
                     <Button block className="btn-round" color="danger">
-                      Register
+                      Login
                     </Button>
                   </Form>
                   <div className="forgot">
@@ -77,7 +77,7 @@ function LoginPage() {
             <div className="demo-footer text-center">
               <h6>
                 © {new Date().getFullYear()}, made with{" "}
-                <i className="fa fa-heart heart" /> by Creative Tim
+                <i className="fa fa-heart heart" /> by FRS team
               </h6>
             </div>
           </Container>

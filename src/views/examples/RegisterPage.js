@@ -1,10 +1,16 @@
 import React from "react";
+import Select from "react-select";
 
 // reactstrap components
 import {
   Button,
   Card,
   CardTitle,
+  // Collapse,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown,
   FormGroup,
   Form,
   Input,
@@ -17,7 +23,23 @@ import {
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 
+const selectOptions = [
+  { value: "", label: " Choose city", isDisabled: true },
+  { value: "1", label: "Paris " },
+  { value: "2", label: "Bucharest" },
+  { value: "3", label: "Rome" },
+  { value: "4", label: "New York" },
+  { value: "5", label: "Miami " },
+  { value: "6", label: "Piatra Neamt" },
+  { value: "7", label: "Paris " },
+  { value: "8", label: "Bucharest" },
+  { value: "9", label: "Rome" },
+  { value: "10", label: "New York" },
+  { value: "11", label: "Miami " }
+];
+
 function RegisterPage() {
+  const [defaultSelect, setDefaultSelect] = React.useState(null);
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -86,7 +108,40 @@ function RegisterPage() {
                       Please check your nationality.
                     </p>
                     <p>
-                    <FormGroup check>
+                      <FormGroup>
+                        <Select
+                          className="react-select react-select-default"
+                          classNamePrefix="react-select"
+                          name="defaultSelect"
+                          value={defaultSelect}
+                          onChange={value => setDefaultSelect(value)}
+                          options={selectOptions}
+                          placeholder="CHOOSE CITY"
+                        />
+                      </FormGroup>
+
+                      {/* <UncontrolledDropdown nav inNavbar>
+                        <span class="caret"></span>
+                          <DropdownToggle className="mr-2" color="default" caret nav>
+                            Theme
+                          </DropdownToggle>
+                          <DropdownMenu>
+                            <DropdownItem>
+                              Culture
+                            </DropdownItem>
+                            <DropdownItem>
+                              Sports
+                            </DropdownItem>
+                            <DropdownItem
+                            >
+                              Eat
+                            </DropdownItem>
+                            <DropdownItem>
+                              Healing
+                            </DropdownItem>
+                          </DropdownMenu>
+                      </UncontrolledDropdown> */}
+                      {/* <FormGroup check>
                         <p>
                           <Label check>
                             <Input defaultValue="" type="checkbox" />Korea
@@ -107,7 +162,7 @@ function RegisterPage() {
                             <span className="form-check-sign" />
                           </Label>
                         </p>
-                      </FormGroup>
+                      </FormGroup> */}
                     </p>
                   </div>
                 </div>
@@ -166,7 +221,7 @@ function RegisterPage() {
                   <div className="login">
                     <p>
                       Already have an account?{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="/login-page">
                         Log in
                       </a>
                       .
