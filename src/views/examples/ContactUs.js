@@ -10,14 +10,14 @@ import {
 import { Button, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
-import InfoNavbar from "components/Navbars/InfoNavbar.js";
-import FooterWhite from "components/Footers/FooterWhite.js";
+import InfoNavbar from "components/Navbars/ColorNavbar.js";
+import FooterWhite from "components/Footers/FooterBlack.js";
 
 const MapWrapper = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
       defaultZoom={14}
-      defaultCenter={{ lat: 44.445248, lng: 26.099672 }}
+      defaultCenter={{ lat: 37.321128, lng: 127.128350 }}
       defaultOptions={{
         styles: [
           {
@@ -198,13 +198,14 @@ const MapWrapper = withScriptjs(
         scrollwheel: false //we disable de scroll over the map, it is a really annoing when you scroll through page
       }}
     >
-      <Marker position={{ lat: 44.445248, lng: 26.099672 }} />
+      <Marker position={{ lat: 37.321128, lng: 127.128350 }} />
     </GoogleMap>
   ))
 );
 
 function ContactUs() {
   document.documentElement.classList.remove("nav-open");
+  
   React.useEffect(() => {
     document.body.classList.add("contact-page");
     window.scrollTo(0, 0);
@@ -223,14 +224,11 @@ function ContactUs() {
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Get in touch with us</h2>
                 <p>
-                  Collaboratively administrate empowered markets via
-                  plug-and-play networks. Dynamically procrastinate B2C users
-                  after installed base benefits. Dramatically visualise customer
-                  directed convergence without revolutionary ROI.
+                Do you need any help? We will kindly help you.
                 </p>
               </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
                 <h3 className="title">
                   <small>Find us on social networks</small>
@@ -254,11 +252,11 @@ function ContactUs() {
                   <i className="fa fa-youtube" />
                 </Button>
               </Col>
-            </Row>
+            </Row> */}
             <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
                 <h3 className="title">
-                  <small>Or drop us a note</small>
+                  <small>drop us a note</small>
                 </h3>
                 <Form className="contact">
                   <Row>
@@ -296,7 +294,7 @@ function ContactUs() {
       </div>
       <div className="big-map" id="contactUsMap">
         <MapWrapper
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyADHgbbaA5Jea7ICklVUITn7TiHIQ5ckh8"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
