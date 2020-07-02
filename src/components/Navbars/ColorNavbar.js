@@ -157,6 +157,21 @@ function ColorNavbar() {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
+                  Help
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/about-us" tag={Link}>
+                    <i className="nc-icon nc-bank" />
+                    About-us
+                  </DropdownItem>
+                  <DropdownItem to="/contact-us" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Contact Us
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
                   Sections
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
