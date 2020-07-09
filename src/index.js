@@ -56,6 +56,12 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import SearchWithSidebar from "views/examples/SearchWithSidebar.js";
 import Settings from "views/examples/Settings.js";
 import TwitterRedesign from "views/examples/TwitterRedesign.js";
+
+import Culture from "views/Culture.js";
+import Sports from "views/Sports.js";
+import Eat from "views/Eat.js";
+import Healing from "views/Healing.js";
+
 // others
 
 ReactDOM.render(
@@ -135,6 +141,12 @@ ReactDOM.render(
         path="/twitter-redesign"
         render={props => <TwitterRedesign {...props} />}
       />
+      
+      <Route path="/Culture" render={props => <Culture {...props} />} />
+      <Route path="/Sports" render={props => <Sports {...props} />} />
+      <Route path="/Eat" render={props => <Eat {...props} />} />
+      <Route path="/Healing" render={props => <Healing {...props} />} />
+
       <Redirect to="/presentation" />
     </Switch>
   </BrowserRouter>,
