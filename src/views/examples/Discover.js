@@ -46,8 +46,7 @@ function Discover() {
                           className="border-input"
                           placeholder="Search..."
                           type="text"
-                        />
-                          
+                        />    
                       </FormGroup>
                       <Button
                         className="btn-just-icon"
