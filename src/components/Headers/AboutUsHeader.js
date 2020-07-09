@@ -12,15 +12,15 @@ function AboutUsHeader() {
         className="page-header page-header-small"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/sections/gerrit-vermeulen.jpg") + ")"
+            "url(" + require("assets/img/sections/gwanganbridge.jpg") + ")"
         }}
       >
-        <div className="filter filter-danger" />
+        <div className="filter filter-secondary" />
         <div className="content-center">
           <Container>
             <h1>
               Hello, <br />
-              We are Creative Tim.
+              We are FRS Team.
             </h1>
             <h3>Let us tell you more about what we do.</h3>
           </Container>

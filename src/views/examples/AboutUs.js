@@ -2,11 +2,11 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
+  //Button,
   Card,
   CardBody,
-  CardFooter,
-  CardTitle,
+  //CardFooter,
+  //CardTitle,
   Container,
   Row,
   Col
@@ -15,7 +15,7 @@ import {
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import AboutUsHeader from "components/Headers/AboutUsHeader.js";
-import FooterAboutUs from "components/Footers/FooterAboutUs.js";
+//import FooterAboutUs from "components/Footers/FooterAboutUs.js";
 
 function AboutUs() {
   document.documentElement.classList.remove("nav-open");
@@ -34,20 +34,15 @@ function AboutUs() {
       <div className="main">
         <div className="section">
           <Container>
-            <h3 className="title-uppercase">We build great products.</h3>
+            <h3 className="title-uppercase">FRS team</h3>
             <p>
-              Collaboratively administrate empowered markets via plug-and-play
-              networks. Dynamically procrastinate B2C users after installed base
-              benefits. Dramatically visualize customer directed convergence
-              without revolutionary ROI.
+              Dankook University
             </p>
             <p>
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-time schemas.
-              Dramatically maintain clicks-and-mortar solutions without
-              functional solutions.
+              Practical Industry-Academic Cooperation Project
+              (Capstone Design)
             </p>
-            <h3 className="title-uppercase">
+            {/* <h3 className="title-uppercase">
               We
               <i className="fa fa-heart heart mr-3 ml-1" />
               what we do.
@@ -57,29 +52,28 @@ function AboutUs() {
               niche markets. Professionally cultivate one-to-one customer
               service with robust ideas. Dynamically innovate resource-leveling
               customer service for state of the art customer service.
-            </p>
+            </p> */}
             <h2 className="text-center creators">Creators</h2>
             <Row>
-              <Col md="4">
+              <Col md="3">
                 <Card className="card-profile card-plain">
                   <CardBody>
                     <div className="card-avatar">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                          src={require("assets/img/faces/wonjong.jpg")}
                         />
-                        <CardTitle tag="h4">Eric Thomson</CardTitle>
-                      </a>
+                      {/* </a> */}
                     </div>
                     <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes orchestra
-                      to play it.
+                      Kim Wonjong
+                    </p>
+                    <p>
+                      Front-end developer
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
+                  {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
@@ -104,29 +98,28 @@ function AboutUs() {
                     >
                       <i className="fa fa-instagram" />
                     </Button>
-                  </CardFooter>
+                  </CardFooter> */}
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md="3">
                 <Card className="card-profile card-plain">
-                  <CardBody>
+                <CardBody>
                     <div className="card-avatar">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/img/faces/joe-gardner-2.jpg")}
+                          src={require("assets/img/faces/jieun.jpg")}
                         />
-                        <CardTitle tag="h4">Sophia West</CardTitle>
-                      </a>
+                      {/* </a> */}
                     </div>
                     <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      Kim Jieun
+                    </p>
+                    <p>
+                      Front-end developer
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
+                  {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
@@ -151,58 +144,241 @@ function AboutUs() {
                     >
                       <i className="fa fa-pinterest" />
                     </Button>
-                  </CardFooter>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="3">
+                <Card className="card-profile card-plain">
+                <CardBody>
+                    <div className="card-avatar">
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
+                        <img
+                          alt="..."
+                          src={require("assets/img/faces/yeonji.jpg")}
+                        />
+                      {/* </a> */}
+                    </div>
+                    <p className="card-description text-center">
+                      Choi Yeonji
+                    </p>
+                    <p>
+                      Front-end developer
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="3">
+                <Card className="card-profile card-plain">
+                <CardBody>
+                    <div className="card-avatar">
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
+                        <img
+                          alt="..."
+                          src={require("assets/img/faces/gisung.jpg")}
+                        />
+                      {/* </a> */}
+                    </div>
+                    <p className="card-description text-center">
+                      Park Gisung
+                    </p>
+                    <p>
+                      Front-end developer
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
                 </Card>
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
-                  <CardBody>
+                <CardBody>
                     <div className="card-avatar">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
                         <img
                           alt="..."
-                          src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
+                          src={require("assets/img/faces/minho.jpg")}
                         />
-                        <CardTitle tag="h4">Lucas Andrew</CardTitle>
-                      </a>
+                      {/* </a> */}
                     </div>
                     <p className="card-description text-center">
-                      Great teams do not hold back with one another. They are
-                      unafraid to air their dirty laundry. They admit their
-                      mistakes, their weaknesses and their concerns without fear
-                      of reprisal.
+                      Lee Minho
+                    </p>
+                    <p>
+                      Back-end developer
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
+                  {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon mr-1"
-                      color="youtube"
+                      color="linkedin"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="fa fa-youtube" />
+                      <i className="fa fa-linkedin" />
                     </Button>
                     <Button
                       className="btn-just-icon mr-1"
-                      color="twitter"
+                      color="dribbble"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="fa fa-twitter" />
+                      <i className="fa fa-dribbble" />
                     </Button>
                     <Button
                       className="btn-just-icon"
-                      color="instagram"
+                      color="pinterest"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="fa fa-instagram" />
+                      <i className="fa fa-pinterest" />
                     </Button>
-                  </CardFooter>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                <CardBody>
+                    <div className="card-avatar">
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
+                        <img
+                          alt="..."
+                          src={require("assets/img/faces/jaewoo.jpg")}
+                        />
+                      {/* </a> */}
+                    </div>
+                    <p className="card-description text-center">
+                      Jeon Jaewoo
+                    </p>
+                    <p>
+                      Back-end developer
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                <CardBody>
+                    <div className="card-avatar">
+                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
+                        <img
+                          alt="..."
+                          src={require("assets/img/faces/jeongjae.jpg")}
+                        />
+                      {/* </a> */}
+                    </div>
+                    <p className="card-description text-center">
+                      Chee Jeong Jae
+                    </p>
+                    <p>
+                      Back-end developer
+                    </p>
+                  </CardBody>
+                  {/* <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="linkedin"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon mr-1"
+                      color="dribbble"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-dribbble" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon"
+                      color="pinterest"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fa fa-pinterest" />
+                    </Button>
+                  </CardFooter> */}
                 </Card>
               </Col>
             </Row>
-            <h3 className="more-info">Need more information?</h3>
+            {/* <h3 className="more-info">Need more information?</h3>
             <Row className="coloured-cards">
               <Col md="4" sm="6">
                 <div className="card-big-shadow">
@@ -225,9 +401,9 @@ function AboutUs() {
                         relevant to the moment.
                       </p>
                     </CardBody>
-                  </Card>
+                  </Card> */}
                   {/* end card */}
-                </div>
+                {/* </div>
               </Col>
               <Col md="4" sm="6">
                 <div className="card-big-shadow">
@@ -250,9 +426,9 @@ function AboutUs() {
                         relevant to the moment.
                       </p>
                     </CardBody>
-                  </Card>
+                  </Card> */}
                   {/* end card */}
-                </div>
+                {/* </div>
               </Col>
               <Col md="4" sm="6">
                 <div className="card-big-shadow">
@@ -275,15 +451,14 @@ function AboutUs() {
                         relevant to the moment.
                       </p>
                     </CardBody>
-                  </Card>
+                  </Card> */}
                   {/* end card */}
-                </div>
+                {/* </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         </div>
       </div>
-      <FooterAboutUs />
     </>
   );
 }
