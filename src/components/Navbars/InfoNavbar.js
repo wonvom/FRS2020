@@ -67,20 +67,82 @@ function WhiteNavbar() {
             <Nav className="ml-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
-                  Components
+                  Theme
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/index" tag={Link}>
-                    All Components
+                  <DropdownItem to="/Culture" tag={Link}>
+                    Culture
                   </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    Presentation
+                  <DropdownItem to="/Sports" tag={Link}>
+                    Sports
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-info-navbar"
-                    target="_blank"
+                    to="/Eat" tag={Link}
+                    //href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-color-navbar"
+                    //target="_blank"
                   >
-                    Documentation
+                    Eat
+                  </DropdownItem>
+                  <DropdownItem to="/Healing" tag={Link}>
+                    Healing
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
+                  Location
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/blog-post-seoul" tag={Link}>
+                    <i className="nc-icon nc-tile-56" />
+                    Seoul
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-busan" tag={Link}>
+                    <i className="nc-icon nc-settings" />
+                    Busan
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-daegu" tag={Link}>
+                    <i className="nc-icon nc-bullet-list-67" />
+                    Daegu
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-daejeon" tag={Link}>
+                    <i className="nc-icon nc-single-02" />
+                    Daejeon
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-gangwon" tag={Link}>
+                    <i className="nc-icon nc-calendar-60" />
+                    Gangwon
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-gwangju" tag={Link}>
+                    <i className="nc-icon nc-money-coins" />
+                    Gwangju
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-incheon" tag={Link}>
+                    <i className="nc-icon nc-badge" />
+                    Incheon
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-ulsan" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Ulsan
+                  </DropdownItem>
+                  <DropdownItem to="/blog-post-jeju" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Jeju
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
+                  Help
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/about-us" tag={Link}>
+                    <i className="nc-icon nc-bank" />
+                    About-us
+                  </DropdownItem>
+                  <DropdownItem to="/contact-us" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Contact Us
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -191,15 +253,39 @@ function WhiteNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
+              <Button
+                  className="btn-round"
+                  style={{backgroundColor: '#BF7E5D'}}
+                  outline color="secondary"
+                  to="/profile-page" tag={Link}
+                  //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
+                  //target="_blank"
+                >
+                  {/* <i className="nc-icon nc-cart-simple" />  */}
+                  My Page
+                </Button>
+                <Button
+                  className="btn-round"
+                  style={{backgroundColor: '#BF7E5D'}}
+                  outline color="secondary"
+                  to="/register-page" tag={Link}
+                  //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
+                  //target="_blank"
+                >
+                  {/* <i className="nc-icon nc-cart-simple" />  */}
+                  Register Now
+                </Button>
+              </NavItem>
+              {/* <NavItem>
                 <Button
                   className="btn-round"
                   color="danger"
-                  href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-info-navbar"
+                  href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-color-navbar"
                   target="_blank"
                 >
                   <i className="nc-icon nc-cart-simple" /> Buy Now
                 </Button>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

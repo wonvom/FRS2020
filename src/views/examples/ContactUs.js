@@ -10,7 +10,7 @@ import React from "react";
 import { Button, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
-import InfoNavbar from "components/Navbars/ColorNavbar.js";
+import InfoNavbar from "components/Navbars/InfoNavbar.js";
 import FooterWhite from "components/Footers/FooterBlack.js";
 
 // const MapWrapper = withScriptjs(
