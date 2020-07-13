@@ -211,6 +211,7 @@ function RegisterPage() {
                     <div className="line r" />
                   </div>
                   <Form className="register-form">
+                    <Input placeholder="Name" type="text" />
                     <Input placeholder="Email" type="text" />
                     <Input placeholder="Password" type="password" />
                     <Input placeholder="Confirm Password" type="password" />
