@@ -1,16 +1,17 @@
 import React from "react";
 import Select from "react-select";
+import {withRouter} from "react-router-dom";
 
 // reactstrap components
 import {
   Button,
   Card,
   CardTitle,
-  // Collapse,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
-  // UncontrolledDropdown,
+  Collapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
   FormGroup,
   Form,
   Input,
@@ -38,8 +39,15 @@ const selectOptions = [
   { value: "11", label: "Miami " }
 ];
 
-function RegisterPage() {
+function RegisterPage({history}) {
   const [defaultSelect, setDefaultSelect] = React.useState(null);
+  const [age, setAge] = React.useState(0);
+  const [name, setName] = React.useState('')
+  const [email, setEmail] = React.useState('');
+  const [nation, setNation] = React.useState('');
+  const [sex, setSex] = React.useState('');
+  const [password,setPassword] = React.useState('');
+  
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -75,24 +83,24 @@ function RegisterPage() {
                     <p>
                     <FormGroup check>
                         <p>
-                          <Label check>
-                            <Input defaultValue="" type="checkbox" />10s
+                          <Label check >
+                            <Input defaultValue="" type="checkbox" value='10' onClick={(e)=>{setAge(e.target.value)}}/>10s
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" />20s
+                            <Input defaultValue="" type="checkbox" value='20' onClick={(e)=>{setAge(e.target.value)}}/>20s
                             <span className="form-check-sign" />
                           </Label>
                         </p>
                         <p>
                           <Label check>
-                            <Input defaultValue="" type="checkbox" />30s
+                            <Input defaultValue="" type="checkbox" value='30' onClick={(e)=>{setAge(e.target.value)}} />30s
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" />40s
+                            <Input defaultValue="" type="checkbox" value='40' onClick={(e)=>{setAge(e.target.value)}} />40s
                             <span className="form-check-sign" />
                           </Label>
                         </p>
@@ -110,61 +118,28 @@ function RegisterPage() {
                       Please check your nationality.
                     </p>
                     <p>
-                      <FormGroup>
-                        <Select
-                          className="react-select react-select-default"
-                          classNamePrefix="react-select"
-                          name="defaultSelect"
-                          value={defaultSelect}
-                          onChange={value => setDefaultSelect(value)}
-                          options={selectOptions}
-                          placeholder="CHOOSE CITY"
-                        />
+                      <FormGroup check>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" value='kr' onClick={(e)=>{setNation(e.target.value)}}/>Korea
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" value='cn' onClick={(e)=>{setNation(e.target.value)}}/>China
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
+                        <p>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" value='usa' onClick={(e)=>{setNation(e.target.value)}}/>USA
+                            <span className="form-check-sign" />
+                          </Label>
+                          <Label check>
+                            <Input defaultValue="" type="checkbox" value='en' onClick={(e)=>{setNation(e.target.value)}}/>England
+                            <span className="form-check-sign" />
+                          </Label>
+                        </p>
                       </FormGroup>
-
-                      {/* <UncontrolledDropdown nav inNavbar>
-                        <span class="caret"></span>
-                          <DropdownToggle className="mr-2" color="default" caret nav>
-                            Theme
-                          </DropdownToggle>
-                          <DropdownMenu>
-                            <DropdownItem>
-                              Culture
-                            </DropdownItem>
-                            <DropdownItem>
-                              Sports
-                            </DropdownItem>
-                            <DropdownItem
-                            >
-                              Eat
-                            </DropdownItem>
-                            <DropdownItem>
-                              Healing
-                            </DropdownItem>
-                          </DropdownMenu>
-                      </UncontrolledDropdown> */}
-                      {/* <FormGroup check>
-                        <p>
-                          <Label check>
-                            <Input defaultValue="" type="checkbox" />Korea
-                            <span className="form-check-sign" />
-                          </Label>
-                          <Label check>
-                            <Input defaultValue="" type="checkbox" />Sports
-                            <span className="form-check-sign" />
-                          </Label>
-                        </p>
-                        <p>
-                          <Label check>
-                            <Input defaultValue="" type="checkbox" />Eat
-                            <span className="form-check-sign" />
-                          </Label>
-                          <Label check>
-                            <Input defaultValue="" type="checkbox" />Healing
-                            <span className="form-check-sign" />
-                          </Label>
-                        </p>
-                      </FormGroup> */}
                     </p>
                   </div>
                 </div>
@@ -178,12 +153,12 @@ function RegisterPage() {
                     <FormGroup check>
                         <p>
                           <Label check>
-                            <Input defaultValue="" type="checkbox" />Female
+                            <Input defaultValue="" type="checkbox" value='female' onClick={(e)=>{setSex(e.target.value)}}/>Female
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" />Male
+                            <Input defaultValue="" type="checkbox" value='male' onClick={(e)=>{setSex(e.target.value)}}/>Male
                             <span className="form-check-sign" />
                           </Label>
                         </p>
@@ -214,11 +189,32 @@ function RegisterPage() {
                     <div className="line r" />
                   </div>
                   <Form className="register-form">
-                    <Input placeholder="Name" type="text" />
-                    <Input placeholder="Email" type="text" />
+                    <Input placeholder="Name" type="text" onChange={(e)=>{setName(e.target.value)}}/>
+                    <Input placeholder="Email" type="text" onChange={(e)=>{setEmail(e.target.value)}}/>
                     <Input placeholder="Password" type="password" />
-                    <Input placeholder="Confirm Password" type="password" />
-                    <Button block className="btn-round" color="default">
+                    <Input placeholder="Confirm Password" type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
+                    <Button block className="btn-round" color="default" onClick={()=>{
+                      console.log(email,password,age,name,nation,sex)
+                      fetch("http://13.125.213.16:8080/join", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                          email: email,
+                          password: password,
+                          age:parseInt(age),
+                          name:name,
+                          nationality:nation,
+                          gender:sex
+                        })
+                      }
+                    )
+                      localStorage.setItem('email',email);
+                      localStorage.setItem('password',password);
+                      alert('축하합니다! 회원가입이 완료 됐습니다.');
+                      history.push('/presentation');
+                    }}>
                       Register
                     </Button>
                   </Form>
@@ -247,4 +243,4 @@ function RegisterPage() {
   );
 }
 
-export default RegisterPage;
+export default withRouter(RegisterPage);

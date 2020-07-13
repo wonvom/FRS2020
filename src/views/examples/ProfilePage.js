@@ -23,15 +23,54 @@ import FooterWhite from "components/Footers/FooterWhite.js";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
-
+  const [usermail, setusermail] = React.useState('');
+  const [age, setAge] = React.useState(0);
+  const [name, setName] = React.useState('');
+  const [nation, setNation] = React.useState('');
+  const [sex, setSex] = React.useState('');
+  const [token, setToken] = React.useState('');
+  
+  
+  
   const toggle = tab => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }
   };
 
+  
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
+  
+    const email = localStorage.getItem('email');
+    const password = localStorage.getItem('password');
+    fetch("http://13.125.213.16:8080/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        })
+      }
+    ).then(res=>res.json()).then(res=>setToken(res.Authorization)).then(res => {
+    fetch(`http://13.125.213.16:8080/users/${email}`, {
+      method: "GET",
+      headers: {
+        Authorization : token
+      },
+      }
+    ).then(res => res.json()).then(res => {
+        setName(res.name);
+        setAge(res.name);
+        setNation(res.nationality);
+        setusermail(res.email);
+        setSex(res.gender);
+      }
+      
+    )})
+    
     document.body.classList.add("profile-page");
     return function cleanup() {
       document.body.classList.remove("profile-page");
@@ -58,11 +97,11 @@ function ProfilePage() {
                   </div>
                   <div className="name">
                     <h4 className="title text-center">
-                      Kim Wonjong <br />
+                      {name} <br />
                       <p></p>
-                      <p><small>20s</small></p>
-                      <p><small>Korea</small></p>
-                      <p><small>Male</small></p>
+                      <p><small>{age}</small></p>
+                      <p><small>{nation}</small></p>
+                      <p><small>{sex}</small></p>
                     </h4>
                   </div>
                 </div>

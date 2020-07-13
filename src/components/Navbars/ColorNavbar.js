@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
+import {withRouter} from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
@@ -21,7 +22,7 @@ import {
 } from "reactstrap";
 // core components
 
-function ColorNavbar() {
+function ColorNavbar({history}) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -288,17 +289,36 @@ function ColorNavbar() {
                   {/* <i className="nc-icon nc-cart-simple" />  */}
                   My Page
                 </Button>
+                {localStorage.getItem('email') ?
                 <Button
                   className="btn-round"
                   style={{backgroundColor: '#BF7E5D'}}
-                  outline color="secondary"
-                  to="/register-page" tag={Link}
+                  outline color="secondary" tag={Link}
+                  onClick={()=>{
+                    localStorage.clear();
+                     history.push('/presentation');
+                  }}
                   //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
                   //target="_blank"
                 >
                   {/* <i className="nc-icon nc-cart-simple" />  */}
-                  Register Now
+                  logout
                 </Button>
+                  :
+                  <Button
+                    className="btn-round"
+                    style={{backgroundColor: '#BF7E5D'}}
+                    outline color="secondary" tag={Link}
+                    onClick={()=>{
+                      history.push('/register-page');
+                    }}
+                    //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기
+                    //target="_blank"
+                  >
+                    {/* <i className="nc-icon nc-cart-simple" />  */}
+                   Register Now
+                  </Button>
+                  }
               </NavItem>
               {/* <NavItem>
                 <Button
@@ -318,4 +338,4 @@ function ColorNavbar() {
   );
 }
 
-export default ColorNavbar;
+export default withRouter(ColorNavbar);
