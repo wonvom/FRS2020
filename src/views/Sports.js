@@ -14,6 +14,7 @@ import {
 
 // core components
 import InfoNavbar from "components/Navbars/InfoNavbar.js";
+import ThemeHeader from "components/Headers/ThemeHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
@@ -29,6 +30,7 @@ function BlogPosts() {
   return (
     <>
       <InfoNavbar />
+      <ThemeHeader />
       <div className="wrapper">
         <div className="main">
           <div className="section section-white">
