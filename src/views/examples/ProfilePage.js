@@ -23,7 +23,7 @@ import FooterWhite from "components/Footers/FooterWhite.js";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
-
+  // eslint-disable-next-line
   const toggle = tab => {
     if (activeTab !== tab) {
       setActiveTab(tab);
