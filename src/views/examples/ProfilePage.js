@@ -3,12 +3,12 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
+  //Label,
+  //FormGroup,
+  //Input,
+  //NavItem,
+  //NavLink,
+  //Nav,
   TabContent,
   TabPane,
   Container,
@@ -30,14 +30,11 @@ function ProfilePage() {
   const [sex, setSex] = React.useState('');
   const [token, setToken] = React.useState('');
   
-  
-  
   const toggle = tab => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }
   };
-
   
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {

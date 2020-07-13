@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Badge, Card, Container, Row, Col } from "reactstrap"; // Button, Media 삭제
+import { Card, Container, Row, Col } from "reactstrap"; // Button, Media 삭제
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";

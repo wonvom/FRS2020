@@ -36,62 +36,69 @@ function SectionSections() {
             <Container fluid>
               <Row>
                 <Col md="3">
-                  <img
+                  <a href = "/blog-post-seoul"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Seoul.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
-                  <img
+                  <a href = "/blog-post-busan"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Busan.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
-                  <img
+                  <a href = "/blog-post-daegu"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Daegu.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
-                  <img
+                  <a href = "/blog-post-daejeon"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Daejeon.PNG")}
                   />
+                  </a>
                 </Col>
               </Row>
               <Row>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-busan"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Gangwon.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-gwangju"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Gwangju.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-incheon"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Incheon.PNG")}
-                  />
+                  /></a>
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-ulsan"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Ulsan.PNG")}
-                  />
+                  /></a>
                 </Col>
               </Row>
               <Row>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-jeju"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Jeju.PNG")}
                   />
+                  </a>
                 </Col>
                 <Col md="3">
                   <img
