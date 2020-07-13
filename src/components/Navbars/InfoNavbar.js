@@ -42,11 +42,11 @@ function WhiteNavbar() {
       <Navbar className="fixed-top" expand="lg" id="navbar-main" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" to="/presentation" tag={Link}>
-              Paper Kit PRO React
+          <NavbarBrand id="navbar-brand" to="/presentation" tag={Link}>
+              FRS team
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Paper Kit PRO React
+              FRS team
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"
