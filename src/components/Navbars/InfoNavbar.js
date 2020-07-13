@@ -146,7 +146,7 @@ function WhiteNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className="mr-2" color="default" caret nav>
                   Sections
                 </DropdownToggle>
@@ -251,7 +251,7 @@ function WhiteNavbar() {
                     Twitter
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               <NavItem>
               <Button
                   className="btn-round"
