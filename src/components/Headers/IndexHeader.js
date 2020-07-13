@@ -13,10 +13,10 @@ function IndexHeader() {
           backgroundImage: "url(" + require("assets/img/sections/han-ook.jpg") + ")"
         }}
       >
-        <div className="filter" />
+        {/* <div className="filter" /> */}
         <div className="content-center">
-          <div className="motto">
-          </div>
+          {/* <div className="motto">
+          </div> */}
         </div>
       </div>
     </>
