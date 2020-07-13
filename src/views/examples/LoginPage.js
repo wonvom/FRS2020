@@ -1,4 +1,5 @@
 import React from "react";
+import {withRouter} from 'react-router-dom'
 
 // reactstrap components
 import {
@@ -15,7 +16,10 @@ import {
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 
-function LoginPage() {
+function LoginPage({history}) {
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("login-page");
@@ -50,14 +54,33 @@ function LoginPage() {
                       className="no-border"
                       placeholder="Email"
                       type="email"
+                      onChange={(e)=>{setEmail(e.target.value)}}
                     />
                     <label>Password</label>
                     <Input
                       className="no-border"
                       placeholder="Password"
                       type="password"
+                      onChange={(e)=>{setPassword(e.target.value)}}
                     />
-                    <Button block className="btn-round" color="danger">
+                    <Button block className="btn-round" color="danger" onClick={()=>{
+                      fetch("http://13.125.213.16:8080/login", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json"
+                          },
+                          body: JSON.stringify({
+                            email: email,
+                            password: password,
+                          })
+                        }
+                      ).then(res=>res.json()).then(res => {
+                        localStorage.setItem('email', email)
+                        localStorage.setItem('password', password)
+  
+                        localStorage.setItem('token',res.Authorization)
+                      history.push('/')})
+                    }}>
                       Login
                     </Button>
                   </Form>
@@ -87,4 +110,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default withRouter(LoginPage);

@@ -29,6 +29,7 @@ function ProfilePage() {
   const [nation, setNation] = React.useState('');
   const [sex, setSex] = React.useState('');
   const [token, setToken] = React.useState('');
+  const [email, setEmail] = React.useState('');
   
   const toggle = tab => {
     if (activeTab !== tab) {
@@ -37,37 +38,26 @@ function ProfilePage() {
   };
   
   document.documentElement.classList.remove("nav-open");
-  React.useEffect(() => {
+  React.useEffect(()=>{
+    setToken(localStorage.getItem('token'));
+    setEmail(localStorage.getItem('email'));
   
-    const email = localStorage.getItem('email');
-    const password = localStorage.getItem('password');
-    fetch("http://13.125.213.16:8080/login", {
-        method: "POST",
+    fetch(`http://13.125.213.16:8080/users/${localStorage.getItem('email')}`, {
+        method: "GET",
         headers: {
-          "Content-Type": "application/json"
+          Authorization : localStorage.getItem('token')
         },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-        })
-      }
-    ).then(res=>res.json()).then(res=>setToken(res.Authorization)).then(res => {
-    fetch(`http://13.125.213.16:8080/users/${email}`, {
-      method: "GET",
-      headers: {
-        Authorization : token
-      },
       }
     ).then(res => res.json()).then(res => {
-        setName(res.name);
-        setAge(res.name);
-        setNation(res.nationality);
-        setusermail(res.email);
-        setSex(res.gender);
-      }
-      
-    )})
-    
+      setName(res.name);
+      setAge(res.name);
+      setNation(res.nationality);
+      setusermail(res.email);
+      setSex(res.gender);
+    })
+  },[])
+  
+  React.useEffect(() => {
     document.body.classList.add("profile-page");
     return function cleanup() {
       document.body.classList.remove("profile-page");
