@@ -59,7 +59,10 @@ function ProfilePage() {
                   <div className="name">
                     <h4 className="title text-center">
                       Kim Wonjong <br />
-                      <small>Programmar</small>
+                      <p></p>
+                      <p><small>20s</small></p>
+                      <p><small>Korea</small></p>
+                      <p><small>Male</small></p>
                     </h4>
                   </div>
                 </div>
@@ -67,18 +70,16 @@ function ProfilePage() {
             </Row>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
-                <p>
-                  Traveling with alcohol
-                </p>
+                <h5>"Traveling with alcohol"</h5>
                 <br />
-                <Button className="btn-round" color="default" outline>
+                {/* <Button className="btn-round" color="default" outline>
                   <i className="fa fa-cog mr-1" />
                   Settings
-                </Button>
+                </Button> */}
               </Col>
             </Row>
             <br />
-            <div className="nav-tabs-navigation">
+            {/* <div className="nav-tabs-navigation">
               <div className="nav-tabs-wrapper">
                 <Nav role="tablist" tabs>
                   <NavItem>
@@ -103,7 +104,7 @@ function ProfilePage() {
                   </NavItem>
                 </Nav>
               </div>
-            </div>
+            </div> */}
             {/* Tab panes */}
             <TabContent className="following" activeTab={activeTab}>
               <TabPane tabId="1" id="follows">
@@ -116,17 +117,17 @@ function ProfilePage() {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/baeinhyuk.jpg")}
+                              src={require("assets/img/sections/myeongdong.jpg")}
                             />
                           </Col>
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                             <h6>
-                              Bae Inhyuk <br />
-                              <small>Actor</small>
+                              Myeong-Dong <br />
+                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
                             </h6>
                           </Col>
                           <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                            <FormGroup check>
+                            {/* <FormGroup check>
                               <Label check>
                                 <Input
                                   defaultChecked
@@ -135,7 +136,7 @@ function ProfilePage() {
                                 />
                                 <span className="form-check-sign" />
                               </Label>
-                            </FormGroup>
+                            </FormGroup> */}
                           </Col>
                         </Row>
                       </li>
@@ -146,22 +147,112 @@ function ProfilePage() {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/joy.jpg")}
+                              src={require("assets/img/sections/gyeongbokpalace.jpg")}
                             />
                           </Col>
                           <Col lg="7" md="4" xs="4">
                             <h6>
-                              Joy <br />
-                              <small>Singer</small>
+                              Gyeongbok Palace<br />
+                              <small>161 Gyeongbok Palace, Sajik-ro, Jongno-gu, Seoul</small>
                             </h6>
                           </Col>
                           <Col lg="3" md="4" xs="4">
-                            <FormGroup check>
+                            {/* <FormGroup check>
                               <Label check>
                                 <Input defaultValue="" type="checkbox" />
                                 <span className="form-check-sign" />
                               </Label>
-                            </FormGroup>
+                            </FormGroup> */}
+                          </Col>
+                        </Row>
+                      </li>
+                      <hr />
+                      <li>
+                        <Row>
+                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                            <img
+                              alt="..."
+                              className="img-circle img-no-padding img-responsive"
+                              src={require("assets/img/sections/myeongdong.jpg")}
+                            />
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
+                            <h6>
+                              Myeong-Dong <br />
+                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
+                            </h6>
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
+                            {/* <FormGroup check>
+                              <Label check>
+                                <Input
+                                  defaultChecked
+                                  defaultValue=""
+                                  type="checkbox"
+                                />
+                                <span className="form-check-sign" />
+                              </Label>
+                            </FormGroup> */}
+                          </Col>
+                        </Row>
+                      </li>
+                      <hr />
+                      <li>
+                        <Row>
+                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                            <img
+                              alt="..."
+                              className="img-circle img-no-padding img-responsive"
+                              src={require("assets/img/sections/myeongdong.jpg")}
+                            />
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
+                            <h6>
+                              Myeong-Dong <br />
+                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
+                            </h6>
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
+                            {/* <FormGroup check>
+                              <Label check>
+                                <Input
+                                  defaultChecked
+                                  defaultValue=""
+                                  type="checkbox"
+                                />
+                                <span className="form-check-sign" />
+                              </Label>
+                            </FormGroup> */}
+                          </Col>
+                        </Row>
+                      </li>
+                      <hr />
+                      <li>
+                        <Row>
+                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                            <img
+                              alt="..."
+                              className="img-circle img-no-padding img-responsive"
+                              src={require("assets/img/sections/myeongdong.jpg")}
+                            />
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
+                            <h6>
+                              Myeong-Dong <br />
+                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
+                            </h6>
+                          </Col>
+                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
+                            {/* <FormGroup check>
+                              <Label check>
+                                <Input
+                                  defaultChecked
+                                  defaultValue=""
+                                  type="checkbox"
+                                />
+                                <span className="form-check-sign" />
+                              </Label>
+                            </FormGroup> */}
                           </Col>
                         </Row>
                       </li>
