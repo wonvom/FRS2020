@@ -79,6 +79,7 @@ function RegisterPage() {
                             <Input defaultValue="" type="checkbox" />10s
                             <span className="form-check-sign" />
                           </Label>
+                          &nbsp;&nbsp;&nbsp;&nbsp;
                           <Label check>
                             <Input defaultValue="" type="checkbox" />20s
                             <span className="form-check-sign" />
@@ -89,6 +90,7 @@ function RegisterPage() {
                             <Input defaultValue="" type="checkbox" />30s
                             <span className="form-check-sign" />
                           </Label>
+                          &nbsp;&nbsp;&nbsp;
                           <Label check>
                             <Input defaultValue="" type="checkbox" />40s
                             <span className="form-check-sign" />
@@ -179,6 +181,7 @@ function RegisterPage() {
                             <Input defaultValue="" type="checkbox" />Female
                             <span className="form-check-sign" />
                           </Label>
+                          &nbsp;&nbsp;&nbsp;
                           <Label check>
                             <Input defaultValue="" type="checkbox" />Male
                             <span className="form-check-sign" />
