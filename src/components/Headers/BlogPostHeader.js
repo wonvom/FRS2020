@@ -29,7 +29,7 @@ function BlogPostHeader() {
         ref={pageHeader}
         style={{
           backgroundImage:
-            "url(" + require("assets/img/sections/uriel-soberanes.jpg") + ")"
+            "url(" + require("assets/img/sections/suwoncastle.jpg") + ")"
         }}
       >
         <div className="filter" />
