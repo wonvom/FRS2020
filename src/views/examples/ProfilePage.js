@@ -79,7 +79,7 @@ function ProfilePage() {
                   <div className="fileinput-new img-no-padding">
                     <img
                       alt="..."
-                      src={require("assets/img/faces/wonjong-1.jpg")}
+                      src={require("assets/img/faces/defaultimage.jpg")}
                     />
                   </div>
                   <div className="name">
@@ -94,16 +94,16 @@ function ProfilePage() {
                 </div>
               </div>
             </Row>
-            <Row>
+            {/* <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
                 <h5>"Traveling with alcohol"</h5>
-                <br />
+                <br /> */}
                 {/* <Button className="btn-round" color="default" outline>
                   <i className="fa fa-cog mr-1" />
                   Settings
                 </Button> */}
-              </Col>
-            </Row>
+              {/* </Col>
+            </Row> */}
             <br />
             {/* <div className="nav-tabs-navigation">
               <div className="nav-tabs-wrapper">
