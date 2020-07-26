@@ -124,6 +124,7 @@ function RegisterPage({history}) {
                             <Input defaultValue="" type="checkbox" value='kr' onClick={(e)=>{setNation(e.target.value)}}/>Korea
                             <span className="form-check-sign" />
                           </Label>
+                          &nbsp;&nbsp;&nbsp;
                           <Label check>
                             <Input defaultValue="" type="checkbox" value='cn' onClick={(e)=>{setNation(e.target.value)}}/>China
                             <span className="form-check-sign" />
@@ -134,6 +135,7 @@ function RegisterPage({history}) {
                             <Input defaultValue="" type="checkbox" value='usa' onClick={(e)=>{setNation(e.target.value)}}/>USA
                             <span className="form-check-sign" />
                           </Label>
+                          &nbsp;&nbsp;&nbsp;
                           <Label check>
                             <Input defaultValue="" type="checkbox" value='en' onClick={(e)=>{setNation(e.target.value)}}/>England
                             <span className="form-check-sign" />
