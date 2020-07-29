@@ -65,7 +65,7 @@ function PresentationHeader() {
 
               </h1>
                 <Col className="ml-auto mr-auto text-center" md="3" xs="10">
-                  <Form className="form-inline search-form" role="search">
+                  <Form className="form-inline search-form" role="search" action="/blog-post-seoul" method="get">
                     <InputGroup className="no-border">
                       <span
                         className="input-group-addon addon-xtreme no-border"

@@ -90,30 +90,7 @@ function BlogPost() {
                     </p>
                     <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                    
                     <br />
                     <br />
                     <Row>
@@ -146,131 +123,13 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                   
                   </div>
                   <br />
-                  {/* <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div> */}
+                 
                   <hr />
                   <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
+                    
                     
                   </Container>
                 </Col>
@@ -283,10 +142,10 @@ function BlogPost() {
                     </Badge> */}
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Hongdae (Hongik University Street) (홍대)
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">20, Hongik-ro, Mapo-gu, Seoul </h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -296,7 +155,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/seoul-myeongdong-1.jpg") +
+                          require("assets/img/location/seoul-hongdae-1.jpg") +
                           ")"
                       }}
                     />
@@ -307,54 +166,35 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Hongdae is a neighborhood known for its youthful and romantic ambience, underground culture, and freedom of self-expression.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    Unique cafes, cozy galleries, accessory stores, fashion shops, live cafés and clubs, art markets, 
+                    and gourmet eateries make this a popular hang-out for local youth and a fascinating place to walk 
+                    around. These unique places plus the cultural events, street performances, and festivals held here 
+                    make Hongdae an area that is always packed with people and excitement. Special streets such as ateliers’ 
+                    street (lined with private institutions for art students preparing for university entrance exams), 
+                    Picasso’s Street, and Club Street are also must-go places if you’re hoping to fully experience the Hongdae area.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    [Main tourism spots in front of Hongik University]
+                    * Hongdae Walking Street: Main spot of Hongdae area which has an outdoor stage for indie band performance 
+                    and dynamic culture of young people.
+
+                    * Hongdae Mural Street: Mural street stretching from Kanemaya restaurant by the back gate of Hongik University 
+                    to Four Seasons House (Wausan-go 22-gil) and featuring various arrangements of painting from graffiti to artistic 
+                    design. It is also referred to as ‘Picasso’s Street’ and is famous as a dating spot.
+
+                    * Hongdae Free Market: The market is held every Saturday from March to November at Hongik Children’s Park in 
+                    front of the main gate of Hongik University. All people can sign up to sell their hand-made products and other 
+                    exhibitions created by artists will be shown.
                     </p>
                     <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                    
                     <br />
                     <br />
                     <Row>
@@ -365,7 +205,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-hongdae-2.jpg") +
                                 ")"
                             }}
                           />
@@ -379,7 +219,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-hongdae-3.jpg") +
                                 ")"
                             }}
                           />
@@ -387,135 +227,16 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                    
+                    
                   </div>
                   <br />
-                  {/* <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div> */}
+                  
                   <hr />
-                  <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
-                    
-                  </Container>
+
                 </Col>
               </Row>
+
               <Row>
                 <Col className="ml-auto mr-auto" md="10">
                   <div className="text-center">
@@ -524,10 +245,10 @@ function BlogPost() {
                     </Badge> */}
                     <a href="javascrip: void(0);">
                       <h3 className="title">
-                      Myeong-dong (명동)
+                      Namdaemun Market (남대문시장)
                       </h3>
                     </a>
-                    <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
+                    <h6 className="title-uppercase">21, Namdaemunsijang 4-gil, Jung-gu, Seoul  </h6>
                   </div>
                 </Col>
                 <Col className="ml-auto mr-auto" md="8">
@@ -537,7 +258,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/seoul-myeongdong-1.jpg") +
+                          require("assets/img/location/seoul-hongdae-1.jpg") +
                           ")"
                       }}
                     />
@@ -548,54 +269,24 @@ function BlogPost() {
 
                   <div className="article-content">
 
-                    <h4>Myeong-dong is one of the primary shopping districts in Seoul.</h4>
+                    <h4>Opened in 1964, Namdaemun Market is the largest traditional market in Korea with shops selling various goods.</h4>
                     <br />
                     <blockquote className="blockquote">
                     <br />
                     <p>
-                    The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
-                    many premium labels and other fashionable goods at reasonable prices.
+                    All products are sold at affordable prices and the stores in this area also function as wholesale markets.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
-                    in the area include hair salons, banks and theaters.
+                    Most of the goods are made directly by the storeowners. Namdaemun Market is even open overnight, 
+                    from 23:00 to 04:00, and is crowded with retailers from all over the country. When day breaks, the 
+                    site of busy shoppers bustling around the market creates a unique scene that attracts tourists worldwide. 
+                    Namdaemun Market sells a variety of clothes, glasses, kitchenware, toys, mountain gear, fishing equipment,
+                     stationery, fine arts, accessories, hats, carpets, flowers, ginseng, and imported goods.
                     </p>
                     <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                    
                     <br />
                     <br />
                     <Row>
@@ -606,7 +297,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-2.jpg") +
+                                require("assets/img/location/seoul-hongdae-2.jpg") +
                                 ")"
                             }}
                           />
@@ -620,7 +311,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-3.jpg") +
+                                require("assets/img/location/seoul-hongdae-3.jpg") +
                                 ")"
                             }}
                           />
@@ -628,179 +319,17 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                    
+                    
                   </div>
                   <br />
-                  {/* <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div> */}
+                  
                   <hr />
-                  <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
-                    
-                  </Container>
+
                 </Col>
               </Row>
-              {/* <Row>
-                <div className="related-articles">
-                  <h3 className="title">Related with this destination</h3>
-                  <legend />
-                  <Container>
-                    <Row>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/location/seoul-hongdae-1.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">
-                        Hongdae
-                        </p>
-                      </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/location/seoul-namsantower-1.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">Namsan Tower</p>
-                      </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/location/seoul-gyeongbokgung-1.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">
-                          Gyeongbokgung
-                        </p>
-                      </Col>
-                    </Row>
-                  </Container>
-                </div>
-              </Row> */}
+
+
             </Container>
           </div>
         </div>

@@ -90,30 +90,7 @@ function BlogPost() {
                     </p>
                     <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                  
                     <br />
                     <br />
                     <Row>
@@ -124,7 +101,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-2.jpg") +
+                                require("assets/img/location/incheon-yongyudo-2.jpg") +
                                 ")"
                             }}
                           />
@@ -138,7 +115,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-3.jpg") +
+                                require("assets/img/location/incheon-yongyudo-3.jpg") +
                                 ")"
                             }}
                           />
@@ -146,302 +123,217 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                   
                   </div>
                   <br />
-                  <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div>
+                 
                   <hr />
                   <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
-                    <Row>
-                      <div className="comments media-area">
-                        <h3 className="text-center">Comments</h3>
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              John Lincoln
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:54 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <Media>
-                              <a
-                                className="pull-left"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <div className="avatar">
-                                  <Media
-                                    alt="..."
-                                    object
-                                    src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                                  />
-                                </div>
-                              </a>
-                              <Media body>
-                                <Media heading tag="h5">
-                                  Erik P.
-                                </Media>
-                                <div className="pull-right">
-                                  <h6 className="text-muted">
-                                    Sep 11, 11:56 AM
-                                  </h6>
-                                  <Button
-                                    className="btn-link pull-right"
-                                    color="info"
-                                    href="#pablo"
-                                    onClick={e => e.preventDefault()}
-                                  >
-                                    <i className="fa fa-reply mr-1" />
-                                    Reply
-                                  </Button>
-                                </div>
-                                <p>
-                                  Hello guys, nice to have you on the platform!
-                                  There will be a lot of great stuff coming
-                                  soon. We will keep you posted for the latest
-                                  news.
-                                </p>
-                                <p>Don't forget, You're Awesome!</p>
-                              </Media>
-                            </Media>
-                            {/* end media */}
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/joe-gardner-2.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              Joe
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:57 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <p>Don't forget, You're Awesome!</p>
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                      </div>
-                    </Row>
+                    
+                    
                   </Container>
                 </Col>
               </Row>
               <Row>
-                <div className="related-articles">
-                  <h3 className="title">Related articles</h3>
-                  <legend />
-                  <Container>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Wolmi Special Tourist Zone (월미 관광특구)
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">81, Wolmimunhwa-ro, Jung-gu, Incheon</h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/incheon-wolmi-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Wolmi Special Tourist Zone is a historic and cultural site where visitors can learn 
+                      about Korea’s modern history and culture through a tour of Incheon.</h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    The area has plenty of modern architecture and cultural heritages embracing the history 
+                    of the open port era. Incheon Port is conveniently located to facilitate the flow of products 
+                    from other civilizations.
+                    </p>
+                    <br />
+                    <p>
+                    Included in the open port, Incheon Chinatown has various Chinese restaurants, a modern history 
+                    museum, and exhibition hall where visitors can look into the past and current life of Chinese 
+                    people living in Korea. Jayu Park Cultural Tourism Festival and Songwol-dong Donghwa Village 
+                    Festival are held here every spring.
+                    </p>
+                    <br />
+                    <p>
+                    In addition, the Museum of Korea Emigration History, date courses, and Wolmi Cultural Street, 
+                    offering up various sliced raw fish restaurants, and fine cafes are all available in the zone. 
+                    Wolmi Observatory offers a view overlooking a port and downtown at once. The coastal pier 
+                    approaching the port offers the active atmosphere of coming and going ships and the lively 
+                    fish market. Enjoying various fish dishes and sea-fishing, or walking along the ocean square 
+                    are recommended activities.
+                    </p>
+                    <br />
+                    <p>
+                    * Current State of Wolmi Special Tourist Zone
+                    1) Districts Covered: Areas around Yeonan, Shinheung, Bukseong, Dongincheon and Sinpo-dong, Jung-gu, Incheon
+                    2) Area: 3,000,898㎡
+                    3) Designated on June 26, 2001
+                    * Tourist Attractions
+                    Jayu Park, Chinatown, Open Port, coastal pier approaching the port, Wolmido Island, surrounding area
+                    </p>
+                    </blockquote>
+                    
+                    <br />
+                    <br />
                     <Row>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/damir-bosnjak.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/incheon-wolmi-2.jpg") +
+                                ")"
+                            }}
                           />
+                          {/* end card */}
                         </a>
-                        <p className="blog-title">
-                          My Review of Pitchfork’s ‘Indie 500’ Album Review
-                        </p>
                       </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/por7o.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/incheon-wolmi-3.jpg") +
+                                ")"
+                            }}
                           />
                         </a>
-                        <p className="blog-title">Top Events This Month</p>
-                      </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/jeff-sheldon.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">
-                          You Should Get Excited About Virtual Reality. Here’s
-                          Why.
-                        </p>
                       </Col>
                     </Row>
-                  </Container>
-                </div>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
+              </Row>
+
+              <Row>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Incheon Chinatown (인천 차이나타운)
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">14, Chinatown-ro 52beon-gil, Jung-gu, Incheon </h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/incheon-chinatown-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Incheon's Chinatown came into being with the opening of Incheon Port in 1883</h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    Incheon's designation as an extraterritoriality of the Ching Dynasty in the following year. 
+                    In the past, the area held many stores trading goods imported from China, but currently most 
+                    Chinese businesses in the area are restaurants. Today, the residents of Chinatown are mostly 
+                    2nd or 3rd generation Chinese, descendents of the early Chinese settlers.  The area harbors many 
+                    of the flavors of China, while the traditional culture of the first generation are preserved.
+
+
+                    
+                    </p>
+                    <br />
+                    </blockquote>
+                    
+                    <br />
+                    <br />
+                    <Row>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/incheon-chinatown-2.jpg") +
+                                ")"
+                            }}
+                          />
+                          {/* end card */}
+                        </a>
+                      </Col>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/incheon-chinatown-3.jpg") +
+                                ")"
+                            }}
+                          />
+                        </a>
+                      </Col>
+                    </Row>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
               </Row>
             </Container>
           </div>

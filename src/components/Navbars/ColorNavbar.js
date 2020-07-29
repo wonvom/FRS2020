@@ -138,9 +138,9 @@ function ColorNavbar({history}) {
                     <i className="nc-icon nc-calendar-60" />
                     Gangwon
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-gwangju" tag={Link}>
+                  <DropdownItem to="/blog-post-jeonju" tag={Link}>
                     <i className="nc-icon nc-money-coins" />
-                    Gwangju
+                    Jeonju
                   </DropdownItem>
                   <DropdownItem to="/blog-post-incheon" tag={Link}>
                     <i className="nc-icon nc-badge" />
