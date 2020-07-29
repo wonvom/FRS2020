@@ -55,7 +55,7 @@ function BlogPost() {
                       style={{
                         backgroundImage:
                           "url(" +
-                          require("assets/img/location/daejeon-expopark-1.jpg") +
+                          require("assets/img/location/daejeon-yuseongspecial-1.jpg") +
                           ")"
                       }}
                     />
@@ -80,33 +80,8 @@ function BlogPost() {
 
                     </p>
                     <br />
-                    
-                    <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                  
                     <br />
                     <br />
                     <Row>
@@ -117,7 +92,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-2.jpg") +
+                                require("assets/img/location/daejeon-yuseongspecial-2.jpg") +
                                 ")"
                             }}
                           />
@@ -131,7 +106,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-3.jpg") +
+                                require("assets/img/location/daejeon-yuseongspecial-3.jpg") +
                                 ")"
                             }}
                           />
@@ -139,302 +114,201 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                   
                   </div>
                   <br />
-                  <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div>
+                 
                   <hr />
                   <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
-                    <Row>
-                      <div className="comments media-area">
-                        <h3 className="text-center">Comments</h3>
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              John Lincoln
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:54 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <Media>
-                              <a
-                                className="pull-left"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <div className="avatar">
-                                  <Media
-                                    alt="..."
-                                    object
-                                    src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                                  />
-                                </div>
-                              </a>
-                              <Media body>
-                                <Media heading tag="h5">
-                                  Erik P.
-                                </Media>
-                                <div className="pull-right">
-                                  <h6 className="text-muted">
-                                    Sep 11, 11:56 AM
-                                  </h6>
-                                  <Button
-                                    className="btn-link pull-right"
-                                    color="info"
-                                    href="#pablo"
-                                    onClick={e => e.preventDefault()}
-                                  >
-                                    <i className="fa fa-reply mr-1" />
-                                    Reply
-                                  </Button>
-                                </div>
-                                <p>
-                                  Hello guys, nice to have you on the platform!
-                                  There will be a lot of great stuff coming
-                                  soon. We will keep you posted for the latest
-                                  news.
-                                </p>
-                                <p>Don't forget, You're Awesome!</p>
-                              </Media>
-                            </Media>
-                            {/* end media */}
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/joe-gardner-2.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              Joe
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:57 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <p>Don't forget, You're Awesome!</p>
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                      </div>
-                    </Row>
+                    
+                    
                   </Container>
                 </Col>
               </Row>
               <Row>
-                <div className="related-articles">
-                  <h3 className="title">Related articles</h3>
-                  <legend />
-                  <Container>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Daejeon Modern History Exhibition Hall (대전근현대사전시관(옛 충남도청사 본관))
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">101, Jungang-ro, Jung-gu, Daejeon  </h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/daejeon-modernhistory-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Daejeon Modern History Hall opened to the public on October 1, 2013 at the former 
+                      main building of Chungcheongnam-do Provincial Government, Daejeon (Registered Cultural Heritage No. 18). </h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    Visitors can see various scenes of history and the development of Daejeon over the past 
+                    100 years from the early 20th century to current times. Daejeon operates a planned exhibition 
+                    hall, special exhibition showcasing history, architecture, design, folk style and other varied 
+                    fields as well as a rotation exhibition. Also, touring the main building of Chungcheongnam-do 
+                    Provincial Goverment, music concerts and various cultural education programs are available in 
+                    this cultural complex.
+                    </p>
+                    <br />
+                    <p>
+                    * Former Main Building of Chungcheongnam-do Provincial Government, Daejeon (Registered Cultural Heritage No. 18)
+                    * Filming site of movie "The Attorney (2013)"
+                    </p>
+                    <br />
+                    
+                    </blockquote>
+                    
+                    <br />
+                    <br />
                     <Row>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/damir-bosnjak.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daejeon-modernhistory-2.jpg") +
+                                ")"
+                            }}
                           />
+                          {/* end card */}
                         </a>
-                        <p className="blog-title">
-                          My Review of Pitchfork’s ‘Indie 500’ Album Review
-                        </p>
                       </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/por7o.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daejeon-modernhistory-3.jpg") +
+                                ")"
+                            }}
                           />
                         </a>
-                        <p className="blog-title">Top Events This Month</p>
-                      </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/jeff-sheldon.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">
-                          You Should Get Excited About Virtual Reality. Here’s
-                          Why.
-                        </p>
                       </Col>
                     </Row>
-                  </Container>
-                </div>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
+              </Row>
+
+              <Row>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Hanbat Arboretum (한밭수목원)
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">169, Dunsan-daero, Seo-gu, Daejeon  </h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/daejeon-hanbatarboretum-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Hanbat Arboretum, linked with the Government Complex-Daejeon and Science 
+                      Park, is the largest man-made urban arboretum in Korea. </h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    It serves multiple purposes: a reservoir of genetically diverse foliage, 
+                    an eco learning center for students, and a recreational area where people can 
+                    relax and pass the time in the peaceful embrace of nature. The arboretum, standing 
+                    on a lot measuring 387,000 square meters, is divided into three sections. The West 
+                    Garden and Nammun Square opened on April 28th, 2005, while the East Garden, which 
+                    consists of 19 uniquely themed parks such as the Magnolia Garden, Medicinal Herbs 
+                    Garden, Rock Garden and Fruit Garden, opened on May 9th, 2009.
+                    </p>
+                    </blockquote>
+                    
+                    <br />
+                    <br />
+                    <Row>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daejeon-hanbatarboretum-2.jpg") +
+                                ")"
+                            }}
+                          />
+                          {/* end card */}
+                        </a>
+                      </Col>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daejeon-hanbatarboretum-3.jpg") +
+                                ")"
+                            }}
+                          />
+                        </a>
+                      </Col>
+                    </Row>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
               </Row>
             </Container>
           </div>

@@ -26,7 +26,7 @@ function BlogPost() {
         <div className="main">
           <div className="section section-white">
             <Container>
-              <Row>
+            <Row>
                 <Col className="ml-auto mr-auto text-center title" md="6">
                   <h2>Welcome to Deagu</h2>
                   <h3 className="title-uppercase">
@@ -77,33 +77,8 @@ function BlogPost() {
                     historical moments from the previous generations.
                     </p>
                     <br />
-                  
-                    <br />
                     </blockquote>
-                    {/* <p>
-                      Interesting ideas are a reward for not being afraid to
-                      have unconventional beliefs. You can’t grow if you’re
-                      never willing to turn your back on the status quo. You
-                      can’t expand if you’re never willing to take an unorthodox
-                      stand. You can’t have a beautiful mind if you’re never
-                      willing to leave the crowd behind.
-                    </p> */}
-                    {/* <blockquote className="blockquote">
-                      <p>
-                        "Don’t settle: Don’t finish crappy books. If you don’t
-                        like the menu, leave the restaurant. If you’re not on
-                        the right path, get off it."
-                      </p>
-                      <footer>
-                        - Chris Brogan in{" "}
-                        <cite title="Source Title">Trust Agents</cite>
-                      </footer>
-                    </blockquote> */}
-                    {/* <p>
-                      It’s easier to fear rejection than it is to open our minds
-                      to something new, but doing what’s easy doesn’t always
-                      equal doing what’s authentic, enriching, and meaningful.
-                    </p> */}
+                  
                     <br />
                     <br />
                     <Row>
@@ -114,7 +89,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-2.jpg") +
+                                require("assets/img/location/daegu-modernhistory-2.jpg") +
                                 ")"
                             }}
                           />
@@ -128,7 +103,7 @@ function BlogPost() {
                             style={{
                               backgroundImage:
                                 "url(" +
-                                require("assets/img/location/seoul-myeongdong-3.jpg") +
+                                require("assets/img/location/daegu-modernhistory-3.jpg") +
                                 ")"
                             }}
                           />
@@ -136,303 +111,226 @@ function BlogPost() {
                       </Col>
                     </Row>
                     <p />
-                    {/* <h4>Ideas Worth Mentioning</h4>
-                    <p>
-                      The stories, ideas and lessons are enough to fill a year’s
-                      worth of articles, but for now I wanted to share the ideas
-                      straight from the people creating the disruption. Below
-                      are my most impactful takeaways from the last few days:
-                    </p>
-                    <p>
-                      <strong>No one belongs here more than me.</strong> When in
-                      doubt of your surroundings, this is the mantra.
-                    </p>
-                    <p>
-                      <strong>The ultimate currency is being uncool.</strong> Be
-                      vulnerably you and watch how you connect.
-                    </p>
-                    <p>
-                      <strong>The opposite of scarcity is enough.</strong> Be
-                      confident that if you’re doing work that matters to you,
-                      you are enough. There is no comparison.
-                    </p>
-                    <p>
-                      <strong>Unused creativity is not benign</strong> – it
-                      turns into grief. Do something with it.
-                    </p>
-                    <p>
-                      <strong>Get in the arena</strong>, show up, do your thing
-                      and don’t be afraid to get your ass kicked a little bit.
-                    </p>
-                    <p>
-                      Who you are will always trump who you think people want
-                      you to be.
-                    </p>
-                    <p>
-                      <strong>
-                        You can’t control if someone loves you back.
-                      </strong>{" "}
-                      Love them anyway.
-                    </p>
-                    <h4>
-                      <strong>Conclusions</strong>
-                    </h4>
-                    <p>
-                      If all of your convictions can be expressed in a sound
-                      bite on mainstream television without provoking the
-                      slightest bit of anger or annoyance in anyone whatsoever,
-                      I think it’s safe to say that your outlook on life offers
-                      you very few opportunities for the remarkable.
-                    </p> */}
+                   
                   </div>
                   <br />
-                  <div className="article-footer">
-                    <Container>
-                      <Row>
-                        <Col md="6">
-                          <h5>Tags:</h5>
-                          <label className="label label-default mr-1">
-                            Motivational
-                          </label>
-                          <label className="label label-default mr-1">
-                            Newsletter
-                          </label>
-                          <Badge color="warning">Trending</Badge>
-                        </Col>
-                        <Col className="ml-auto" md="4">
-                          <div className="sharing">
-                            <h5>Spread the word</h5>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="twitter"
-                            >
-                              <i className="fa fa-twitter" />
-                            </Button>
-                            <Button
-                              className="btn-just-icon mr-1"
-                              color="facebook"
-                            >
-                              <i className="fa fa-facebook" />
-                            </Button>
-                            <Button className="btn-just-icon" color="google">
-                              <i className="fa fa-google" />
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Container>
-                  </div>
+                 
                   <hr />
                   <Container>
-                    {/* <Row>
-                      <Media>
-                        <a
-                          className="pull-left"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <div className="avatar big-avatar">
-                            <Media
-                              alt="..."
-                              object
-                              src={require("assets/img/faces/kaci-baum-2.jpg")}
-                            />
-                          </div>
-                        </a>
-                        <Media body>
-                          <Media heading>Sophie Banks</Media>
-                          <div className="pull-right">
-                            <Button
-                              className="btn-round"
-                              color="default"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              <i className="fa fa-reply mr-1" />
-                              Follow
-                            </Button>
-                          </div>
-                          <p>
-                            Hello guys, nice to have you on the platform! There
-                            will be a lot of great stuff coming soon. We will
-                            keep you posted for the latest news.
-                          </p>
-                          <p>Don't forget, You're Awesome!</p>
-                        </Media>
-                      </Media>
-                    </Row> */}
-                    <Row>
-                      <div className="comments media-area">
-                        <h3 className="text-center">Comments</h3>
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              John Lincoln
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:54 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <Media>
-                              <a
-                                className="pull-left"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <div className="avatar">
-                                  <Media
-                                    alt="..."
-                                    object
-                                    src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                                  />
-                                </div>
-                              </a>
-                              <Media body>
-                                <Media heading tag="h5">
-                                  Erik P.
-                                </Media>
-                                <div className="pull-right">
-                                  <h6 className="text-muted">
-                                    Sep 11, 11:56 AM
-                                  </h6>
-                                  <Button
-                                    className="btn-link pull-right"
-                                    color="info"
-                                    href="#pablo"
-                                    onClick={e => e.preventDefault()}
-                                  >
-                                    <i className="fa fa-reply mr-1" />
-                                    Reply
-                                  </Button>
-                                </div>
-                                <p>
-                                  Hello guys, nice to have you on the platform!
-                                  There will be a lot of great stuff coming
-                                  soon. We will keep you posted for the latest
-                                  news.
-                                </p>
-                                <p>Don't forget, You're Awesome!</p>
-                              </Media>
-                            </Media>
-                            {/* end media */}
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                        <Media>
-                          <a
-                            className="pull-left"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            <div className="avatar">
-                              <Media
-                                alt="..."
-                                object
-                                src={require("assets/img/faces/joe-gardner-2.jpg")}
-                              />
-                            </div>
-                          </a>
-                          <Media body>
-                            <Media heading tag="h5">
-                              Joe
-                            </Media>
-                            <div className="pull-right">
-                              <h6 className="text-muted">Sep 11, 11:57 AM</h6>
-                              <Button
-                                className="btn-link pull-right"
-                                color="info"
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                <i className="fa fa-reply mr-1" />
-                                Reply
-                              </Button>
-                            </div>
-                            <p>
-                              Hello guys, nice to have you on the platform!
-                              There will be a lot of great stuff coming soon. We
-                              will keep you posted for the latest news.
-                            </p>
-                            <p>Don't forget, You're Awesome!</p>
-                          </Media>
-                        </Media>
-                        {/* end media */}
-                      </div>
-                    </Row>
+                    
+                    
                   </Container>
                 </Col>
               </Row>
               <Row>
-                <div className="related-articles">
-                  <h3 className="title">Related articles</h3>
-                  <legend />
-                  <Container>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Gukchaebosang Memorial Park (국채보상운동기념공월)
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">670, Gukchaebosang-ro, Jung-gu, Daegu  </h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/daegu-gukchaebosang-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Construction on Gukchaebosang Memorial Park began in March 1998 and was completed in December 1999.</h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    The park was established to retain the spirit of the National Debt Remuneration Movement 
+                    (a national movement that originated in Daegu in 1907) and to help overcome the debt crisis 
+                    of 1997. The park also expanded the green space in the downtown area and offer a place of rest 
+                    and relaxation to the general public.
+                    </p>
+                    <br />
+                    <p>
+                    Spanning 42,500 square meters in size, the park boasts the Dalgubeol Grand Bell, 
+                    a bell pavilion, walking trails, and other amenities. The famous Dalgubeol Grand Bell
+                     was installed on the park grounds in December 1998 as a representation of harmony and 
+                     prosperity and to symbolically awaken the people with its pure and clear ringing.
+                    </p>
+                    <br />
+                    <p>
+                    The park has an ample parking lot (3 underground floors) and is frequented by students 
+                    who study at the Central Library located within the park. Gukchaebosang Memorial Park 
+                    is also a popular destination for couples because of its proximity to the Daegu downtown 
+                    area. As one of the most recently established parks in Daegu, the park boasts thousands
+                     of trees, a large grass plaza, and plenty of benches and resting areas. The beautiful
+                      fountains, pavilion, and stone artworks add to the charms of the park. The park hosts
+                       diverse cultural events such as music concerts and exhibitions and draws many visitors 
+                       every Saturdays and Sundays for the ceremonial ringing of the Dalgubeol Grand Bell.
+
+                    </p>
+                    </blockquote>
+                    
+                    <br />
+                    <br />
                     <Row>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/damir-bosnjak.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daegu-gukchaebosang-2.jpg") +
+                                ")"
+                            }}
                           />
+                          {/* end card */}
                         </a>
-                        <p className="blog-title">
-                          My Review of Pitchfork’s ‘Indie 500’ Album Review
-                        </p>
                       </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/por7o.jpg")}
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daegu-gukchaebosang-3.jpg") +
+                                ")"
+                            }}
                           />
                         </a>
-                        <p className="blog-title">Top Events This Month</p>
-                      </Col>
-                      <Col md="4">
-                        <a href="pkp">
-                          <img
-                            alt="..."
-                            className="img-rounded img-responsive"
-                            src={require("assets/img/sections/jeff-sheldon.jpg")}
-                          />
-                        </a>
-                        <p className="blog-title">
-                          You Should Get Excited About Virtual Reality. Here’s
-                          Why.
-                        </p>
                       </Col>
                     </Row>
-                  </Container>
-                </div>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
               </Row>
+
+              <Row>
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
+                      Trending
+                    </Badge> */}
+                    <a href="javascrip: void(0);">
+                      <h3 className="title">
+                      Daegu Seomun Market & Seomun Night Market
+                      </h3>
+                      <h3 className="title">
+                      (대구 서문시장 & 서문시장 야시장)
+                      </h3>
+                    </a>
+                    <h6 className="title-uppercase">45, Keunjang-ro 26-gil, Jung-gu, Daegu  </h6>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" md="8">
+                  <a href="javascrip: void(0);">
+                    <Card
+                      data-radius="none"
+                      style={{
+                        backgroundImage:
+                          "url(" +
+                          require("assets/img/location/daegu-seomunmarket-1.jpg") +
+                          ")"
+                      }}
+                    />
+                    <p className="image-thumb text-center">
+                      Photo by tourAPI3.0
+                    </p>
+                  </a>
+
+                  <div className="article-content">
+
+                    <h4>Seomun Market (formerly known as Daegu-Keun Market) of Daegu is steeped in history.</h4>
+                    <br />
+                    <blockquote className="blockquote">
+                    <br />
+                    <p>
+                    Along with Pyeongyang Market and Ganggyeong Market, Seomun Market was one of the three main 
+                    markets during the Joseon dynasty. It is situated only 300 meters from the West Gate of the city, 
+                    and was befittingly named Seomunsijang (West Gate Market). Although the market has grown from its 
+                    small size, the names of the alleyways such as Hongdukkaejeon and Dakjeon remains unchanged.
+                    </p>
+                    <br />
+                    <p>
+                    The specialties of the current Seomun Market include fabric-related items like silk, satin, 
+                    linen, cotton, knitted goods, and clothing. However, visitors to the market will also find 
+                    a decent selection of crafts, silver products and dried seafood. While still traditional 
+                    in many respects, Seomun Market offers modern conveniences including a heating and cooling 
+                    system and a large parking lot.
+                    </p>
+                    <br />
+                    <p>
+                    The signature dish of Seomun Night Market is Cup Makchang, small servings of Korea’s 
+                    soul food makchang (beef intestines). Other popular dishes include mu tteokbokki, a unique 
+                    take on a classic Korean dish with thinly sliced radish, and a remake of British fare shrimp and chips.
+                    </p>
+                    </blockquote>
+                    
+                    <br />
+                    <br />
+                    <Row>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daegu-seomunmarket-2.jpg") +
+                                ")"
+                            }}
+                          />
+                          {/* end card */}
+                        </a>
+                      </Col>
+                      <Col md="6">
+                        <a href="javascrip: void(0);">
+                          <Card
+                            data-radius="none"
+                            style={{
+                              backgroundImage:
+                                "url(" +
+                                require("assets/img/location/daegu-seomunmarket-3.jpg") +
+                                ")"
+                            }}
+                          />
+                        </a>
+                      </Col>
+                    </Row>
+                    <p />
+                    
+                    
+                  </div>
+                  <br />
+                  
+                  <hr />
+
+                </Col>
+              </Row>
+
+
             </Container>
           </div>
         </div>

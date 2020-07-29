@@ -66,16 +66,16 @@ function SectionSections() {
               </Row>
               <Row>
                 <Col md="3">
-                <a href = "/blog-post-busan"><img
+                <a href = "/blog-post-gangwon"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Gangwon.PNG")}
                   />
                   </a>
                 </Col>
                 <Col md="3">
-                <a href = "/blog-post-gwangju"><img
+                <a href = "/blog-post-jeonju"><img
                     alt="..."
-                    src={require("assets/img/presentation-page/screenshots/Gwangju.PNG")}
+                    src={require("assets/img/presentation-page/screenshots/Jeonju.PNG")}
                   />
                   </a>
                 </Col>
@@ -101,22 +101,28 @@ function SectionSections() {
                   </a>
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-gyeonggi"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Gyeonggi.PNG")}
                   />
+                  </a>
+                
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-gyeongsang"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Gyeongsang.PNG")}
                   />
+                  </a>
+                  
                 </Col>
                 <Col md="3">
-                  <img
+                <a href = "/blog-post-jeonla"><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Jeonla.PNG")}
                   />
+                  </a>
+                  
                 </Col>
               </Row>
               {/* <Row>
