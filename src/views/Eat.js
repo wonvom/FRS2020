@@ -14,7 +14,7 @@ import {
 
 // core components
 import InfoNavbar from "components/Navbars/InfoNavbar.js";
-import ThemeHeader from "components/Headers/ThemeHeader.js";
+import EatHeader from "components/Headers/EatHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
@@ -30,7 +30,7 @@ function BlogPosts() {
   return (
     <>
       <InfoNavbar />
-      <ThemeHeader />
+      <EatHeader />
       <div className="wrapper">
         <div className="main">
           <div className="section section-white">
@@ -48,14 +48,14 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="http://api.visitkorea.or.kr/search/searchDetail.do" onClick={e => e.preventDefault()}>
+                        <a href="http://tosokchon.com" onClick={e => e.preventDefault()}>
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gyeongbokgung.jpeg")}
+                            src={require("assets/img/eat/TosokchonSamgyetang.jpg")}
                           />
                         </a>
-                        <p className="image-thumb">Photo by Visit Seoul</p>
+                        <p className="image-thumb">Photo by Menupan.com</p>
                       </div>
                       <CardBody>
                         <div className="card-category">
@@ -65,17 +65,16 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                            Gyeongbokgung Palace
+                            Tosokchon Samgyetang
                           </CardTitle>
                         </a>
-                        <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
+                        <h6 className="title-uppercase">5, Jahamun-ro 5-gil, Jongno-gu, Seoul</h6>
                         <div className="card-description">
                           <p>
-                            - Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
-                            when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace. 
-                            Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. 
-                            The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). 
-                            However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
+                            - Located near Gyeongbokgung Station, the restaurant was also frequented by late President Roh Moo-hyun. 
+                            It produces their ingredients like Tojongdak (Korean chicken), 4-years ginseng, chest nut, jujube, garlics, ginger, adlay, perilla seeds, pumpkin seeds, sunflower seed, nuts, pine nut, black sesame, and etc.
+                            Even though one has to wait to enter during lunch time, do not worry about long wait as the restaurant is spacious. 
+                            Besides Samgyetang (ginseng chicken soup), it serves Ogol-samgyetang, otdak, pajeon (green onion pancake), Rotisserie chicken, and other menus.
                           </p>
                         </div>
                       </CardBody>
@@ -98,9 +97,9 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gwanghwamun.jpg")}
+                            src={require("assets/img/eat/MyeongdongKyoja.jpg")}
                           />
-                          <p className="image-thumb">Photo by Visit Seoul</p>
+                          <p className="image-thumb">Photo by Siksin.com</p>
                         </a>
                       </div>
                       <CardBody>
@@ -111,18 +110,16 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                          Gwanghwamun Gate
+                            Myeongdong Kyoja
                           </CardTitle>
-                          <h6 className="title-uppercase">161, Sajik-ro, Jongno-gu, Seoul</h6>
+                          <h6 className="title-uppercase">29, Myeongdong 10-gil, Jung-gu, Seoul (Myeong-dong 2-ga)</h6>
                         </a>
                         <div className="card-description">
                           <p>
-                          Built in 1395 under the reign of King Taejo, the first king of the Joseon dynasty, 
-                          Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. It is also the main gate of the palace, 
-                          therefore larger and fancier in comparison to the other gates. Gwanghwamun Gate consists of three arched gates; 
-                          the center gate was used by the king, while the other two were used by the crown prince and royal officials. 
-                          The tall granite walls of the gate serve as a platform for the wooden gate tower that watches over the city. 
-                          The gate has a sign with its name written at the top center of the gate tower. 
+                            Myeongdong Kyoja is a noodle restaurant located near Myeongdong Cathedral that has been in business for about 40 years. 
+                            The restaurant is known for their knife-cut, handmade kalguksu (noodle soup) which is its main menu item. 
+                            These lovingly prepared noodles are served in a deep and flavorful broth with meat and vegetables, making for a delicious meal. 
+                            Also popular are the mandu (dumplings), bibim guksu (spicy noodles), and kongguksu (noodles in cold soybean soup). 
                           </p>
                         </div>
                       </CardBody>
@@ -140,13 +137,14 @@ function BlogPosts() {
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
                     <div className="card-image">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="https://hellosunshineseoul.wordpress.com/2016/01/06/back-in-seoul-passion-5-itaewon/" 
+                      onClick={e => e.preventDefault()}>
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={require("assets/img/culture/BukchonHanokVillage.jpg")}
+                          src={require("assets/img/eat/Passion5.jpeg")}
                         />
-                        <p className="image-thumb">Photo by Visit Seoul</p>
+                        <p className="image-thumb">Photo by Hello Sunshine</p>
                       </a>
                     </div>
                     <CardBody>
@@ -157,16 +155,19 @@ function BlogPosts() {
                       </div>
                       <a href="javascrip: void(0);">
                         <CardTitle tag="h3">
-                          BukchonHanokVillage
+                          Passion 5 
                         </CardTitle>
-                        <h6 className="title-uppercase">37, Gyedong-gil, Jongno-gu, Seoul</h6>
+                        <h6 className="title-uppercase">272, Itaewon-ro, Yongsan-gu, Seoul</h6>
                       </a>
                       <div className="card-description">
                         <p>
-                        Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. 
-                        The name Bukchon, which literally translates to "northern village," came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. 
-                        Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. 
-                        As Bukchon Hanok Village is an actual neighborhood with people's homes, visitors are advised to be respectful at all times while looking around.
+                        Passion 5 is located near Hangangjin Station in Hannam-dong and is a premium dessert café and gallery launched by SPC Group. 
+                        The Passion 5 bakery brings a whole new culture of after-dining, providing customers with a diverse selection of delicious desserts including hand-made chocolates and puddings. 
+                        Visitors can enjoy their treats in a gallery atmosphere. 
+
+                        The name Passion 5 comes from the combining of five elements: the bakery, patisserie, chocolates and café. 
+                        The final element is the passion of those who create the desserts. The desserts are exquisitely designed and each element has its own unique atmosphere. 
+                        In addition to the wonderful items from the bakery, there are usually 300 to 400 dessert items to choose from including cakes, puddings and chocolates.
                         </p>
                       </div>
                     </CardBody>
