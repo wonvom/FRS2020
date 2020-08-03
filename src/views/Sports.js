@@ -52,7 +52,7 @@ function BlogPosts() {
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gyeongbokgung.jpeg")}
+                            src={require("assets/img/sports/Worldcup.jpeg")}
                           />
                         </a>
                         <p className="image-thumb">Photo by Visit Seoul</p>
@@ -65,17 +65,20 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                            Gyeongbokgung Palace
+                            Seoul World Cup Stadium
                           </CardTitle>
                         </a>
-                        <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
+                        <h6 className="title-uppercase">240, World cup-ro, Mapo-gu, Seoul  </h6>
                         <div className="card-description">
                           <p>
-                            - Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
-                            when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace. 
-                            Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. 
-                            The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). 
-                            However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
+                            - Seoul World Cup Stadium is shaped like a traditional Korean kite, and if seen from above, it looks as if a rectangular shield is being flown like a kite. 
+                            The shape of the stadium represents flight towards victory, and it combines the hopes of the World Cup games and spirit and traditional culture of the Korean people. 
+                            The very first impression the stadium gives is that it is very large. It provides over 60,000 seats, and in fact, in terms of area and facility, it is the best in Asia. 
+                            There are also large screens on either side of the stadium for people wanting close-up view of the games. Near the stadium there are a variety of parks, ideal for leisurely walks. 
+                            There are also five theme parks around the stadium – Peace Park, Nanjicheon Park, and Noeul Park among them. Thick groves of trees, modern street lights, and magnificent fountains make the parks ideal walking areas in the morning and evening. 
+                            In the evenings, many in-line skaters come and hang out as well. The stadium is open from 9 to 5 pm, and many interpreters are always on duty. 
+                            After the successful completion of the 2002 FIFA World Cup Korea/Japan, the Seoul World Cup Stadium has been leading the campaign to promote soccer culture, and is also a frontrunner in hosting various cultural events. 
+                            Located within the facilities are also places to shop and enjoy cultural activities- providing all visitors with much to see and do. In Seoul, it is rising as a popular tourist spot.
                           </p>
                         </div>
                       </CardBody>
@@ -94,13 +97,13 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="www.oakvalley.co.kr" onClick={e => e.preventDefault()}>
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gwanghwamun.jpg")}
+                            src={require("assets/img/sports/OakValleySnowPark.jpg")}
                           />
-                          <p className="image-thumb">Photo by Visit Seoul</p>
+                          <p className="image-thumb">Photo by Oak Valley</p>
                         </a>
                       </div>
                       <CardBody>
@@ -111,18 +114,16 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                          Gwanghwamun Gate
+                          Oak Valley Snow Park
                           </CardTitle>
-                          <h6 className="title-uppercase">161, Sajik-ro, Jongno-gu, Seoul</h6>
+                          <h6 className="title-uppercase">58, Oak valley 2-gil, Wonju-si, Gangwon-do </h6>
                         </a>
                         <div className="card-description">
                           <p>
-                          Built in 1395 under the reign of King Taejo, the first king of the Joseon dynasty, 
-                          Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. It is also the main gate of the palace, 
-                          therefore larger and fancier in comparison to the other gates. Gwanghwamun Gate consists of three arched gates; 
-                          the center gate was used by the king, while the other two were used by the crown prince and royal officials. 
-                          The tall granite walls of the gate serve as a platform for the wooden gate tower that watches over the city. 
-                          The gate has a sign with its name written at the top center of the gate tower. 
+                          Surrounded by a strikingly beautiful environment, the 1.4 million square meters Oak Valley Snow Park contains two beginner, five intermediate, and two advanced level courses. 
+                          Each course presents a different theme, and the slopes have varying inclines. 
+                          Oak Valley is a first-class resort complex providing condo facilities, a golf course, and various other subsidiary facilities. 
+                          Oak Valley also offers special children’s facilities making it the perfect ski resort for the whole family. 
                           </p>
                         </div>
                       </CardBody>
@@ -140,13 +141,13 @@ function BlogPosts() {
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
                     <div className="card-image">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="jungmungolf.visitkorea.or.kr" onClick={e => e.preventDefault()}>
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={require("assets/img/culture/BukchonHanokVillage.jpg")}
+                          src={require("assets/img/sports/JungmunGolfClub.png")}
                         />
-                        <p className="image-thumb">Photo by Visit Seoul</p>
+                        <p className="image-thumb">Photo by 072 GOLF</p>
                       </a>
                     </div>
                     <CardBody>
@@ -157,17 +158,25 @@ function BlogPosts() {
                       </div>
                       <a href="javascrip: void(0);">
                         <CardTitle tag="h3">
-                          BukchonHanokVillage
+                          Jungmun Golf Club
                         </CardTitle>
-                        <h6 className="title-uppercase">37, Gyedong-gil, Jongno-gu, Seoul</h6>
+                        <h6 className="title-uppercase">60, Jungmungwangwang-ro 72beon-gil, Seogwipo-si, Jeju-do</h6>
                       </a>
                       <div className="card-description">
                         <p>
-                        Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. 
-                        The name Bukchon, which literally translates to "northern village," came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. 
-                        Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. 
-                        As Bukchon Hanok Village is an actual neighborhood with people's homes, visitors are advised to be respectful at all times while looking around.
+                        Opened in 1981, Jungmun Golf Club is located along the seaside cliffs of Jeju Island. 
+                        It is open all year long, featuring a 18-hole golf course and a country club set up along a coastal area on Jeju Island. 
+                        Picturesque scenery and various tourist amenities add to the charm of this golf club.
                         </p>
+                        <p>- Korea's sole coastal golf course, embracing the valley as well as breathtaking views</p>
+                        <p>- The course is filled with the western grass and a peaceful atmosphere</p>
+                        <p>- Jeju-grown foliage and subtropical plants</p>
+                        <p>- The longest course distance in Korea (B.T. 6,820 m)</p>
+                        <p>- Open for both members and non-member tourists</p>
+                        <p>- Tee-up on in-course and out-course at once</p>
+                        <p>- Reservation required; international tourists are given priority</p>
+                        <p>- Holes 8 and 11 have an optical illusion (uphill and downhill are reversed)</p>
+                        <p>- Located within 5-min walking distance from the nearest hotel</p>
                       </div>
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
