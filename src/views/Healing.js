@@ -48,11 +48,11 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="http://api.visitkorea.or.kr/search/searchDetail.do" onClick={e => e.preventDefault()}>
+                        <a href="www.junggu.seoul.kr" onClick={e => e.preventDefault()}>
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gyeongbokgung.jpeg")}
+                            src={require("assets/img/healing/SpecialTouristZone.jpg")}
                           />
                         </a>
                         <p className="image-thumb">Photo by Visit Seoul</p>
@@ -65,17 +65,21 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                            Gyeongbokgung Palace
+                            Myeong-dong, Namdaemun, Bukchang-dong, Da-dong and Mugyo-dong Special Tourist Zone
                           </CardTitle>
                         </a>
-                        <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
+                        <h6 className="title-uppercase">Address : 40, Sejong-daero, Jung-gu, Seoul  </h6>
                         <div className="card-description">
                           <p>
-                            - Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
-                            when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace. 
-                            Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. 
-                            The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). 
-                            However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
+                            - Myeong-dong, Namdaemun, Bukchang-dong and Da-dong are widely known among international visitors as hot spots for shopping and food. 
+
+                              Myeong-dong is a popular destination for shopping, culture, arts and fashion. Major shopping malls such as Lotte Department Store, Shinsegae Department Store, Myeong-dong Migliore and Samik Fashion Town are located here. 
+                              Shoppers can find a variety of products here from high-end items to relatively inexpensive clothes. There’s also no shortage of street food, traditional restaurants, coffee shops and fancy cafes. 
+
+                              Namdaemun Market is the biggest traditional market in Korea. Visitors can purchase souvenirs and local produce at an affordable price in the shopping complex crowded with stores and street stalls. 
+                              The market sells a variety of clothes, kitchenware, toys, accessories, food, flowers and imported goods. 
+
+                              Bukchang-dong and Sogong-dong have high-end accommodations including Lotte Hotel Seoul and Westin Chosun Seoul, duty-free shops, and restaurants serving traditional dishes. .
                           </p>
                         </div>
                       </CardBody>
@@ -94,11 +98,11 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="parks.seoul.go.kr " onClick={e => e.preventDefault()}>
                           <img
                             alt="..."
                             className="img img-raised"
-                            src={require("assets/img/culture/Gwanghwamun.jpg")}
+                            src={require("assets/img/healing/TapgolPark.jpg")}
                           />
                           <p className="image-thumb">Photo by Visit Seoul</p>
                         </a>
@@ -111,18 +115,19 @@ function BlogPosts() {
                         </div>
                         <a href="javascrip: void(0);">
                           <CardTitle tag="h3">
-                          Gwanghwamun Gate
+                            Tapgol Park
                           </CardTitle>
-                          <h6 className="title-uppercase">161, Sajik-ro, Jongno-gu, Seoul</h6>
+                          <h6 className="title-uppercase">address : 99, Jong-ro, Jongno-gu, Seoul </h6>
                         </a>
                         <div className="card-description">
                           <p>
-                          Built in 1395 under the reign of King Taejo, the first king of the Joseon dynasty, 
-                          Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. It is also the main gate of the palace, 
-                          therefore larger and fancier in comparison to the other gates. Gwanghwamun Gate consists of three arched gates; 
-                          the center gate was used by the king, while the other two were used by the crown prince and royal officials. 
-                          The tall granite walls of the gate serve as a platform for the wooden gate tower that watches over the city. 
-                          The gate has a sign with its name written at the top center of the gate tower. 
+                          Tapgol Park is the first modern park to be built in Seoul, and it was originally built as a temple site to house Wongaksa Temple during the 13th year of the Joseon Dynasty.
+                          
+                          However, the temple was destroyed under the reign of Yeonsangun and remained closed until 1897, when the provincial advisor, Englishman named John Mcleavy Brown, made a proposal to renovate the site into a park. 
+                          
+                          The park contains several national treasures, including Wongaksaji Sipcheungseoktap Pagoda (Ten-story Stone Pagoda of Wongaksa Temple Site) and Wongaksabi Stele, and Palgakjeong Pavilion, where the Independence Proclamation was first declared; the independence movement relief plate; and the statue of Son Byeong-hee. 
+                          
+                          The park is of great historical value and national spirit as it was the starting point of the March 1 Independence Movement.
                           </p>
                         </div>
                       </CardBody>
@@ -140,11 +145,11 @@ function BlogPosts() {
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
                     <div className="card-image">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="www.namisum.com " onClick={e => e.preventDefault()}>
                         <img
                           alt="..."
                           className="img img-raised"
-                          src={require("assets/img/culture/BukchonHanokVillage.jpg")}
+                          src={require("assets/img/healing/NamiseomIsland.jpg")}
                         />
                         <p className="image-thumb">Photo by Visit Seoul</p>
                       </a>
@@ -157,16 +162,19 @@ function BlogPosts() {
                       </div>
                       <a href="javascrip: void(0);">
                         <CardTitle tag="h3">
-                          BukchonHanokVillage
+                          Namiseom Island
                         </CardTitle>
-                        <h6 className="title-uppercase">37, Gyedong-gil, Jongno-gu, Seoul</h6>
+                        <h6 className="title-uppercase">address : 1, Namiseom-gil, Chuncheon-si, Gangwon-do</h6>
                       </a>
                       <div className="card-description">
                         <p>
-                        Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. 
-                        The name Bukchon, which literally translates to "northern village," came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. 
-                        Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. 
-                        As Bukchon Hanok Village is an actual neighborhood with people's homes, visitors are advised to be respectful at all times while looking around.
+                        Namiseom Island was formed as a result of the construction of Cheongpyeong Dam. It is a half moon-shaped isle, and on it is the grave of General Nami, who led a great victory against the rebels in the 13th year of the 7th king of the Joseon dynasty, King Sejo (r. 1455-1468). 
+
+                        Namiseom Island is 63 kilometers away from Seoul in the direction of Chuncheon, and is famous for its beautiful tree lined roads. The island is 30 minutes away from Chuncheon and an hour away from the suburbs of Seoul. Since it is not far from Seoul, many couples and families come to visit.
+
+                        A special feature of Namiseom Island is that there are no telephone poles. This is because all electric wires were built underground to keep the natural feeling of the landscape. The island is 553,560 square yards with chestnut trees and poplar trees throughout. 
+
+                        In the middle of the isle, there is a grass field about 316,320 square yards. It features education and training facilities and camping sites. The island also has a swimming pool and water sports facilities for motorboats and water-skiing, as well as a theme park with a merry-go-round, shooting range, and roller skating rink. Lodging facilities such as resort villas and bungalows are available for visitors to stay on the island.
                         </p>
                       </div>
                     </CardBody>

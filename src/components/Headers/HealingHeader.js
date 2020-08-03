@@ -35,9 +35,9 @@ function BlogPostHeader() {
         <div className="filter" />
         <div className="content-center">
           <div className="motto">
-            <h2 className="title-uppercase text-center">Culture is the arts </h2>
-            <h2 className="title-uppercase text-center">elevated to a set of beliefs</h2>
-            <h3 className="text-center">- Thomas Wolfe -</h3>
+            <h2 className="title-uppercase text-center">The whole life of man </h2>
+            <h2 className="title-uppercase text-center">is but a point of time; let us enjoy it</h2>
+            <h3 className="text-center">- Mark Twain -</h3>
             <br />
             <br />
             <br />
