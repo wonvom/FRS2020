@@ -71,8 +71,11 @@ function BlogPosts() {
                         <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
                         <div className="card-description">
                           <p>
-                            - Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
+                            Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
                             when compared to the neighboring palaces of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace) Palace. 
+                          </p>
+                          <br />
+                          <p>
                             Gyeongbokgung Palace is arguably the most beautiful, and remains the largest of all five palaces. 
                             The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). 
                             However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
@@ -118,9 +121,17 @@ function BlogPosts() {
                         <div className="card-description">
                           <p>
                           Built in 1395 under the reign of King Taejo, the first king of the Joseon dynasty, 
-                          Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. It is also the main gate of the palace, 
-                          therefore larger and fancier in comparison to the other gates. Gwanghwamun Gate consists of three arched gates; 
+                          Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. 
+                          </p>
+                          <br />
+                          <p>
+                          It is also the main gate of the palace, 
+                          therefore larger and fancier in comparison to the other gates. 
+                          Gwanghwamun Gate consists of three arched gates; 
                           the center gate was used by the king, while the other two were used by the crown prince and royal officials. 
+                          </p>
+                          <br />
+                          <p>
                           The tall granite walls of the gate serve as a platform for the wooden gate tower that watches over the city. 
                           The gate has a sign with its name written at the top center of the gate tower. 
                           </p>
@@ -164,7 +175,13 @@ function BlogPosts() {
                       <div className="card-description">
                         <p>
                         Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. 
+                        </p>
+                        <br />
+                        <p>
                         The name Bukchon, which literally translates to "northern village," came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. 
+                        </p>
+                        <br />
+                        <p>
                         Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. 
                         As Bukchon Hanok Village is an actual neighborhood with people's homes, visitors are advised to be respectful at all times while looking around.
                         </p>
