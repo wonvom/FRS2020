@@ -113,7 +113,7 @@ function BlogPosts() {
                           <CardTitle tag="h3">
                           Gwanghwamun Gate
                           </CardTitle>
-                          <h6 className="title-uppercase">161, Sajik-ro, Jongno-gu, Seoul</h6>
+                          <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul</h6>
                         </a>
                         <div className="card-description">
                           <p>
@@ -159,7 +159,7 @@ function BlogPosts() {
                         <CardTitle tag="h3">
                           BukchonHanokVillage
                         </CardTitle>
-                        <h6 className="title-uppercase">37, Gyedong-gil, Jongno-gu, Seoul</h6>
+                        <h6 className="title-uppercase">Address : 37, Gyedong-gil, Jongno-gu, Seoul</h6>
                       </a>
                       <div className="card-description">
                         <p>

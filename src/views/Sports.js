@@ -68,7 +68,7 @@ function BlogPosts() {
                             Seoul World Cup Stadium
                           </CardTitle>
                         </a>
-                        <h6 className="title-uppercase">240, World cup-ro, Mapo-gu, Seoul  </h6>
+                        <h6 className="title-uppercase">Address : 240, World cup-ro, Mapo-gu, Seoul  </h6>
                         <div className="card-description">
                           <p>
                             - Seoul World Cup Stadium is shaped like a traditional Korean kite, and if seen from above, it looks as if a rectangular shield is being flown like a kite. 
@@ -116,7 +116,7 @@ function BlogPosts() {
                           <CardTitle tag="h3">
                           Oak Valley Snow Park
                           </CardTitle>
-                          <h6 className="title-uppercase">58, Oak valley 2-gil, Wonju-si, Gangwon-do </h6>
+                          <h6 className="title-uppercase">Address : 58, Oak valley 2-gil, Wonju-si, Gangwon-do </h6>
                         </a>
                         <div className="card-description">
                           <p>
@@ -160,7 +160,7 @@ function BlogPosts() {
                         <CardTitle tag="h3">
                           Jungmun Golf Club
                         </CardTitle>
-                        <h6 className="title-uppercase">60, Jungmungwangwang-ro 72beon-gil, Seogwipo-si, Jeju-do</h6>
+                        <h6 className="title-uppercase">Address : 60, Jungmungwangwang-ro 72beon-gil, Seogwipo-si, Jeju-do</h6>
                       </a>
                       <div className="card-description">
                         <p>

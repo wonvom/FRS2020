@@ -68,7 +68,7 @@ function BlogPosts() {
                             Tosokchon Samgyetang
                           </CardTitle>
                         </a>
-                        <h6 className="title-uppercase">5, Jahamun-ro 5-gil, Jongno-gu, Seoul</h6>
+                        <h6 className="title-uppercase">Address : 5, Jahamun-ro 5-gil, Jongno-gu, Seoul</h6>
                         <div className="card-description">
                           <p>
                             - Located near Gyeongbokgung Station, the restaurant was also frequented by late President Roh Moo-hyun. 
@@ -112,7 +112,7 @@ function BlogPosts() {
                           <CardTitle tag="h3">
                             Myeongdong Kyoja
                           </CardTitle>
-                          <h6 className="title-uppercase">29, Myeongdong 10-gil, Jung-gu, Seoul (Myeong-dong 2-ga)</h6>
+                          <h6 className="title-uppercase">Address : 29, Myeongdong 10-gil, Jung-gu, Seoul (Myeong-dong 2-ga)</h6>
                         </a>
                         <div className="card-description">
                           <p>
@@ -157,7 +157,7 @@ function BlogPosts() {
                         <CardTitle tag="h3">
                           Passion 5 
                         </CardTitle>
-                        <h6 className="title-uppercase">272, Itaewon-ro, Yongsan-gu, Seoul</h6>
+                        <h6 className="title-uppercase">Address : 272, Itaewon-ro, Yongsan-gu, Seoul</h6>
                       </a>
                       <div className="card-description">
                         <p>
