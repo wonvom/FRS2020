@@ -71,9 +71,15 @@ function BlogPosts() {
                         <h6 className="title-uppercase">Address : 5, Jahamun-ro 5-gil, Jongno-gu, Seoul</h6>
                         <div className="card-description">
                           <p>
-                            - Located near Gyeongbokgung Station, the restaurant was also frequented by late President Roh Moo-hyun. 
+                            Located near Gyeongbokgung Station, the restaurant was also frequented by late President Roh Moo-hyun.
+                          </p>
+                          <br />
+                          <p>
                             It produces their ingredients like Tojongdak (Korean chicken), 4-years ginseng, chest nut, jujube, garlics, ginger, adlay, perilla seeds, pumpkin seeds, sunflower seed, nuts, pine nut, black sesame, and etc.
-                            Even though one has to wait to enter during lunch time, do not worry about long wait as the restaurant is spacious. 
+                          </p>
+                          <br />
+                          <p>
+                            Even though one has to wait to enter during lunch time, do not worry about long wait as the restaurant is spacious.
                             Besides Samgyetang (ginseng chicken soup), it serves Ogol-samgyetang, otdak, pajeon (green onion pancake), Rotisserie chicken, and other menus.
                           </p>
                         </div>
@@ -117,7 +123,13 @@ function BlogPosts() {
                         <div className="card-description">
                           <p>
                             Myeongdong Kyoja is a noodle restaurant located near Myeongdong Cathedral that has been in business for about 40 years. 
+                          </p>
+                          <br />
+                          <p>
                             The restaurant is known for their knife-cut, handmade kalguksu (noodle soup) which is its main menu item. 
+                          </p>
+                          <br />
+                          <p>
                             These lovingly prepared noodles are served in a deep and flavorful broth with meat and vegetables, making for a delicious meal. 
                             Also popular are the mandu (dumplings), bibim guksu (spicy noodles), and kongguksu (noodles in cold soybean soup). 
                           </p>
@@ -161,12 +173,21 @@ function BlogPosts() {
                       </a>
                       <div className="card-description">
                         <p>
-                        Passion 5 is located near Hangangjin Station in Hannam-dong and is a premium dessert café and gallery launched by SPC Group. 
-                        The Passion 5 bakery brings a whole new culture of after-dining, providing customers with a diverse selection of delicious desserts including hand-made chocolates and puddings. 
-                        Visitors can enjoy their treats in a gallery atmosphere. 
-
+                          Passion 5 is located near Hangangjin Station in Hannam-dong and is a premium dessert café and gallery launched by SPC Group. 
+                        </p>
+                        <br />
+                        <p>
+                          The Passion 5 bakery brings a whole new culture of after-dining, providing customers with a diverse selection of delicious desserts including hand-made chocolates and puddings. 
+                          Visitors can enjoy their treats in a gallery atmosphere. 
+                        </p>
+                        <br />
+                        <p>
                         The name Passion 5 comes from the combining of five elements: the bakery, patisserie, chocolates and café. 
-                        The final element is the passion of those who create the desserts. The desserts are exquisitely designed and each element has its own unique atmosphere. 
+                        The final element is the passion of those who create the desserts. 
+                        </p>
+                        <br />
+                        <p>
+                        The desserts are exquisitely designed and each element has its own unique atmosphere. 
                         In addition to the wonderful items from the bakery, there are usually 300 to 400 dessert items to choose from including cakes, puddings and chocolates.
                         </p>
                       </div>
@@ -178,29 +199,7 @@ function BlogPosts() {
                 </Col>
               </div>
               <hr />
-              <Row>
-                <Col md="12">
-                  <div className="pull-left">
-                    <Button
-                      className="btn-link btn-move-left"
-                      color="default"
-                      size="sm"
-                    >
-                      <i className="fa fa-angle-left mr-1" />
-                      Older Posts
-                    </Button>
-                  </div>
-                  <div className="pull-right">
-                    <Button
-                      className="btn-link btn-move-right"
-                      color="default"
-                      size="sm"
-                    >
-                      Newer Posts <i className="fa fa-angle-right" />
-                    </Button>
-                  </div>
-                </Col>
-              </Row>
+                
             </Container>
           </div>
         </div>

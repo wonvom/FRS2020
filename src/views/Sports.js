@@ -71,12 +71,24 @@ function BlogPosts() {
                         <h6 className="title-uppercase">Address : 240, World cup-ro, Mapo-gu, Seoul  </h6>
                         <div className="card-description">
                           <p>
-                            - Seoul World Cup Stadium is shaped like a traditional Korean kite, and if seen from above, it looks as if a rectangular shield is being flown like a kite. 
+                            Seoul World Cup Stadium is shaped like a traditional Korean kite, and if seen from above, it looks as if a rectangular shield is being flown like a kite. 
                             The shape of the stadium represents flight towards victory, and it combines the hopes of the World Cup games and spirit and traditional culture of the Korean people. 
                             The very first impression the stadium gives is that it is very large. It provides over 60,000 seats, and in fact, in terms of area and facility, it is the best in Asia. 
-                            There are also large screens on either side of the stadium for people wanting close-up view of the games. Near the stadium there are a variety of parks, ideal for leisurely walks. 
-                            There are also five theme parks around the stadium – Peace Park, Nanjicheon Park, and Noeul Park among them. Thick groves of trees, modern street lights, and magnificent fountains make the parks ideal walking areas in the morning and evening. 
-                            In the evenings, many in-line skaters come and hang out as well. The stadium is open from 9 to 5 pm, and many interpreters are always on duty. 
+                          </p>
+                          <br />
+                          <p>
+                            There are also large screens on either side of the stadium for people wanting close-up view of the games. 
+                            Near the stadium there are a variety of parks, ideal for leisurely walks. 
+                            There are also five theme parks around the stadium – Peace Park, Nanjicheon Park, and Noeul Park among them. 
+                          </p>
+                          <br />
+                          <p>
+                            Thick groves of trees, modern street lights, and magnificent fountains make the parks ideal walking areas in the morning and evening. 
+                            In the evenings, many in-line skaters come and hang out as well. 
+                            The stadium is open from 9 to 5 pm, and many interpreters are always on duty. 
+                          </p>
+                          <br />
+                          <p>
                             After the successful completion of the 2002 FIFA World Cup Korea/Japan, the Seoul World Cup Stadium has been leading the campaign to promote soccer culture, and is also a frontrunner in hosting various cultural events. 
                             Located within the facilities are also places to shop and enjoy cultural activities- providing all visitors with much to see and do. In Seoul, it is rising as a popular tourist spot.
                           </p>
@@ -121,6 +133,9 @@ function BlogPosts() {
                         <div className="card-description">
                           <p>
                           Surrounded by a strikingly beautiful environment, the 1.4 million square meters Oak Valley Snow Park contains two beginner, five intermediate, and two advanced level courses. 
+                          </p>
+                          <br />
+                          <p>
                           Each course presents a different theme, and the slopes have varying inclines. 
                           Oak Valley is a first-class resort complex providing condo facilities, a golf course, and various other subsidiary facilities. 
                           Oak Valley also offers special children’s facilities making it the perfect ski resort for the whole family. 
@@ -168,6 +183,7 @@ function BlogPosts() {
                         It is open all year long, featuring a 18-hole golf course and a country club set up along a coastal area on Jeju Island. 
                         Picturesque scenery and various tourist amenities add to the charm of this golf club.
                         </p>
+                        <br />
                         <p>- Korea's sole coastal golf course, embracing the valley as well as breathtaking views</p>
                         <p>- The course is filled with the western grass and a peaceful atmosphere</p>
                         <p>- Jeju-grown foliage and subtropical plants</p>
@@ -186,29 +202,7 @@ function BlogPosts() {
                 </Col>
               </div>
               <hr />
-              <Row>
-                <Col md="12">
-                  <div className="pull-left">
-                    <Button
-                      className="btn-link btn-move-left"
-                      color="default"
-                      size="sm"
-                    >
-                      <i className="fa fa-angle-left mr-1" />
-                      Older Posts
-                    </Button>
-                  </div>
-                  <div className="pull-right">
-                    <Button
-                      className="btn-link btn-move-right"
-                      color="default"
-                      size="sm"
-                    >
-                      Newer Posts <i className="fa fa-angle-right" />
-                    </Button>
-                  </div>
-                </Col>
-              </Row>
+            
             </Container>
           </div>
         </div>

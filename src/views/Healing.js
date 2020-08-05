@@ -71,14 +71,20 @@ function BlogPosts() {
                         <h6 className="title-uppercase">Address : 40, Sejong-daero, Jung-gu, Seoul  </h6>
                         <div className="card-description">
                           <p>
-                            - Myeong-dong, Namdaemun, Bukchang-dong and Da-dong are widely known among international visitors as hot spots for shopping and food. 
-
+                          Myeong-dong, Namdaemun, Bukchang-dong and Da-dong are widely known among international visitors as hot spots for shopping and food. 
+                          </p>
+                          <br />
+                          <p>
                               Myeong-dong is a popular destination for shopping, culture, arts and fashion. Major shopping malls such as Lotte Department Store, Shinsegae Department Store, Myeong-dong Migliore and Samik Fashion Town are located here. 
                               Shoppers can find a variety of products here from high-end items to relatively inexpensive clothes. There’s also no shortage of street food, traditional restaurants, coffee shops and fancy cafes. 
-
+                          </p>
+                          <br />
+                          <p>
                               Namdaemun Market is the biggest traditional market in Korea. Visitors can purchase souvenirs and local produce at an affordable price in the shopping complex crowded with stores and street stalls. 
                               The market sells a variety of clothes, kitchenware, toys, accessories, food, flowers and imported goods. 
-
+                          </p>
+                          <br />
+                          <p>
                               Bukchang-dong and Sogong-dong have high-end accommodations including Lotte Hotel Seoul and Westin Chosun Seoul, duty-free shops, and restaurants serving traditional dishes. .
                           </p>
                         </div>
@@ -122,11 +128,17 @@ function BlogPosts() {
                         <div className="card-description">
                           <p>
                           Tapgol Park is the first modern park to be built in Seoul, and it was originally built as a temple site to house Wongaksa Temple during the 13th year of the Joseon Dynasty.
-                          
+                          </p>
+                          <br />
+                          <p>
                           However, the temple was destroyed under the reign of Yeonsangun and remained closed until 1897, when the provincial advisor, Englishman named John Mcleavy Brown, made a proposal to renovate the site into a park. 
-                          
+                          </p>
+                          <br />
+                          <p>
                           The park contains several national treasures, including Wongaksaji Sipcheungseoktap Pagoda (Ten-story Stone Pagoda of Wongaksa Temple Site) and Wongaksabi Stele, and Palgakjeong Pavilion, where the Independence Proclamation was first declared; the independence movement relief plate; and the statue of Son Byeong-hee. 
-                          
+                          </p>
+                          <br />
+                          <p>
                           The park is of great historical value and national spirit as it was the starting point of the March 1 Independence Movement.
                           </p>
                         </div>
@@ -167,15 +179,32 @@ function BlogPosts() {
                         <h6 className="title-uppercase">address : 1, Namiseom-gil, Chuncheon-si, Gangwon-do</h6>
                       </a>
                       <div className="card-description">
-                        <p>
-                        Namiseom Island was formed as a result of the construction of Cheongpyeong Dam. It is a half moon-shaped isle, and on it is the grave of General Nami, who led a great victory against the rebels in the 13th year of the 7th king of the Joseon dynasty, King Sejo (r. 1455-1468). 
-
-                        Namiseom Island is 63 kilometers away from Seoul in the direction of Chuncheon, and is famous for its beautiful tree lined roads. The island is 30 minutes away from Chuncheon and an hour away from the suburbs of Seoul. Since it is not far from Seoul, many couples and families come to visit.
-
-                        A special feature of Namiseom Island is that there are no telephone poles. This is because all electric wires were built underground to keep the natural feeling of the landscape. The island is 553,560 square yards with chestnut trees and poplar trees throughout. 
-
-                        In the middle of the isle, there is a grass field about 316,320 square yards. It features education and training facilities and camping sites. The island also has a swimming pool and water sports facilities for motorboats and water-skiing, as well as a theme park with a merry-go-round, shooting range, and roller skating rink. Lodging facilities such as resort villas and bungalows are available for visitors to stay on the island.
-                        </p>
+                      <p>
+                      It is a half moon-shaped isle, and on it is the grave of General Nami, who led a 
+                      great victory against the rebels in the 13th year of the 7th king of the Joseon 
+                      dynasty, King Sejo (r. 1455-1468).
+                      </p>
+                      <br />
+                      <p>
+                      Namiseom Island is 63 kilometers away from Seoul in the direction of Chuncheon, and is 
+                      famous for its beautiful tree lined roads. The island is 30 minutes away from Chuncheon 
+                      and an hour away from the suburbs of Seoul. Since it is not far from Seoul, many couples 
+                      and families come to visit.
+                      </p>
+                      <br />
+                      <p>
+                      A special feature of Namiseom Island is that there are no telephone poles. This is because 
+                      all electric wires were built underground to keep the natural feeling of the landscape. 
+                      The island is 553,560 square yards with chestnut trees and poplar trees throughout.
+                      </p>
+                      <br />
+                      <p>
+                      In the middle of the isle, there is a grass field about 316,320 square yards. It features 
+                      education and training facilities and camping sites. The island also has a swimming pool 
+                      and water sports facilities for motorboats and water-skiing, as well as a theme park with 
+                      a merry-go-round, shooting range, and roller skating rink. Lodging facilities such as resort 
+                      villas and bungalows are available for visitors to stay on the island.   
+                      </p>
                       </div>
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
@@ -185,29 +214,7 @@ function BlogPosts() {
                 </Col>
               </div>
               <hr />
-              <Row>
-                <Col md="12">
-                  <div className="pull-left">
-                    <Button
-                      className="btn-link btn-move-left"
-                      color="default"
-                      size="sm"
-                    >
-                      <i className="fa fa-angle-left mr-1" />
-                      Older Posts
-                    </Button>
-                  </div>
-                  <div className="pull-right">
-                    <Button
-                      className="btn-link btn-move-right"
-                      color="default"
-                      size="sm"
-                    >
-                      Newer Posts <i className="fa fa-angle-right" />
-                    </Button>
-                  </div>
-                </Col>
-              </Row>
+              
             </Container>
           </div>
         </div>
