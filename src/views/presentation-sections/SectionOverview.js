@@ -19,6 +19,7 @@ function SectionOverview() {
               <div className="space-top" />
               <Row>
                 <Col sm="3">
+                  <a href = "/Culture">
                   <Card data-background="color" data-color="green">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -30,8 +31,10 @@ function SectionOverview() {
                       </p>
                     </CardBody>
                   </Card>
+                  </a>
                 </Col>
                 <Col sm="3">
+                  <a href = "/Sports">
                   <Card data-background="color" data-color="blue">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -44,8 +47,10 @@ function SectionOverview() {
                       </p>
                     </CardBody>
                   </Card>
+                  </a>
                 </Col>
                 <Col sm="3">
+                  <a href = "/Eat">
                   <Card data-background="color" data-color="purple">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -56,12 +61,13 @@ function SectionOverview() {
                       Enjoy a wide range of dishes, from traditional foods to 
                       fusion cuisine, a joint venture between the East and the West. 
                       It's no less than Michelin.
-                        
                       </p>
                     </CardBody>
                   </Card>
+                  </a>
                 </Col>
                 <Col sm="3">
+                  <a href = "/Healing">
                   <Card data-background="color" data-color="brown">
                     <CardBody className="text-center">
                       <div className="card-icon">
@@ -71,11 +77,10 @@ function SectionOverview() {
                       <p className="card-description">
                       Are you tired of the long trip? Hot springs, forest baths, etc. 
                       There are so many factors to relieve your fatigue.
-
-                      
                       </p>
                     </CardBody>
                   </Card>
+                  </a>
                 </Col>
               </Row>
             </Container>
