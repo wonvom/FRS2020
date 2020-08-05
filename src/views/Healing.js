@@ -214,29 +214,7 @@ function BlogPosts() {
                 </Col>
               </div>
               <hr />
-              <Row>
-                <Col md="12">
-                  <div className="pull-left">
-                    <Button
-                      className="btn-link btn-move-left"
-                      color="default"
-                      size="sm"
-                    >
-                      <i className="fa fa-angle-left mr-1" />
-                      Older Posts
-                    </Button>
-                  </div>
-                  <div className="pull-right">
-                    <Button
-                      className="btn-link btn-move-right"
-                      color="default"
-                      size="sm"
-                    >
-                      Newer Posts <i className="fa fa-angle-right" />
-                    </Button>
-                  </div>
-                </Col>
-              </Row>
+              
             </Container>
           </div>
         </div>
