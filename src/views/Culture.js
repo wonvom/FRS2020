@@ -48,7 +48,7 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="http://api.visitkorea.or.kr/search/searchDetail.do" onClick={e => e.preventDefault()}>
+                        <a href="http://www.royalpalace.go.kr/">
                           <img
                             alt="..."
                             className="img img-raised"
@@ -97,7 +97,7 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="http://www.royalpalace.go.kr/">
                           <img
                             alt="..."
                             className="img img-raised"
@@ -151,7 +151,7 @@ function BlogPosts() {
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
                     <div className="card-image">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="http://hanok.seoul.go.kr/front/index.do">
                         <img
                           alt="..."
                           className="img img-raised"
