@@ -48,7 +48,7 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="http://api.visitkorea.or.kr/search/searchDetail.do" onClick={e => e.preventDefault()}>
+                        <a href="https://www.sisul.or.kr/open_content/worldcup/">
                           <img
                             alt="..."
                             className="img img-raised"
@@ -109,7 +109,7 @@ function BlogPosts() {
                   <Col className="ml-auto mr-auto" md="8">
                     <Card className="card-blog card-plain text-center">
                       <div className="card-image">
-                        <a href="www.oakvalley.co.kr" onClick={e => e.preventDefault()}>
+                        <a href="http://www.oakvalley.co.kr/oak_new/index.asp" >
                           <img
                             alt="..."
                             className="img img-raised"
@@ -156,7 +156,7 @@ function BlogPosts() {
                 <Col className="ml-auto mr-auto" md="8">
                   <Card className="card-blog card-plain text-center">
                     <div className="card-image">
-                      <a href="jungmungolf.visitkorea.or.kr" onClick={e => e.preventDefault()}>
+                      <a href="http://jungmungolf.visitkorea.or.kr/j_golf/kor/gr_main.jsp">
                         <img
                           alt="..."
                           className="img img-raised"
