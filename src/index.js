@@ -33,7 +33,9 @@ import AboutUs from "views/examples/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPost_Seoul from "views/sections-sections/BlogPost_Seoul.js";
+import BlogPost_Seoul0 from "views/sections-sections/BlogPost_Seoul0.js";
 import BlogPost_Busan from "views/sections-sections/BlogPost_Busan.js";
+import BlogPost_Busan0 from "views/sections-sections/BlogPost_Busan0.js";
 import BlogPost_Daegu from "views/sections-sections/BlogPost_Daegu.js";
 import BlogPost_Daejeon from "views/sections-sections/BlogPost_Daejeon.js";
 import BlogPost_Gangwon from "views/sections-sections/BlogPost_Gangwon.js";
@@ -87,12 +89,18 @@ ReactDOM.render(
       <Route path="/blog-post-seoul"
        // eslint-disable-next-line
        render={props => <BlogPost_Seoul {...props} />} />
+      <Route path="/blog-post-seoul0"
+        // eslint-disable-next-line
+             render={props => <BlogPost_Seoul0 {...props} />} />
       <Route path="/blog-post-daejeon"
        // eslint-disable-next-line
        render={props => <BlogPost_Daejeon {...props} />} />
       <Route path="/blog-post-busan"
        // eslint-disable-next-line
        render={props => <BlogPost_Busan {...props} />} />
+      <Route path="/blog-post-busan0"
+        // eslint-disable-next-line
+             render={props => <BlogPost_Busan0 {...props} />} />
       <Route path="/blog-post-daegu"
        // eslint-disable-next-line
        render={props => <BlogPost_Daegu {...props} />} />

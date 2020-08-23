@@ -214,6 +214,9 @@ function RegisterPage({history}) {
                     )
                       localStorage.setItem('email',email);
                       localStorage.setItem('password',password);
+                      localStorage.setItem('nationality',nation);
+                      localStorage.setItem('sex',sex);
+                      localStorage.setItem('age',parseInt(age));
                       alert('축하합니다! 회원가입이 완료 됐습니다.');
                       history.push('/presentation');
                     }}>

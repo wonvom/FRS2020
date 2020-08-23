@@ -6,6 +6,16 @@ import {  Container, Row, Col } from "reactstrap"; // { Button } 버튼사용시
 // core components
 
 function SectionSections() {
+  const [nation,setNation] = React.useState('');
+  const [sex,setSex] = React.useState('');
+  const [age,setAge] = React.useState('');
+  
+  React.useEffect(()=>{
+    setNation(localStorage.getItem('nation'));
+    setSex(localStorage.getItem('sex'));
+    setAge(localStorage.getItem('age'));
+  },[]);
+  
   return (
     <>
       <div className="section section-sections section-gray">
@@ -36,14 +46,14 @@ function SectionSections() {
             <Container fluid>
               <Row>
                 <Col md="3">
-                  <a href = "/blog-post-seoul"><img
+                  <a href = {(age === '20') &&(nation === 'usa') && (sex === 'male') ? "/blog-post-seoul0" :"/blog-post-seoul"}><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Seoul.PNG")}
                   />
                   </a>
                 </Col>
                 <Col md="3">
-                  <a href = "/blog-post-busan"><img
+                  <a href = {(age === '40') &&(nation === 'en') && (sex === 'female') ? "/blog-post-busan0" :"/blog-post-busan"}><img
                     alt="..."
                     src={require("assets/img/presentation-page/screenshots/Busan.PNG")}
                   />
