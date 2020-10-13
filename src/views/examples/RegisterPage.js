@@ -47,7 +47,7 @@ function RegisterPage({history}) {
   const [nation, setNation] = React.useState('');
   const [sex, setSex] = React.useState('');
   const [password,setPassword] = React.useState('');
-  
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -197,7 +197,7 @@ function RegisterPage({history}) {
                     <Input placeholder="Confirm Password" type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
                     <Button block className="btn-round" color="default" onClick={()=>{
                       console.log(email,password,age,name,nation,sex)
-                      fetch("http://13.125.213.16:8080/join", {
+                      fetch("http://172.31.17.50:8080/join", {
                         method: "POST",
                         headers: {
                           "Content-Type": "application/json"

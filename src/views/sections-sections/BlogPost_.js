@@ -9,7 +9,39 @@ import BlogPostHeader from "components/Headers/BlogPostHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPost() {
+
+
+  const [activeTab, setActiveTab] = React.useState("1");
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+
+
+  const toggle = tab => {
+    if (activeTab !== tab) {
+      setActiveTab(tab);
+    }
+  };
+
   document.documentElement.classList.remove("nav-open");
+
+  React.useEffect(()=>{
+
+
+
+    fetch(`http://172.31.17.50:8080/tour/list/address?location=${localStorage.getItem('location')}`, {
+        method: "GET",
+
+        },
+      }
+    ).then(res => res.json()).then(res => {
+      setTourname(res.tourname);
+      setAddress(res.address);
+
+    })
+  },[])
+
+
+
   React.useEffect(() => {
     document.body.classList.add("blog-post");
     window.scrollTo(0, 0);
@@ -41,9 +73,13 @@ function BlogPost() {
                       Trending
                     </Badge>
                     <a href="javascrip: void(0);">
-                      <h3 className="title">
-                      Myeong-dong (명동)
-                      </h3>
+                    <div className="name">
+                      <h4 className="title text-center">
+                        {tourname} <br />
+                        <p></p>
+                        <p><small>{address}</small></p>
+                      </h4>
+                    </div>
                     </a>
                     <h6 className="title-uppercase">66, Eulji-ro, Jung-gu, Seoul</h6>
                   </div>
@@ -72,20 +108,20 @@ function BlogPost() {
                     <br />
                     <p>
                     The two main streets meet in the center of the block with one beginning
-                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other 
-                    from Lotte Department Store at Euljiro. Many brand name shops and department 
-                    stores line the streets and alleys. Common products for sale include clothes, 
-                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands 
-                    are sold in Myeong-dong. In addition, several major department stores have 
-                    branches here, including Lotte Department Store, Shinsegae Department Store, 
-                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry 
+                    from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other
+                    from Lotte Department Store at Euljiro. Many brand name shops and department
+                    stores line the streets and alleys. Common products for sale include clothes,
+                    shoes, and accessories. Unlike Namdaemun or Dongdaemun, many designer brands
+                    are sold in Myeong-dong. In addition, several major department stores have
+                    branches here, including Lotte Department Store, Shinsegae Department Store,
+                    Myeong-dong Migliore, Noon Square and M Plaza. The department stores carry
                     many premium labels and other fashionable goods at reasonable prices.
                     </p>
                     <br />
                     <p>
-                    Myeong-dong also has family restaurants, fast food, plus Korean, Western 
-                    and Japanese dining options. Many restaurants in Myeong-dong specialize 
-                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses 
+                    Myeong-dong also has family restaurants, fast food, plus Korean, Western
+                    and Japanese dining options. Many restaurants in Myeong-dong specialize
+                    in dongaseu (pork cutlet) and kalguksu (noodle soup). Other businesses
                     in the area include hair salons, banks and theaters.
                     </p>
                     <br />

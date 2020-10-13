@@ -19,7 +19,7 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 function LoginPage({history}) {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("login-page");
@@ -64,7 +64,7 @@ function LoginPage({history}) {
                       onChange={(e)=>{setPassword(e.target.value)}}
                     />
                     <Button block className="btn-round" color="danger" onClick={()=>{
-                      fetch("http://13.125.213.16:8080/login", {
+                      fetch("http://172.31.17.50:8080/login", {
                           method: "POST",
                           headers: {
                             "Content-Type": "application/json"
@@ -77,7 +77,7 @@ function LoginPage({history}) {
                       ).then(res=>res.json()).then(res => {
                         localStorage.setItem('email', email)
                         localStorage.setItem('password', password)
-  
+
                         localStorage.setItem('token',res.Authorization)
                       history.push('/')})
                     }}>
