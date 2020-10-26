@@ -313,7 +313,7 @@ function ColorNavbar({history}) {
                     localStorage.removeItem('email');
                     localStorage.removeItem('password');
                     localStorage.removeItem('token');
-  
+
                     history.push('/presentation');
                   }}
                   //href="https://www.google.com/" //회원가입 사이트 만들기 or 페이지 넘어가기

@@ -239,7 +239,7 @@ function AboutUs() {
                   </CardFooter> */}
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md="6">
                 <Card className="card-profile card-plain">
                 <CardBody>
                     <div className="card-avatar">
@@ -285,7 +285,7 @@ function AboutUs() {
                   </CardFooter> */}
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md="6">
                 <Card className="card-profile card-plain">
                 <CardBody>
                     <div className="card-avatar">
@@ -298,52 +298,6 @@ function AboutUs() {
                     </div>
                     <p className="card-description text-center">
                       Jeon Jaewoo
-                    </p>
-                    <p>
-                      Back-end developer
-                    </p>
-                  </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="linkedin"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon mr-1"
-                      color="dribbble"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon"
-                      color="pinterest"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fa fa-pinterest" />
-                    </Button>
-                  </CardFooter> */}
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                <CardBody>
-                    <div className="card-avatar">
-                      {/* <a href="#pablo" onClick={e => e.preventDefault()}> */}
-                        <img
-                          alt="..."
-                          src={require("assets/img/faces/jeongjae.jpg")}
-                        />
-                      {/* </a> */}
-                    </div>
-                    <p className="card-description text-center">
-                      Chee Jeong Jae
                     </p>
                     <p>
                       Back-end developer
