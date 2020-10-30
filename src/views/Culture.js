@@ -18,7 +18,51 @@ import CultureHeader from "components/Headers/CultureHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
+  const [ss, setSs] = React.useState('');
+  const [activeTab, setActiveTab] = React.useState("1");
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [summery, setSummery] = React.useState('');
+  const [tourname1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+  const [summery1, setSummery1] = React.useState('');
+  const [tourname2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+  const [summery2, setSummery2] = React.useState('');
+
+  const toggle = tab => {
+    if (activeTab !== tab){
+      setActiveTab(tab);
+    }
+  }
+
   document.documentElement.classList.remove("nav-open");
+
+  React.useEffect(()=>{
+
+    fetch('http://172.31.17.50:8080/', {
+      method: "GET",
+      headers: {
+        Authorization: null
+      },
+    }
+    ).then(res => res.json()).then(res =>{
+      setSs(res);
+
+      setTourname(res._embedded.tupleBackedMapList[0].tourName);
+      setAddress(res._embedded.tupleBackedMapList[0].address);
+      setSummery(res._embedded.tupleBackedMapList[0].summery);
+
+      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+      setAddress1(res._embedded.tupleBackedMapList[1].address);
+      setSummery1(res._embedded.tupleBackedMapList[1].summery);
+
+      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+      setAddress2(res._embedded.tupleBackedMapList[2].address);
+      setSummery2(res._embedded.tupleBackedMapList[2].summery);
+    })
+  }, []);
+
   React.useEffect(() => {
     document.body.classList.add("blog-posts");
     window.scrollTo(0, 0);
@@ -43,6 +87,7 @@ function BlogPosts() {
                   </h3>
                 </Col>
               </Row>
+
               <div className="article">
                 <Row>
                   <Col className="ml-auto mr-auto" md="8">
@@ -64,11 +109,16 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
-                          <CardTitle tag="h3">
-                            Gyeongbokgung Palace
-                          </CardTitle>
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname} <br/>
+                              <p></p>
+                              <p><small>{address}</small></p>
+                            </h4>
+                          </div>
                         </a>
-                        <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
+                        {summery}
+                        {/*<h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul </h6>
                         <div className="card-description">
                           <p>
                             Built in 1395, Gyeongbokgung Palace is also commonly referred to as the Northern Palace because its location is furthest north 
@@ -80,7 +130,8 @@ function BlogPosts() {
                             The premises were once destroyed by fire during the Imjin War (Japanese Invasions, 1592-1598). 
                             However, all of the palace buildings were later restored under the leadership of Heungseondaewongun during the reign of King Gojong (1852-1919).
                           </p>
-                        </div>
+                        </div> */}
+                        <p></p>
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -113,12 +164,21 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
-                          <CardTitle tag="h3">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname1}
+                              <p></p>
+                              <p><small>{address1}</small></p>
+                            </h4>
+                          </div>
+                          {/* <CardTitle tag="h3">
                           Gwanghwamun Gate
-                          </CardTitle>
-                          <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul</h6>
+                          </CardTitle> */}
+                          {/* <h6 className="title-uppercase">Address : 161, Sajik-ro, Jongno-gu, Seoul</h6> */}
                         </a>
-                        <div className="card-description">
+                        {summery1}
+                        <p></p>
+                        {/* <div className="card-description">
                           <p>
                           Built in 1395 under the reign of King Taejo, the first king of the Joseon dynasty, 
                           Gwanghwamun Gate is the southern gate of Gyeongbokgung Palace. 
@@ -135,7 +195,7 @@ function BlogPosts() {
                           The tall granite walls of the gate serve as a platform for the wooden gate tower that watches over the city. 
                           The gate has a sign with its name written at the top center of the gate tower. 
                           </p>
-                        </div>
+                        </div> */}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -167,12 +227,21 @@ function BlogPosts() {
                         </Badge>
                       </div>
                       <a href="javascrip: void(0);">
-                        <CardTitle tag="h3">
+                        <div className="name">
+                          <h4 className="title text-center">
+                            {tourname2}
+                            <p></p>
+                            <p><small>{address2}</small></p>
+                          </h4>
+                        </div>
+                        {/* <CardTitle tag="h3">
                           BukchonHanokVillage
-                        </CardTitle>
-                        <h6 className="title-uppercase">Address : 37, Gyedong-gil, Jongno-gu, Seoul</h6>
+                        </CardTitle> */}
+                        {/* <h6 className="title-uppercase">Address : 37, Gyedong-gil, Jongno-gu, Seoul</h6> */}
                       </a>
-                      <div className="card-description">
+                      {summery2}
+                      <p></p>
+                      {/* <div className="card-description">
                         <p>
                         Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. 
                         </p>
@@ -185,7 +254,7 @@ function BlogPosts() {
                         Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. 
                         As Bukchon Hanok Village is an actual neighborhood with people's homes, visitors are advised to be respectful at all times while looking around.
                         </p>
-                      </div>
+                      </div> */}
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
                       Read more
