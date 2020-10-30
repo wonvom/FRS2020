@@ -30,19 +30,19 @@ function ProfilePage() {
   const [sex, setSex] = React.useState('');
   const [token, setToken] = React.useState('');
   const [email, setEmail] = React.useState('');
-  
+
   const toggle = tab => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }
   };
-  
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(()=>{
     setToken(localStorage.getItem('token'));
     setEmail(localStorage.getItem('email'));
-  
-    fetch(`http://13.125.213.16:8080/users/${localStorage.getItem('email')}`, {
+
+    fetch(`http://172.31.17.50:8080/users/${localStorage.getItem('email')}`, {
         method: "GET",
         headers: {
           Authorization : localStorage.getItem('token')
@@ -50,13 +50,13 @@ function ProfilePage() {
       }
     ).then(res => res.json()).then(res => {
       setName(res.name);
-      setAge(res.name);
+      setAge(res.age);
       setNation(res.nationality);
       setusermail(res.email);
       setSex(res.gender);
     })
   },[])
-  
+
   React.useEffect(() => {
     document.body.classList.add("profile-page");
     return function cleanup() {
