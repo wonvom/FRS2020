@@ -18,7 +18,51 @@ import SportsHeader from "components/Headers/SportsHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
+  const [ss, setSs] = React.useState('');
+  const [activeTab, setActiveTab] = React.useState("1");
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [summery, setSummery] = React.useState('');
+  const [tourname1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+  const [summery1, setSummery1] = React.useState('');
+  const [tourname2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+  const [summery2, setSummery2] = React.useState('');
+
+  const toggle = tab => {
+    if (activeTab !== tab){
+      setActiveTab(tab);
+    }
+  }
+
   document.documentElement.classList.remove("nav-open");
+
+  React.useEffect(()=>{
+
+    fetch('http://172.31.17.50:8080/', {
+      method: "GET",
+      headers: {
+        Authorization: null
+      },
+    }
+    ).then(res => res.json()).then(res =>{
+      setSs(res);
+
+      setTourname(res._embedded.tupleBackedMapList[0].tourName);
+      setAddress(res._embedded.tupleBackedMapList[0].address);
+      setSummery(res._embedded.tupleBackedMapList[0].summery);
+
+      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+      setAddress1(res._embedded.tupleBackedMapList[1].address);
+      setSummery1(res._embedded.tupleBackedMapList[1].summery);
+
+      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+      setAddress2(res._embedded.tupleBackedMapList[2].address);
+      setSummery2(res._embedded.tupleBackedMapList[2].summery);
+    })
+  }, []);
+
   React.useEffect(() => {
     document.body.classList.add("blog-posts");
     window.scrollTo(0, 0);
@@ -64,6 +108,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname} <br/>
+                              <p></p>
+                              <p><small>{address}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                             Seoul World Cup Stadium
                           </CardTitle>
@@ -92,7 +147,7 @@ function BlogPosts() {
                             After the successful completion of the 2002 FIFA World Cup Korea/Japan, the Seoul World Cup Stadium has been leading the campaign to promote soccer culture, and is also a frontrunner in hosting various cultural events. 
                             Located within the facilities are also places to shop and enjoy cultural activities- providing all visitors with much to see and do. In Seoul, it is rising as a popular tourist spot.
                           </p>
-                        </div>
+                        </div>*/}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -125,6 +180,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname1} <br/>
+                              <p></p>
+                              <p><small>{address1}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery1}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                           Oak Valley Snow Park
                           </CardTitle>
@@ -140,7 +206,7 @@ function BlogPosts() {
                           Oak Valley is a first-class resort complex providing condo facilities, a golf course, and various other subsidiary facilities. 
                           Oak Valley also offers special children’s facilities making it the perfect ski resort for the whole family. 
                           </p>
-                        </div>
+                        </div>*/}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -172,6 +238,17 @@ function BlogPosts() {
                         </Badge>
                       </div>
                       <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname2} <br/>
+                              <p></p>
+                              <p><small>{address2}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery2}
+                        <p></p>
+                      {/*<a href="javascrip: void(0);">
                         <CardTitle tag="h3">
                           Jungmun Golf Club
                         </CardTitle>
@@ -193,7 +270,7 @@ function BlogPosts() {
                         <p>- Reservation required; international tourists are given priority</p>
                         <p>- Holes 8 and 11 have an optical illusion (uphill and downhill are reversed)</p>
                         <p>- Located within 5-min walking distance from the nearest hotel</p>
-                      </div>
+                      </div>*/}
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
                       Read more
