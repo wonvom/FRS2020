@@ -18,7 +18,51 @@ import HealingHeader from "components/Headers/HealingHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
+  const [ss, setSs] = React.useState('');
+  const [activeTab, setActiveTab] = React.useState("1");
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [summery, setSummery] = React.useState('');
+  const [tourname1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+  const [summery1, setSummery1] = React.useState('');
+  const [tourname2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+  const [summery2, setSummery2] = React.useState('');
+
+  const toggle = tab => {
+    if (activeTab !== tab){
+      setActiveTab(tab);
+    }
+  }
+
   document.documentElement.classList.remove("nav-open");
+
+  React.useEffect(()=>{
+
+    fetch('http://172.31.17.50:8080/', {
+      method: "GET",
+      headers: {
+        Authorization: null
+      },
+    }
+    ).then(res => res.json()).then(res =>{
+      setSs(res);
+
+      setTourname(res._embedded.tupleBackedMapList[0].tourName);
+      setAddress(res._embedded.tupleBackedMapList[0].address);
+      setSummery(res._embedded.tupleBackedMapList[0].summery);
+
+      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+      setAddress1(res._embedded.tupleBackedMapList[1].address);
+      setSummery1(res._embedded.tupleBackedMapList[1].summery);
+
+      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+      setAddress2(res._embedded.tupleBackedMapList[2].address);
+      setSummery2(res._embedded.tupleBackedMapList[2].summery);
+    })
+  }, []);
+  
   React.useEffect(() => {
     document.body.classList.add("blog-posts");
     window.scrollTo(0, 0);
@@ -64,6 +108,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname} <br/>
+                              <p></p>
+                              <p><small>{address}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                             Myeong-dong, Namdaemun, Bukchang-dong, Da-dong and Mugyo-dong Special Tourist Zone
                           </CardTitle>
@@ -88,6 +143,7 @@ function BlogPosts() {
                               Bukchang-dong and Sogong-dong have high-end accommodations including Lotte Hotel Seoul and Westin Chosun Seoul, duty-free shops, and restaurants serving traditional dishes. .
                           </p>
                         </div>
+                        */}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -120,6 +176,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname1} <br/>
+                              <p></p>
+                              <p><small>{address1}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery1}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                             Tapgol Park
                           </CardTitle>
@@ -141,7 +208,7 @@ function BlogPosts() {
                           <p>
                           The park is of great historical value and national spirit as it was the starting point of the March 1 Independence Movement.
                           </p>
-                        </div>
+                        </div>*/}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -173,6 +240,17 @@ function BlogPosts() {
                         </Badge>
                       </div>
                       <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname2} <br/>
+                              <p></p>
+                              <p><small>{address2}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery2}
+                        <p></p>
+                      {/*<a href="javascrip: void(0);">
                         <CardTitle tag="h3">
                           Namiseom Island
                         </CardTitle>
@@ -205,7 +283,7 @@ function BlogPosts() {
                       a merry-go-round, shooting range, and roller skating rink. Lodging facilities such as resort 
                       villas and bungalows are available for visitors to stay on the island.   
                       </p>
-                      </div>
+                      </div>*/}
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
                       Read more

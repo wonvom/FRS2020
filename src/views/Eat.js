@@ -18,7 +18,51 @@ import EatHeader from "components/Headers/EatHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
 function BlogPosts() {
+  const [ss, setSs] = React.useState('');
+  const [activeTab, setActiveTab] = React.useState("1");
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [summery, setSummery] = React.useState('');
+  const [tourname1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+  const [summery1, setSummery1] = React.useState('');
+  const [tourname2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+  const [summery2, setSummery2] = React.useState('');
+
+  const toggle = tab => {
+    if (activeTab !== tab){
+      setActiveTab(tab);
+    }
+  }
+
   document.documentElement.classList.remove("nav-open");
+  
+  React.useEffect(()=>{
+
+    fetch('http://172.31.17.50:8080/', {
+      method: "GET",
+      headers: {
+        Authorization: null
+      },
+    }
+    ).then(res => res.json()).then(res =>{
+      setSs(res);
+
+      setTourname(res._embedded.tupleBackedMapList[0].tourName);
+      setAddress(res._embedded.tupleBackedMapList[0].address);
+      setSummery(res._embedded.tupleBackedMapList[0].summery);
+
+      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+      setAddress1(res._embedded.tupleBackedMapList[1].address);
+      setSummery1(res._embedded.tupleBackedMapList[1].summery);
+
+      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+      setAddress2(res._embedded.tupleBackedMapList[2].address);
+      setSummery2(res._embedded.tupleBackedMapList[2].summery);
+    })
+  }, []);
+  
   React.useEffect(() => {
     document.body.classList.add("blog-posts");
     window.scrollTo(0, 0);
@@ -64,6 +108,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname} <br/>
+                              <p></p>
+                              <p><small>{address}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                             Tosokchon Samgyetang
                           </CardTitle>
@@ -82,7 +137,7 @@ function BlogPosts() {
                             Even though one has to wait to enter during lunch time, do not worry about long wait as the restaurant is spacious.
                             Besides Samgyetang (ginseng chicken soup), it serves Ogol-samgyetang, otdak, pajeon (green onion pancake), Rotisserie chicken, and other menus.
                           </p>
-                        </div>
+                        </div>*/}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -115,6 +170,17 @@ function BlogPosts() {
                           </Badge>
                         </div>
                         <a href="javascrip: void(0);">
+                          <div className="name">
+                            <h4 className="title text-center">
+                              {tourname1}
+                              <p></p>
+                              <p><small>{address1}</small></p>
+                            </h4>
+                          </div>
+                        </a>
+                        {summery1}
+                        <p></p>
+                        {/*<a href="javascrip: void(0);">
                           <CardTitle tag="h3">
                             Myeongdong Kyoja
                           </CardTitle>
@@ -134,6 +200,7 @@ function BlogPosts() {
                             Also popular are the mandu (dumplings), bibim guksu (spicy noodles), and kongguksu (noodles in cold soybean soup). 
                           </p>
                         </div>
+                      */}
                       </CardBody>
                       <Button className="btn-round" color="danger" size="sm">
                         Read more
@@ -166,6 +233,17 @@ function BlogPosts() {
                         </Badge>
                       </div>
                       <a href="javascrip: void(0);">
+                        <div className="name">
+                          <h4 className="title text-center">
+                            {tourname2}
+                            <p></p>
+                            <p><small>{address2}</small></p>
+                          </h4>
+                        </div>
+                      </a>
+                      {summery2}
+                      <p></p>
+                      {/*<a href="javascrip: void(0);">
                         <CardTitle tag="h3">
                           Passion 5 
                         </CardTitle>
@@ -191,6 +269,7 @@ function BlogPosts() {
                         In addition to the wonderful items from the bakery, there are usually 300 to 400 dessert items to choose from including cakes, puddings and chocolates.
                         </p>
                       </div>
+                    */}
                     </CardBody>
                     <Button className="btn-round" color="danger" size="sm">
                       Read more
