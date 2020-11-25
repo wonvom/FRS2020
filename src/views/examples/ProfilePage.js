@@ -167,13 +167,13 @@ function ProfilePage() {
                     <ul className="list-unstyled follows">
                       <li>
                         <Row>
-                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                          {/* <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/sections/myeongdong.jpg")}
                             />
-                          </Col>
+                          </Col> */}
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                             
                             <small>{tourName}</small> <br />
@@ -197,13 +197,13 @@ function ProfilePage() {
                       <hr />
                       <li>
                         <Row>
-                          <Col className="mx-auto" lg="2" md="4" xs="4">
+                          {/* <Col className="mx-auto" lg="2" md="4" xs="4">
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/sections/gyeongbokpalace.jpg")}
                             />
-                          </Col>
+                          </Col> */}
                           <Col lg="7" md="4" xs="4">
                             <small>{tourName1}</small> <br />
                             <p><small>{address1}</small></p>
@@ -222,13 +222,13 @@ function ProfilePage() {
                       <hr />
                       <li>
                         <Row>
-                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                          {/* <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/sections/myeongdong.jpg")}
                             />
-                          </Col>
+                          </Col> */}
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                             <small>{tourName2}</small> <br />
                             <p><small>{address2}</small></p>
