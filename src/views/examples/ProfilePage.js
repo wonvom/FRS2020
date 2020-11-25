@@ -38,9 +38,9 @@ function ProfilePage() {
   };
 
   document.documentElement.classList.remove("nav-open");
-  React.useEffect(async()=>{
-    await setToken(localStorage.getItem('token'));
-    await setEmail(localStorage.getItem('email'));
+  React.useEffect(()=>{
+     setToken(localStorage.getItem('token'));
+     setEmail(localStorage.getItem('email'));
 
     fetch(`http://172.31.36.93:8080/users/${localStorage.getItem('email')}`, {
         method: "GET",
