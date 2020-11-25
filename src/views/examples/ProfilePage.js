@@ -30,6 +30,14 @@ function ProfilePage() {
   const [sex, setSex] = React.useState('');
   const [token, setToken] = React.useState('');
   const [email, setEmail] = React.useState('');
+  const [tourName, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [tourName1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+
+  const [tourName2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+
 
   const toggle = tab => {
     if (activeTab !== tab) {
@@ -54,6 +62,24 @@ function ProfilePage() {
       setNation(res.nationality);
       setusermail(res.email);
       setSex(res.gender);
+    })
+
+    fetch(`http://172.31.36.93:8080/recommend`, {
+        method: "GET",
+        headers: {
+          Authorization : localStorage.getItem('token')
+        }
+      }
+    ).then(res => res.json()).then(res => {
+      console.log(res);
+      setTourname(res._embedded.tupleBackedMapList[0].tourName);
+      setAddress(res._embedded.tupleBackedMapList[0].address);
+
+      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+      setAddress1(res._embedded.tupleBackedMapList[1].address);
+
+      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+      setAddress2(res._embedded.tupleBackedMapList[2].address);
     })
   },[])
 
@@ -89,6 +115,8 @@ function ProfilePage() {
                       <p><small>{age}</small></p>
                       <p><small>{nation}</small></p>
                       <p><small>{sex}</small></p>
+                      
+                      
                     </h4>
                   </div>
                 </div>
@@ -147,10 +175,10 @@ function ProfilePage() {
                             />
                           </Col>
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                            <h6>
-                              Myeong-Dong <br />
-                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
-                            </h6>
+                            
+                            <small>{tourName}</small> <br />
+                            <p><small>{address}</small></p>
+                            
                           </Col>
                           <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
                             {/* <FormGroup check>
@@ -177,10 +205,9 @@ function ProfilePage() {
                             />
                           </Col>
                           <Col lg="7" md="4" xs="4">
-                            <h6>
-                              Gyeongbok Palace<br />
-                              <small>161 Gyeongbok Palace, Sajik-ro, Jongno-gu, Seoul</small>
-                            </h6>
+                            <small>{tourName1}</small> <br />
+                            <p><small>{address1}</small></p>
+                            
                           </Col>
                           <Col lg="3" md="4" xs="4">
                             {/* <FormGroup check>
@@ -203,10 +230,9 @@ function ProfilePage() {
                             />
                           </Col>
                           <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                            <h6>
-                              Myeong-Dong <br />
-                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
-                            </h6>
+                            <small>{tourName2}</small> <br />
+                            <p><small>{address2}</small></p>
+                            
                           </Col>
                           <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
                             {/* <FormGroup check>
@@ -223,65 +249,6 @@ function ProfilePage() {
                         </Row>
                       </li>
                       <hr />
-                      <li>
-                        <Row>
-                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
-                            <img
-                              alt="..."
-                              className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/sections/myeongdong.jpg")}
-                            />
-                          </Col>
-                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                            <h6>
-                              Myeong-Dong <br />
-                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
-                            </h6>
-                          </Col>
-                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                            {/* <FormGroup check>
-                              <Label check>
-                                <Input
-                                  defaultChecked
-                                  defaultValue=""
-                                  type="checkbox"
-                                />
-                                <span className="form-check-sign" />
-                              </Label>
-                            </FormGroup> */}
-                          </Col>
-                        </Row>
-                      </li>
-                      <hr />
-                      <li>
-                        <Row>
-                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
-                            <img
-                              alt="..."
-                              className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/sections/myeongdong.jpg")}
-                            />
-                          </Col>
-                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                            <h6>
-                              Myeong-Dong <br />
-                              <small>66, Eulji-ro, Jung-gu, Seoul</small>
-                            </h6>
-                          </Col>
-                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                            {/* <FormGroup check>
-                              <Label check>
-                                <Input
-                                  defaultChecked
-                                  defaultValue=""
-                                  type="checkbox"
-                                />
-                                <span className="form-check-sign" />
-                              </Label>
-                            </FormGroup> */}
-                          </Col>
-                        </Row>
-                      </li>
                     </ul>
                   </Col>
                 </Row>
