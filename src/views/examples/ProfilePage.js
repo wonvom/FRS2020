@@ -45,7 +45,7 @@ function ProfilePage() {
     fetch(`http://172.31.36.93:8080/users/${localStorage.getItem('email')}`, {
         method: "GET",
         headers: {
-          Authorization : localStorage.getItem('token')
+          Authorization : JSON.parse(localStorage.getItem('token'));
         },
         body: JSON.stringify({
           "age":"50",
