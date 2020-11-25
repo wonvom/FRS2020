@@ -26,6 +26,20 @@ function ColorNavbar({history}) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [bodyClick, setBodyClick] = React.useState(false);
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [location, setLocation ] = React.useState('');
+  const [test, setTest] = React.useState('');
+  const [ss, setSs] = React.useState('');
+  const [tourname, setTourname] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [summery, setSummery] = React.useState('');
+  const [tourname1, setTourname1] = React.useState('');
+  const [address1, setAddress1] = React.useState('');
+  const [summery1, setSummery1] = React.useState('');
+  const [tourname2, setTourname2] = React.useState('');
+  const [address2, setAddress2] = React.useState('');
+  const [summery2, setSummery2] = React.useState('');
+
+
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -48,6 +62,48 @@ function ColorNavbar({history}) {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+
+  const getData = ({name}) => {
+    fetch(`http://172.31.36.93:8080/tour/list/address?location=${name}`, {
+      method: "GET",
+      headers: {
+        Authorization: null
+      },
+    }
+
+    ).then(res => res.json()).then(res => {
+      
+      localStorage.setItem('data', JSON.stringify(res));
+     
+      //console.log(res)
+    })
+  }
+  // React.useEffect(() => {
+  //   fetch(`http://172.31.17.90:8080/tour/list/address?location=${JSON.parse(localStorage.getItem('location'))}`, {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: null
+  //     },
+  //   }
+
+  //   ).then(res => res.json()).then(res => {
+  //     setSs(res);
+  //     setTourname(res._embedded.tupleBackedMapList[0].tourName);
+  //     setAddress(res._embedded.tupleBackedMapList[0].address);
+  //     setSummery(res._embedded.tupleBackedMapList[0].summery);
+  //     setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+  //     setAddress1(res._embedded.tupleBackedMapList[1].address);
+  //     setSummery1(res._embedded.tupleBackedMapList[1].summery);
+  //     setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+  //     setAddress2(res._embedded.tupleBackedMapList[2].address);
+  //     setSummery2(res._embedded.tupleBackedMapList[2].summery);
+  //     //console.log(res)
+
+  //   })
+  // }, [location]);
+
+
   return (
     <>
       {bodyClick ? (
@@ -118,39 +174,103 @@ function ColorNavbar({history}) {
                   Location
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/blog-post-seoul" tag={Link}>
+                  <DropdownItem to="/blog-post-seoul" 
+                    tag={Link} 
+                    name="Seoul"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-tile-56" />
                     Seoul
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-busan" tag={Link}>
+                  <DropdownItem to="/blog-post-busan" tag={Link} 
+                    name="Busan"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-settings" />
                     Busan
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-daegu" tag={Link}>
+                  <DropdownItem to="/blog-post-daegu" tag={Link}
+                    name="Daegu"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-bullet-list-67" />
                     Daegu
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-daejeon" tag={Link}>
+                  <DropdownItem to="/blog-post-daejeon" tag={Link}
+                    name="Daejeon"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-single-02" />
                     Daejeon
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-gangwon" tag={Link}>
+                  <DropdownItem to="/blog-post-gangwon" tag={Link}
+                    name="Gangwon"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-calendar-60" />
                     Gangwon
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-jeonju" tag={Link}>
+                  <DropdownItem to="/blog-post-jeonju" tag={Link}
+                    name="Jeonju"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-money-coins" />
                     Jeonju
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-incheon" tag={Link}>
+                  <DropdownItem to="/blog-post-incheon" tag={Link}
+                    name="Incheon"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-badge" />
                     Incheon
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-ulsan" tag={Link}>
+                  <DropdownItem to="/blog-post-ulsan" tag={Link} 
+                    name="Ulsan"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-mobile" />
                     Ulsan
                   </DropdownItem>
-                  <DropdownItem to="/blog-post-jeju" tag={Link}>
+                  <DropdownItem to="/blog-post-jeju" tag={Link} 
+                    name="Jeju"
+                    onClick={e => {
+                      setLocation(e.target.name);
+                      localStorage.setItem('location', JSON.stringify(e.target.name));
+                      getData({name: e.target.name});
+                    }}
+                  >
                     <i className="nc-icon nc-mobile" />
                     Jeju
                   </DropdownItem>
@@ -278,7 +398,7 @@ function ColorNavbar({history}) {
                 </DropdownMenu>
               </UncontrolledDropdown> */}
               <NavItem>
-                {localStorage.getItem('token') ?
+                {localStorage.getItem('email') ?
                   <Button
                     className="btn-round"
                     style={{backgroundColor: '#BF7E5D'}}
@@ -304,7 +424,7 @@ function ColorNavbar({history}) {
                     Login
                   </Button>
                 }
-                {localStorage.getItem('email') ?
+                {localStorage.getItem('email')  ?
                 <Button
                   className="btn-round"
                   style={{backgroundColor: '#BF7E5D'}}
@@ -334,7 +454,7 @@ function ColorNavbar({history}) {
                     //target="_blank"
                   >
                     {/* <i className="nc-icon nc-cart-simple" />  */}
-                   Register Now
+                Register Now
                   </Button>
                   }
               </NavItem>

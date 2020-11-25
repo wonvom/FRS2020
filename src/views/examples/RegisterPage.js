@@ -155,12 +155,12 @@ function RegisterPage({history}) {
                     <FormGroup check>
                         <p>
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='female' onClick={(e)=>{setSex(e.target.value)}}/>Female
+                            <Input defaultValue="" type="checkbox" value='woman' onClick={(e)=>{setSex(e.target.value)}}/>Female
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='male' onClick={(e)=>{setSex(e.target.value)}}/>Male
+                            <Input defaultValue="" type="checkbox" value='man' onClick={(e)=>{setSex(e.target.value)}}/>Male
                             <span className="form-check-sign" />
                           </Label>
                         </p>
@@ -196,8 +196,15 @@ function RegisterPage({history}) {
                     <Input placeholder="Password" type="password" />
                     <Input placeholder="Confirm Password" type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
                     <Button block className="btn-round" color="default" onClick={()=>{
-                      console.log(email,password,age,name,nation,sex)
-                      fetch("http://172.31.17.50:8080/join", {
+                      if(email === '') alert("이메일을 입력해주세요");
+                      else if(password === '') alert("패스워드를 입력해주세요");
+                      else if(age === '') alert("나이를 선택해주세요");
+                      else if(name === '') alert("이름을 입력해주세요");
+                      else if(nation === '') alert("국적을 선택 해주세요");
+                      else if(sex === '') alert("성별을 선택 해주세요");
+                      else {
+                    
+                      fetch("http://172.31.36.93:8080/join", {
                         method: "POST",
                         headers: {
                           "Content-Type": "application/json"
@@ -211,15 +218,24 @@ function RegisterPage({history}) {
                           gender:sex
                         })
                       }
-                    )
-                      localStorage.setItem('email',email);
-                      localStorage.setItem('password',password);
-                      localStorage.setItem('nationality',nation);
-                      localStorage.setItem('sex',sex);
-                      localStorage.setItem('age',parseInt(age));
-                      alert('축하합니다! 회원가입이 완료 됐습니다.');
-                      history.push('/presentation');
-                    }}>
+                      ).then(res => {if(res.status === 400){
+                        alert('패스워드는 숫자, 문자, 특수문자 각각 1개 이상, 8자리 이상 입력해주세요');
+                      }else if(res.status === 409){
+                        alert('이메일이 중복입니다 다른 이메일을 입력해 주세요');
+
+                      }
+                    
+                      else {
+                        localStorage.setItem('age',parseInt(age));
+                        localStorage.setItem('email',email);
+                        localStorage.setItem('password',password);
+                        localStorage.setItem('nationality',nation);
+                        localStorage.setItem('sex',sex);
+                        localStorage.setItem('age',parseInt(age));
+                        alert('축하합니다! 회원가입이 완료 됐습니다.');
+                        history.push('/presentation');
+                      }})
+                    }}}>
                       Register
                     </Button>
                   </Form>
