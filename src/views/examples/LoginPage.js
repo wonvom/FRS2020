@@ -85,7 +85,7 @@ function LoginPage({history}) {
                         alert("이메일이 존재하지 않습니다 이메일을 확인해 주세요");
                       }
                       else{
-                        res.json().then(()=> {
+                        res.json().then((res)=> {
                           console.log(res)
                           localStorage.setItem('email', email)
                           localStorage.setItem('password', password)
