@@ -1,4 +1,6 @@
 import React from "react";
+import {withRouter} from "react-router-dom";
+import {isEmpty} from "lodash/isEmpty";
 
 // reactstrap components
 import { Card, Container, Row, Col } from "reactstrap"; // Button, Media 삭제
@@ -8,7 +10,7 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import BlogPostHeader from "components/Headers/BlogPostHeader.js";
 import FooterGray from "components/Footers/FooterGray.js";
 
-function BlogPost() {
+function BlogPost({history}) {
 
   const [ss, setSs] = React.useState('');
   const [activeTab, setActiveTab] = React.useState("1");
@@ -21,6 +23,8 @@ function BlogPost() {
   const [tourname2, setTourname2] = React.useState('');
   const [address2, setAddress2] = React.useState('');
   const [summery2, setSummery2] = React.useState('');
+  const [path, setPath] = React.useState('');
+  const [data, setData] = React.useState(null);
 
 
   const toggle = tab => {
@@ -32,42 +36,19 @@ function BlogPost() {
 
   document.documentElement.classList.remove("nav-open");
 
+
+
   React.useEffect(()=>{
-    //setLocation(localStorage.getItem('location'));
+    const {location} = history;
+    setPath(location.pathname);
+  },[]);
+
+  React.useEffect(()=>{
+    setData(JSON.parse(localStorage.getItem('data')));
+  },[path]);
 
 
-
-    fetch(`http://172.31.17.50:8080/tour/list/address?location=Seoul`, {
-        method: "GET",
-        headers: {
-          Authorization : null
-        },
-        }
-
-    ).then(res => res.json()).then(res => {
-      setSs(res);
-
-
-      setTourname(res._embedded.tupleBackedMapList[0].tourName);
-      setAddress(res._embedded.tupleBackedMapList[0].address);
-      setSummery(res._embedded.tupleBackedMapList[0].summery);
-
-      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
-      setAddress1(res._embedded.tupleBackedMapList[1].address);
-      setSummery1(res._embedded.tupleBackedMapList[1].summery);
-
-      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
-      setAddress2(res._embedded.tupleBackedMapList[2].address);
-      setSummery2(res._embedded.tupleBackedMapList[2].summery);
-
-
-      //console.log(res);
-
-
-
-
-    })
-  },[])
+   
 
 
 
@@ -81,6 +62,10 @@ function BlogPost() {
       document.body.classList.remove("blog-post");
     };
   });
+
+    console.log(data)
+
+    if(data === null) return null;
   return (
     <>
       <ColorNavbar />
@@ -106,9 +91,8 @@ function BlogPost() {
                     <a href="javascrip: void(0);">
                       <div className="name">
                         <h4 className="title text-center">
-                          {tourname} <br />
-                          <p></p>
-                          <p><small>{address}</small></p>
+                          {data._embedded.tupleBackedMapList[0].tourName}<br />
+                          <p>{data._embedded.tupleBackedMapList[0].address}</p>
                         </h4>
                       </div>
                     </a>
@@ -133,11 +117,9 @@ function BlogPost() {
                   <div className="article-content">
 
                     <blockquote className="blockquote">
-                    <br />
-                    <p>
-                    {summery}
-                    </p>
-                    <br />
+                      <br />
+                      <p><small>{data._embedded.tupleBackedMapList[0].summery}</small></p>
+                      <br />
                     </blockquote>
 
                     <br />
@@ -184,22 +166,21 @@ function BlogPost() {
                 </Col>
               </Row>
               <Row>
-              <Col className="ml-auto mr-auto" md="10">
-                <div className="text-center">
-                  {/* <Badge className="main-tag" color="warning">
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
                     Trending
                   </Badge> */}
-                  <a href="javascrip: void(0);">
-                    <div className="name">
-                      <h4 className="title text-center">
-                        {tourname1} <br />
-                        <p></p>
-                        <p><small>{address1}</small></p>
-                      </h4>
-                    </div>
-                  </a>
-                </div>
-              </Col>
+                    <a href="javascrip: void(0);">
+                      <div className="name">
+                        <h4 className="title text-center">
+                          {data._embedded.tupleBackedMapList[1].tourName} <br />
+                          <p>{data._embedded.tupleBackedMapList[0].address}</p>
+                        </h4>
+                      </div>
+                    </a>
+                  </div>
+                </Col>
                 <Col className="ml-auto mr-auto" md="8">
                   <a href="javascrip: void(0);">
                     <Card
@@ -220,11 +201,11 @@ function BlogPost() {
 
 
                     <blockquote className="blockquote">
-                    <br />
-                    <p>
-                    {summery1}
-                    </p>
-                    <br />
+                      <br />
+                      <p>
+                        {data._embedded.tupleBackedMapList[1].summery}
+                      </p>
+                      <br />
                     </blockquote>
 
                     <br />
@@ -270,22 +251,21 @@ function BlogPost() {
               </Row>
 
               <Row>
-              <Col className="ml-auto mr-auto" md="10">
-                <div className="text-center">
-                  {/* <Badge className="main-tag" color="warning">
+                <Col className="ml-auto mr-auto" md="10">
+                  <div className="text-center">
+                    {/* <Badge className="main-tag" color="warning">
                     Trending
                   </Badge> */}
-                  <a href="javascrip: void(0);">
-                    <div className="name">
-                      <h4 className="title text-center">
-                        {tourname2} <br />
-                        <p></p>
-                        <p><small>{address2}</small></p>
-                      </h4>
-                    </div>
-                  </a>
-                </div>
-              </Col>
+                    <a href="javascrip: void(0);">
+                      <div className="name">
+                        <h4 className="title text-center">
+                          {data._embedded.tupleBackedMapList[2].tourName} <br />
+                          <p>{data._embedded.tupleBackedMapList[2].address}</p>
+                        </h4>
+                      </div>
+                    </a>
+                  </div>
+                </Col>
                 <Col className="ml-auto mr-auto" md="8">
                   <a href="javascrip: void(0);">
                     <Card
@@ -305,11 +285,11 @@ function BlogPost() {
                   <div className="article-content">
 
                     <blockquote className="blockquote">
-                    <br />
-                    <p>
-                    {summery2}
-                    </p>
-                    <br />
+                      <br />
+                      <p>
+                        {data._embedded.tupleBackedMapList[2].summery}
+                      </p>
+                      <br />
                     </blockquote>
 
                     <br />
@@ -363,4 +343,4 @@ function BlogPost() {
   );
 }
 
-export default BlogPost;
+export default withRouter(BlogPost);

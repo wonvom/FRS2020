@@ -28,7 +28,7 @@ function BlogPost() {
 
 
 
-    fetch(`http://172.31.17.50:8080/tour/list/address?location=${localStorage.getItem('location')}`, {
+    fetch(`http://172.31.17.185:8080/tour/list/address?location=${localStorage.getItem('location')}`, {
         method: "GET",
 
         },

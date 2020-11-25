@@ -42,7 +42,7 @@ function ProfilePage() {
     setToken(localStorage.getItem('token'));
     setEmail(localStorage.getItem('email'));
 
-    fetch(`http://172.31.17.50:8080/users/${localStorage.getItem('email')}`, {
+    fetch(`http://172.31.36.93:8080/users/${localStorage.getItem('email')}`, {
         method: "GET",
         headers: {
           Authorization : localStorage.getItem('token')

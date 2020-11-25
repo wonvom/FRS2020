@@ -38,30 +38,30 @@ function BlogPosts() {
 
   document.documentElement.classList.remove("nav-open");
 
-  React.useEffect(()=>{
+  // React.useEffect(()=>{
 
-    fetch('http://172.31.17.50:8080/', {
-      method: "GET",
-      headers: {
-        Authorization: null
-      },
-    }
-    ).then(res => res.json()).then(res =>{
-      setSs(res);
+  //   fetch('http://172.31.17.90:8080/tour/list/culture', {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: null
+  //     },
+  //   }
+  //   ).then(res => res.json()).then(res =>{
+  //     setSs(res);
 
-      setTourname(res._embedded.tupleBackedMapList[0].tourName);
-      setAddress(res._embedded.tupleBackedMapList[0].address);
-      setSummery(res._embedded.tupleBackedMapList[0].summery);
+  //     setTourname(res._embedded.tupleBackedMapList[0].tourName);
+  //     setAddress(res._embedded.tupleBackedMapList[0].address);
+  //     setSummery(res._embedded.tupleBackedMapList[0].summery);
 
-      setTourname1(res._embedded.tupleBackedMapList[1].tourName);
-      setAddress1(res._embedded.tupleBackedMapList[1].address);
-      setSummery1(res._embedded.tupleBackedMapList[1].summery);
+  //     setTourname1(res._embedded.tupleBackedMapList[1].tourName);
+  //     setAddress1(res._embedded.tupleBackedMapList[1].address);
+  //     setSummery1(res._embedded.tupleBackedMapList[1].summery);
 
-      setTourname2(res._embedded.tupleBackedMapList[2].tourName);
-      setAddress2(res._embedded.tupleBackedMapList[2].address);
-      setSummery2(res._embedded.tupleBackedMapList[2].summery);
-    })
-  }, []);
+  //     setTourname2(res._embedded.tupleBackedMapList[2].tourName);
+  //     setAddress2(res._embedded.tupleBackedMapList[2].address);
+  //     setSummery2(res._embedded.tupleBackedMapList[2].summery);
+  //   })
+  // }, []);
 
   React.useEffect(() => {
     document.body.classList.add("blog-posts");
