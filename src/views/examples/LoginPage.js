@@ -31,6 +31,8 @@ function LoginPage({history}) {
       document.body.classList.remove("full-screen");
     };
   });
+
+  console.log(localStorage.getItem('location'))
   return (
     <>
       <ColorNavbar />
