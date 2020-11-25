@@ -1,5 +1,4 @@
 import React from "react";
-import {isEmpty} from "lodash";
 import {withRouter} from 'react-router-dom'
 
 // reactstrap components
@@ -64,7 +63,7 @@ function LoginPage({history}) {
                       type="password"
                       onChange={(e)=>{setPassword(e.target.value)}}
                     />
-                    <Button block className="btn-round" color="danger" onClick={async()=>{
+                     <Button block className="btn-round" color="danger" onClick={async()=>{
                       if(email === '') alert('이메일을 입력하세요');
                       else if(password === '') alert('비밀번호를 입력하세요');
                       else {
