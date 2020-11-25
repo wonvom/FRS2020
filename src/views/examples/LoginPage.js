@@ -84,16 +84,15 @@ function LoginPage({history}) {
                       }else if(res.status === 404){
                         alert("이메일이 존재하지 않습니다 이메일을 확인해 주세요");
                       }
-                        res.json();
+                        res.json().then(()=> {
+                          console.log(res)
+                          localStorage.setItem('email', email)
+                          localStorage.setItem('password', password)
+                          localStorage.setItem('token', res.Authorization)
+                          history.push('/') 
+                        })
                       }
-                      ).then(res =>  {
-                        if(!isEmpty(res.Authorization)){
-                      console.log(res)
-                      localStorage.setItem('email', email)
-                      localStorage.setItem('password', password)
-                      localStorage.setItem('token', res.Authorization)
-                      history.push('/') } })
-                       
+                      )
                     }}}>
                       Login
                     </Button>
