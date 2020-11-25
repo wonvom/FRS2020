@@ -84,6 +84,7 @@ function LoginPage({history}) {
                       }else if(res.status === 404){
                         alert("이메일이 존재하지 않습니다 이메일을 확인해 주세요");
                       }
+                      else{
                         res.json().then(()=> {
                           console.log(res)
                           localStorage.setItem('email', email)
@@ -92,7 +93,9 @@ function LoginPage({history}) {
                           history.push('/') 
                         })
                       }
+                    }
                       )
+                      
                     }}}>
                       Login
                     </Button>
