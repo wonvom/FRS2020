@@ -63,7 +63,7 @@ function LoginPage({history}) {
                       type="password"
                       onChange={(e)=>{setPassword(e.target.value)}}
                     />
-                    <Button block className="btn-round" color="danger" onClick={async()=>{
+                     <Button block className="btn-round" color="danger" onClick={async()=>{
                       if(email === '') alert('이메일을 입력하세요');
                       else if(password === '') alert('비밀번호를 입력하세요');
                       else {
@@ -82,15 +82,19 @@ function LoginPage({history}) {
                         alert("비밀번호를 확인해 주세요")
                       }else if(res.status === 404){
                         alert("이메일이 존재하지 않습니다 이메일을 확인해 주세요");
-                      }  else{
-                        res.json().then(()=> {
+                      }
+                      else{
+                        res.json().then((res)=> {
                           console.log(res)
                           localStorage.setItem('email', email)
                           localStorage.setItem('password', password)
                           localStorage.setItem('token', res.Authorization)
                           history.push('/') 
-                        })}})
-                       
+                        })
+                      }
+                    }
+                      )
+                      
                     }}}>
                       Login
                     </Button>
