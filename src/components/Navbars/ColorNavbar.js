@@ -424,7 +424,7 @@ function ColorNavbar({history}) {
                     Login
                   </Button>
                 }
-                {localStorage.getItem('email')  ?
+                {localStorage.getItem('email') || localStorage.getItem('token') ?
                 <Button
                   className="btn-round"
                   style={{backgroundColor: '#BF7E5D'}}
