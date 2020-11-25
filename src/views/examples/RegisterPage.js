@@ -126,18 +126,18 @@ function RegisterPage({history}) {
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='cn' onClick={(e)=>{setNation(e.target.value)}}/>China
+                            <Input defaultValue="" type="checkbox" value='china' onClick={(e)=>{setNation(e.target.value)}}/>China
                             <span className="form-check-sign" />
                           </Label>
                         </p>
                         <p>
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='usa' onClick={(e)=>{setNation(e.target.value)}}/>USA
+                            <Input defaultValue="" type="checkbox" value='USA' onClick={(e)=>{setNation(e.target.value)}}/>USA
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='en' onClick={(e)=>{setNation(e.target.value)}}/>England
+                            <Input defaultValue="" type="checkbox" value='UK' onClick={(e)=>{setNation(e.target.value)}}/>England
                             <span className="form-check-sign" />
                           </Label>
                         </p>
@@ -155,12 +155,12 @@ function RegisterPage({history}) {
                     <FormGroup check>
                         <p>
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='woman' onClick={(e)=>{setSex(e.target.value)}}/>Female
+                            <Input defaultValue="" type="checkbox" value='women' onClick={(e)=>{setSex(e.target.value)}}/>Female
                             <span className="form-check-sign" />
                           </Label>
                           &nbsp;&nbsp;&nbsp;
                           <Label check>
-                            <Input defaultValue="" type="checkbox" value='man' onClick={(e)=>{setSex(e.target.value)}}/>Male
+                            <Input defaultValue="" type="checkbox" value='men' onClick={(e)=>{setSex(e.target.value)}}/>Male
                             <span className="form-check-sign" />
                           </Label>
                         </p>

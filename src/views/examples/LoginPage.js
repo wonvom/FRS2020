@@ -89,7 +89,7 @@ function LoginPage({history}) {
                           console.log(res)
                           localStorage.setItem('email', email)
                           localStorage.setItem('password', password)
-                          localStorage.setItem('token', res.Authorization)
+                          localStorage.setItem('token', JSON.stringify(res.Authorization))
                           history.push('/') 
                         })
                       }
