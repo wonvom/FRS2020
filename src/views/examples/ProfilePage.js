@@ -46,12 +46,7 @@ function ProfilePage() {
         method: "GET",
         headers: {
           Authorization : localStorage.getItem('token')
-        },
-        body: JSON.stringify({
-          "age":"50",
-          "nationality":"kr",
-          "name":"newName"
-        })
+        }
       }
     ).then(res => res.json()).then(res => {
       setName(res.name);
