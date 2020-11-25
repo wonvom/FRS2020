@@ -1,4 +1,5 @@
 import React from "react";
+import {isEmpty} from "lodash";
 import {withRouter} from 'react-router-dom'
 
 // reactstrap components
@@ -87,12 +88,12 @@ function LoginPage({history}) {
                       }
                       }
                       ).then(res =>  {
-                        if(res.Authorization){
+                        if(!isEmpty(res.Authorization)){
                       console.log(res)
                       localStorage.setItem('email', email)
                       localStorage.setItem('password', password)
                       localStorage.setItem('token', res.Authorization)
-                      history.push('/')}})
+                      history.push('/') } })
                        
                     }}}>
                       Login
