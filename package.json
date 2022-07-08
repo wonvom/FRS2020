@@ -7,7 +7,7 @@
     "create-react-app": "^3.4.1",
     "headroom.js": "0.9.4",
     "lodash": "^4.17.20",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "node-sass": "^4.14.1",
     "nouislider": "14.0.2",
     "react": "16.8.6",
